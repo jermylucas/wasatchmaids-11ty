@@ -1,5 +1,6 @@
 # wasatchmaids-11ty
-11ty conversion of Wasatch Maids site
+
+This is a static site conversion to using 11ty as a more flexible approach
 
 On new machine type: `npm i -D @11ty/eleventy`
 
