@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include "head.html" %}
+  </head>
+  <header>{% include "header.html" %}</header>
+  <body>
+    {{ content | safe }}
+
+    <footer>{% include "footer.html" %}</footer>
+    <script defer src="./app.js"></script>
+  </body>
+</html>
