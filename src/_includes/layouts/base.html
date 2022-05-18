@@ -5,7 +5,7 @@
   </head>
   <header>{% include "header.html" %}</header>
   <body>
-    {{ content | safe }}
+    {% block content %} {{ content | safe }} {% endblock content %}
 
     <footer>{% include "footer.html" %}</footer>
     <script defer src="./app.js"></script>

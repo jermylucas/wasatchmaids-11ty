@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0px) {
   #hero {
     height: auto;
-    background: url("/images/kitchen2.jpg");
+    background: url("/assets/images/kitchen2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@
   #contact-hero,
   #generic-hero {
     height: 150px;
-    background: url("/images/kitchen2.jpg");
+    background: url("/assets/images/kitchen2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@
   #banner {
     position: relative;
     background-color: var(--primary-blue);
-    background-image: url("/images/bg-shape.png");
+    background-image: url("/assets/images/bg-shape.png");
     background: repeating-conic-gradient(
       at 50% 60%,
       #00aad8 0 10deg,
@@ -273,7 +273,7 @@
   }
 
   .banner_card:after {
-    content: url("/images/star-figure.png");
+    content: url("/assets/images/star-figure.png");
     position: absolute;
     top: 0;
     right: 0;

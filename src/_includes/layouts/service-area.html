@@ -1,0 +1,123 @@
+{% extends "layouts/base.html" %} {% block content %}
+
+<main id="main">
+  <section class="page-content">
+    <div class="content-container">
+      <div class="content-component">
+        <div class="content-text-wrapper">
+          <h1 class="text-heading small">
+            <span class="text-blue">Home Cleaning</span> and
+            <span class="text-blue">Maid Service</span> in {{ about.city }} Utah
+          </h1>
+          <p>
+            {{ heading.intro }} Want anything that's not included in our
+            standard cleaning? Give us a
+            <a class="blue-link" href="tel:801-821-2316">call</a>, send us a
+            <a class="blue-link" href="sms:8018212316">text</a>, or
+            <a class="blue-link" href="mailto:contact@wasatchmaids.com"
+              >e-mail</a
+            >
+            us!
+          </p>
+          <span>
+            <a
+              style="width: 150px; margin-top: 10px; margin-right: 10px"
+              class="button-solid"
+              href="/booknow.html"
+              >Book Now</a
+            >
+            <a
+              style="width: 150px; margin-top: 10px"
+              class="button-solid"
+              href="/home-cleaning-checklist.html"
+              >View Checklist</a
+            >
+          </span>
+        </div>
+        <div class="image-container">
+          <img src="{{ heading.image.url }}" alt="{{ heading.image.text }}" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content">
+        <h2>House Cleaning & Maid Service in {{ about.city }}</h2>
+        <p>{{ main.text }}</p>
+      </div>
+      <div class="text-content">
+        <div class="flex-grid-2">
+          <div class="flex-grid-2-content">
+            <h2>Our {{ about.city }} Cleaning Services</h2>
+            <div class="text-content">
+              <ul class="check-list">
+                <li>Recurring Home Cleaning and Maid Service</li>
+                <li>One-Time Deep, and Spring Cleanings</li>
+                <li>Move-In and Move-Out Cleaning</li>
+                <li>Post-Construction Cleanup</li>
+                <li>Custom and Hourly Cleaning Services</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-grid-2-content">
+            <div class="image-container-full">
+              <iframe
+                loading="lazy"
+                src="{{ main.map }}"
+                width="100%"
+                height="250px"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-content">
+        <p>
+          Either
+          <a class="blue-link" href="../booknow.html">book online</a>, give us a
+          <a class="blue-link" href="tel:801-821-2316">call</a>, send us a
+          <a class="blue-link" href="sms:8018212316">text</a>, or
+          <a class="blue-link" href="mailto:contact@wasatchmaids.com">e-mail</a>
+          us, and we'd be happy to get you on our Ogden schedule!
+        </p>
+      </div>
+      <div class="text-content">
+        <p>
+          We are completely committed to our work and delivery top quality
+          cleaning to you. All our house cleaners are
+          <span class="key blue">certified maids</span>, and have extensive
+          experience cleaning homes of all conditions, shapes, and sizes.
+        </p>
+      </div>
+      <div class="text-content">
+        <p>
+          Wasatch Maids is <span class="key">highly</span>
+          <span class="key blue">insured</span>, and your happiness is
+          guaranteed.
+        </p>
+      </div>
+      <div class="text-content">
+        <p>
+          With our 100% satisfaction guarantee, the days of searching for
+          residential cleaning services near you are long gone. Never have to
+          worry about keeping your home fresh and clean with Wasatch Maids.
+        </p>
+      </div>
+
+      <div class="text-content last">
+        <h3>So, what are you waiting for?</h3>
+        <p>
+          Sit back, kick your feet up and relax because the cleaning pros at
+          Wasatch Maids have you covered.
+        </p>
+      </div>
+    </div>
+  </section>
+  {% include "cards.html" %} {% include "checklist.html" %}
+</main>
+
+{% endblock content %}
