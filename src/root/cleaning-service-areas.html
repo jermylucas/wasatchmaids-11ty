@@ -152,17 +152,6 @@ about:
       </div>
     </div>
   </section>
-  <!-- Make a function btn -->
-  <section class="cta-banner-dark">
-    <div class="cta-wrapper">
-      <div class="cta-grid">
-        <div class="cta-grid-text">Schedule Your Home Cleaning</div>
-        <div class="cta-grid-btn">
-          <a class="button-solid-small" href="/booknow.html">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  {% include "services.html" %}
+  {% CtaBanner text="Schedule Your Home Cleaning", btnText="Book Now", dark=true
+  %} {% include "services.html" %}
 </main>
