@@ -50,11 +50,11 @@
         </a>
         <ul id="on-top" class="navbar-links">
           <li class="nav-li">
-            <a class="active-menu" href="/index.html">Home</a>
+            <a {% if activemenu === 'home' %} class="active-menu" {% endif %} href="/index.html">Home</a>
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a href="/cleaning-services.html">Services </a>
+              <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html">Services </a>
               <div class="dropdown-list">
                 <a href="/cleaning-services.html" class="dropdown-item"
                   >All Services</a
@@ -84,28 +84,27 @@
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a href="/cleaning-service-areas.html">Locations </a>
+              <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html">Locations </a>
               <div class="dropdown-list">
                 <a href="/cleaning-service-areas.html" class="dropdown-item"
                   >All Locations</a
                 >
+                {% for page in collections.serviceareanav %}
                 <a
-                  href="/cleaning-service-areas/ogden.html"
+                  href="/cleaning-service-areas/{{ page.data.navurl }}.html"
                   class="dropdown-item"
-                  >Ogden House Cleaning</a
+                  >{{ page.data.about.city }} House Cleaning</a
                 >
+                {% endfor %}
               </div>
             </div>
           </li>
-          <!-- <li class="nav-li">
-                <a href="/blog/index.html">Blog</a>
-              </li> -->
           <li class="nav-li">
-            <a href="/blog/">Blog</a>
+            <a {% if activemenu === 'blog' %} class="active-menu" {% endif %} href="/blog/">Blog</a>
           </li>
-          <li class="nav-li"><a href="/contact.html">Contact</a></li>
+          <li {% if activemenu === 'contact' %} class="active-menu" {% endif %} class="nav-li"><a href="/contact.html">Contact</a></li>
           <li class="nav-li">
-            <a class="button-solid" href="/booknow.html">Book Now</a>
+            <a {% if activemenu === 'booknow' %} class="active-menu button-solid" {% endif %} class="button-solid" href="/booknow.html">Book Now</a>
           </li>
         </ul>
       </div>

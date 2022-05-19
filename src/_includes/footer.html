@@ -28,11 +28,13 @@
             <li>
               <a href="/cleaning-service-areas.html">All Service Areas</a>
             </li>
+            {% for page in collections.serviceareanav %}
             <li>
-              <a href="/cleaning-service-areas/ogden.html"
-                >Ogden House Cleaning</a
+              <a href="/cleaning-service-areas/{{ page.data.navurl }}.html"
+                >{{ page.data.about.city }} House Cleaning</a
               >
             </li>
+            {% endfor %}
           </ul>
         </div>
         <!-- Col 3 -->
@@ -40,10 +42,13 @@
           <ul>
             <li><h3>Services</h3></li>
             <li><a href="/cleaning-services.html">All Services</a></li>
-            <li><a href="/house-cleaning.html">Home Cleaning</a></li>
+            {% for page in collections.servicenav %}
             <li>
-              <a href="/cleaning-services/deep-cleaning.html">Deep Cleaning</a>
+              <a href="/cleaning-services/{{ page.data.navurl }}.html"
+                >{{ page.data.about.service }}</a
+              >
             </li>
+            {% endfor %}
           </ul>
           <ul>
             <li><h3>Stay Connected</h3></li>

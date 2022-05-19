@@ -1,0 +1,53 @@
+{% extends "layouts/base.html" %} {% block content %}
+<main id="main">
+  <section class="page-content">
+    <div class="content-container">
+      <div class="content-component">
+        <div class="content-text-wrapper">
+          <h1 class="text-heading">
+            Wasatch Maids
+            <span class="text-blue"> {{ about.service }} </span>Services
+          </h1>
+          <p>
+            {{ heading.intro }}
+            <br />
+            {% if about.service === NaN %}
+            <br />
+            Manage appointments online, and get e-mail or SMS reminders when
+            your cleaning is coming up.
+            <br /><a class="blue-link" href="./home-cleaning-checklist.html"
+              >View Residential Cleaning Checklist</a
+            >
+            {% endif %} {% if about.service %} Questions? Give us a
+            <a class="blue-link" href="tel:801-821-2316">call</a>, send us a
+            <a class="blue-link" href="sms:8018212316">text</a>, or
+            <a class="blue-link" href="mailto:contact@wasatchmaids.com"
+              >e-mail</a
+            >
+            us!
+          </p>
+          <span>
+            <a
+              style="width: 150px; margin-top: 10px; margin-right: 10px"
+              class="button-solid"
+              href="/booknow.html"
+              >Book Now</a
+            >
+            <a
+              style="width: 150px; margin-top: 10px"
+              class="button-solid"
+              href="/home-cleaning-checklist.html"
+              >View Checklist</a
+            >
+          </span>
+          {% endif %}
+        </div>
+        <div class="image-container">
+          <img src="{{ heading.image.url }}" alt="{{ heading.image.text }}" />
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ content | safe }}
+</main>
+{% endblock content %}

@@ -1,8 +1,11 @@
 ---
 layout: layouts/service-area.html
+activemenu: "locations"
+tags: serviceareanav
+navurl: "ogden"
 meta:
-  title: "Test"
-  description: "This is a description"
+  title: "Premium Home Cleaning and Maid Service in Ogden, Utah | Wasatch Maids"
+  description: "Looking for maid or house cleaning service in Ogden? Wasatch Maids is the company that offers the best cleaning services. Book your home cleaning in 60 seconds."
   link: "https://wasatchmaids.com/cleaning-service-areas/ogden"
   socialimage: "/assets/images/Ogden-Utah.jpg"
 about:
