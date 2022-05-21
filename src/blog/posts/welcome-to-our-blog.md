@@ -4,6 +4,7 @@ layout: post.html
 activemenu: "blog"
 description: This is a test of the tags. I hope this provides useful content!
 meta:
+  title: "Welcome To Our Blog | Wasatch Maids"
   description: "Just testing out the blog feature of eleventy"
   link: "https://wasatchmaids.com/blog/welcome-to-our-blog"
   socialimage: "/assets/images/Ogden-Utah.jpg"
