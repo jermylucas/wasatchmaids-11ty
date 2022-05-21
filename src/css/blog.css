@@ -168,6 +168,9 @@ ol {
   margin-left: 20px;
 } */
 
+.snippet__title {
+  margin-top: 15px;
+}
 h1 {
   font-size: 2em;
 }
