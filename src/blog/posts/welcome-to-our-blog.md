@@ -1,5 +1,7 @@
 ---
 title: Welcome To Our Blog
+layout: article.html
+activemenu: "blog"
 description: This is a test of the tags. I hope this provides useful content!
 author: Michell
 date: 2022-05-16T17:40:07.390Z

@@ -84,9 +84,9 @@
 } */
 
 /** Reset some basic elements */
-body,
+body.blog-post,
 h1,
-h2,
+h2.blog-post,
 h3,
 h4,
 h5,
@@ -105,10 +105,7 @@ figure {
 }
 
 /** Basic styling */
-body {
-  font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+/* body {
   color: #111;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -120,7 +117,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
+} */
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1,
@@ -137,7 +134,7 @@ ol,
 dl,
 figure,
 .highlight {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 /** `main` element */
@@ -171,19 +168,19 @@ ol {
 .snippet__title {
   margin-top: 15px;
 }
-h1 {
+.blog-post h1 {
   font-size: 2em;
 }
 
-h2 {
+.blog-post h2 {
   font-size: 1.5em;
 }
 
-h3 {
+.blog-post h3 {
   font-size: 1.17em;
 }
 
-h4 {
+.blog-post h4 {
   font-size: 1em;
 }
 
@@ -192,6 +189,11 @@ h4 {
 .post-list a {
   color: #01b3e4;
   text-decoration: none;
+  font-size: 1.25rem;
+}
+a.continue-reading {
+  font-size: 0.9rem;
+  text-decoration: underline;
 }
 
 .post-list a:visited {
