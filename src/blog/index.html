@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.html
 activemenu: "blog"
+description: ""
 meta:
   title: "House Cleaning Blog | Wasatch Maids"
   description: "Reach facts and home cleaning tips, how to guides, and updates from Wasatch Maids."
@@ -22,7 +23,7 @@ about:
             <h2 class="post-list-heading">Posts</h2>
             <ul class="post-list">
               {%- for post in collections.post | reverse -%} {% include
-              'article-snippet.html' %} {%- endfor %}
+              'post-snippet.html' %} {%- endfor %}
             </ul>
           </div>
         </div>

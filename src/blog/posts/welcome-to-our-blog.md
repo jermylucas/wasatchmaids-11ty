@@ -1,8 +1,12 @@
 ---
 title: Welcome To Our Blog
-layout: article.html
+layout: post.html
 activemenu: "blog"
 description: This is a test of the tags. I hope this provides useful content!
+meta:
+  description: "Just testing out the blog feature of eleventy"
+  link: "https://wasatchmaids.com/blog/welcome-to-our-blog"
+  socialimage: "/assets/images/Ogden-Utah.jpg"
 author: Michell
 date: 2022-05-16T17:40:07.390Z
 tags: post

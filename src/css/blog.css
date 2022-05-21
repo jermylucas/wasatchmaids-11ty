@@ -418,13 +418,13 @@ table td {
   flex: 1;
 }
 
-.page-heading {
+/* .page-heading {
   font-size: 32px;
-}
+} */
 
-.post-list-heading {
+/* .post-list-heading {
   font-size: 28px;
-}
+} */
 
 .post-list {
   margin-left: 0;
