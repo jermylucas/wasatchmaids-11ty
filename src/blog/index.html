@@ -13,7 +13,24 @@ about:
 
 <main>
   {% include "hero.html" %}
-  <div class="container" style="padding-top: 20px; padding-bottom: 20px">
+
+  <section class="general_content">
+    <div class="general_content-container">
+      <div class="general_content-component">
+        <div class="general_content-text">
+          <div class="blog-stuff">
+            <h2 class="post-list-heading">Posts</h2>
+            <ul class="post-list">
+              {%- for post in collections.post | reverse -%} {% include
+              'article-snippet.html' %} {%- endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="container" style="padding-top: 20px; padding-bottom: 20px">
     <h3>Check back soon...</h3>
-  </div>
+  </div> -->
 </main>

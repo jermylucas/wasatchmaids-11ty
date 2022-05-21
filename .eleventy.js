@@ -1,3 +1,4 @@
+const { DateTime } = require("luxon");
 const CtaBanner = require("./src/_includes/components/CtaBanner");
 
 module.exports = function (eleventyConfig) {
@@ -7,6 +8,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/scripts/");
 
   eleventyConfig.addShortcode("CtaBanner", CtaBanner);
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
 
   return {
     dir: {
