@@ -8,10 +8,11 @@ collections:
     label: "Blog"
     folder: "src/blog/posts"
     create: true
+    layout: post.html
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Meta Title", name: "meta.title", widget: "string" }
+      - { label: "Meta Title", name: "meta:title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - {
           label: "Meta Description",
@@ -25,13 +26,13 @@ collections:
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "how-to"
-    label: "HowTo"
+    label: "How To"
     folder: "src/how-to/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Meta Title", name: "meta.title", widget: "string" }
+      - { label: "Meta Title", name: "meta:title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - {
           label: "Meta Description",
@@ -40,7 +41,7 @@ collections:
         }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["howtto"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
