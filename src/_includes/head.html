@@ -1,9 +1,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-{% if !meta.title %}
+{% if not meta.title %}
 <title>{{ title }} | Wasatch Maids</title>
-<link rel="canonical" href="{{ meta.link }}" />
-<meta property="og: url" content="https://wasatchmaids.com/{{ slug }}" />
+
 <meta name="description" content="{{ description }}" />
 <meta property="og:title" content="{{ title }} | Wasatch Maids" />
 <meta property="og:description" content="{{ description }}" />
@@ -13,20 +12,19 @@
 <meta name="twitter:image" content="{{ image }}" />
 {% endif %} {% if meta.title %}
 <title>{{ meta.title }}</title>
-<link rel="canonical" href="{{ meta.link }}" />
-<meta property="og: url" content="{{ meta.link }}" />
 <meta name="description" content="{{ meta.description }}" />
 <meta property="og:title" content="{{ meta.title }}" />
 <meta property="og:description" content="{{ meta.description }}" />
 <meta property="og:image" content="{{ meta.socialimage }}" />
-
 <meta name="twitter:title" content="{{ meta.title }}" />
 <meta name="twitter:description" content="{{ meta.description }}" />
 <meta name="twitter:image" content="{{ meta.socialimage }}" />
 {% endif %}
+<!-- Common meta tags -->
+<link rel="canonical" href="https://wasatchmaids.com{{ page.url }}" />
+<meta property="og: url" content="https://wasatchmaids.com{{ page.url }}" />
 <meta property="og:site_name" content="Wasatch Maids" />
 <meta property="og:type" content="article" />
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@wasatchmaids" />
 
