@@ -2,11 +2,26 @@
 <html lang="en">
   <head>
     {% include "head.html" %}
+    <script
+      defer
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <header>{% include "header.html" %}</header>
   <body>
     {% block content %} {{ content | safe }} {% endblock content %} {% include
     "footer.html" %}
     <script defer src="/scripts/app.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
   </body>
 </html>

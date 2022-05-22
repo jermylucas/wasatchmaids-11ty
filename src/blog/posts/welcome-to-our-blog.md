@@ -11,7 +11,7 @@ meta:
 author: Michell
 date: 2022-05-16T17:40:07.390Z
 tags: post
-image: /assets/blog/airbnb-kitchen-view.jpg
+image: /assets/posts/airbnb-kitchen-view.jpg
 imageAlt: looking at inset
 ---
 

@@ -16,6 +16,6 @@ Navigate to the Wasatch Maids <a href="/login.html">login page here</a>, or by g
 
 Once there, click on "Forgot Password?"
 
-![](/assets/how-to/airbnb-kitchen-view.jpg)
+![](/assets/posts/airbnb-kitchen-view.jpg)
 
 ## Step 2
