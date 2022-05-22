@@ -473,6 +473,10 @@
     transition: 0.2s ease;
     display: inline-block;
   }
+  .button-link.green {
+    background: var(--green);
+    color: var(--black-blue);
+  }
 
   .button-solid:hover {
     color: #000;
@@ -1950,6 +1954,9 @@
     opacity: 0.9;
     font-size: 0.9em;
     line-height: 1.16666667;
+  }
+  #footer .right-section .lists .button-link.green {
+    color: var(--black-blue);
   }
   #footer .right-section .lists ul h3 {
     color: var(--white);

@@ -139,9 +139,9 @@ figure,
 
 /** `main` element */
 /** Images */
-img {
-  max-width: 100%;
-  vertical-align: middle;
+article img {
+  max-width: 50%;
+  text-align: center;
 }
 
 /** Figures */
@@ -168,7 +168,7 @@ ol {
 .snippet__title {
   margin-top: 15px;
 }
-.blog-post h1 {
+/* .blog-post h1 {
   font-size: 2em;
 }
 
@@ -182,7 +182,7 @@ ol {
 
 .blog-post h4 {
   font-size: 1em;
-}
+} */
 
 /** Headings */
 /** Links */
@@ -466,34 +466,58 @@ table td {
   margin-bottom: 30px;
 }
 
-.post-content h2 {
-  margin-top: 1.25rem;
-  font-size: 32px;
+.post-content h1,
+.blog-post h1 {
+  font-size: 2rem;
+}
+.post-content h2,
+.blog-post h2 {
+  font-size: 1.75rem;
+}
+
+.post-content h3,
+.blog-post h3 {
+  font-size: 1.5rem;
+}
+
+.post-content h3,
+.blog-post h3 {
+  font-size: 1.25rem;
+}
+
+.post-content h4,
+.blog-post h4 {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 800px) {
-  .post-content h2 {
+  .post-content h1,
+  .blog-post h1 {
     font-size: 28px;
   }
-}
+  .post-content h2,
+  .blog-post h2 {
+    font-size: 24px;
+  }
 
-.post-content h3 {
-  font-size: 26px;
-}
-
-@media screen and (max-width: 800px) {
-  .post-content h3 {
+  .post-content h3,
+  .blog-post h3 {
     font-size: 22px;
   }
-}
 
-.post-content h4 {
-  font-size: 20px;
-}
+  .post-content h3,
+  .blog-post h3 {
+    font-size: 20px;
+  }
 
-@media screen and (max-width: 800px) {
-  .post-content h4 {
+  .post-content h4,
+  .blog-post h4 {
     font-size: 18px;
+  }
+
+  .post-content h4,
+  .blog-post h4 {
+    font-size: 16px;
   }
 }
 

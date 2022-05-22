@@ -10,4 +10,12 @@ meta:
 tags: howto
 ---
 
-Check back soon for a complete how-to guide...
+## Step 1
+
+Navigate to the Wasatch Maids <a href="/login.html">login page here</a>, or by going to https://wasatchmaids.com/login
+
+Once there, click on "Forgot Password?"
+
+![](/assets/how-to/airbnb-kitchen-view.jpg)
+
+## Step 2
