@@ -12,6 +12,11 @@ imageAlt: Kitchen of an airbnb cleaning
 ---
 # How to clean for a move out
 
-### thisafasldkfja  fasfjadkfja **fasdjfkas*asdflaksdjfalksdf*** 
+### thisafasldkfja  fasfjadkfja **fasdjfkas*asdflaksdjfalksdf***
 
 asdlfkjaslfdkasjfa
+
+1. kitchen
+2. living room
+3. bathrooms
+4.
