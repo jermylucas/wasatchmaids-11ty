@@ -1,10 +1,5 @@
 ---
 activemenu: ""
-meta:
-  title: "How To: Reset Your Password | Wasatch Maids"
-  description: Forgot your password, or can't sign in to Wasatch Maids? Learn how
-    to reset your psasword and get back into your account.
-  socialimage: /assets/images/booking-computer.jpg
 layout: post.html
 title: Reset Your Password
 description: Forgot your password? We offer an easy way to log back in...
