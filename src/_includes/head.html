@@ -21,8 +21,14 @@
 <meta name="twitter:image" content="{{ meta.socialimage }}" />
 {% endif %}
 <!-- Common meta tags -->
-<link rel="canonical" href="https://wasatchmaids.com{{ page.url }}" />
-<meta property="og: url" content="https://wasatchmaids.com{{ page.url }}" />
+<link
+  rel="canonical"
+  href="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
+/>
+<meta
+  property="og: url"
+  content="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
+/>
 <meta property="og:site_name" content="Wasatch Maids" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />

@@ -14,15 +14,6 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
-  // eleventyConfig.addFilter("truncateUrl", (url) => {
-  //   console.log(url);
-  //   if (url.toLocaleString().includes("html")) {
-  //     return url.toLocaleString.splice(0, -5);
-  //   } else {
-  //     return url;
-  //   }
-  // });
-
   return {
     dir: {
       input: "src",
