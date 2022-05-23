@@ -1,4 +1,5 @@
 <div class="blue-line"></div>
+{% if post.data.title %}
 <li>
   <article class="snippet">
     <h3 class="snippet__title">
@@ -12,6 +13,7 @@
     <a href="{{ post.url }}" class="continue-reading">Continue Reading</a>
   </article>
 </li>
+{% endif %}
 <!-- <li>
   <span class="post-meta">May 1, 2022</span>
   <h3>
