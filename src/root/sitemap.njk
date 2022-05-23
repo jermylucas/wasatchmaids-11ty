@@ -2,38 +2,6 @@
 permalink: '/sitemap.xml'
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://wasatchmaids.com/</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/booknow</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/cleaning-services</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/cleaning-services/house-cleaning</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/cleaning-services/deep-cleaning</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/cleaning-service-areas/ogden</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/cleaning-service-areas</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/home-cleaning-checklist</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/service-policy</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/contact</loc>
-  </url>
-  <url>
-    <loc>https://wasatchmaids.com/blog/</loc>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{% for item in collections.all %}
+<url><loc>https://wasatchmaids.com/{{item.url | replace('.html', '')}}</loc></url>{% endfor %}
 </urlset>
