@@ -22,6 +22,7 @@
               <a href="/blog/">Blog</a>
             </li>
             <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/sitemap.html">Sitemap</a></li>
           </ul>
         </div>
         <!-- Col 2 -->
@@ -45,6 +46,11 @@
           <ul>
             <li><h3>Services</h3></li>
             <li><a href="/cleaning-services.html">All Services</a></li>
+            <li>
+              <a class="button-link green" href="/booknow.html"
+                >Book Home Cleaning</a
+              >
+            </li>
             {% for page in collections.servicenav %}
             <li>
               <a href="/cleaning-services/{{ page.data.navurl }}.html"

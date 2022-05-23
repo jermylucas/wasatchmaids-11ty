@@ -1,0 +1,34 @@
+---
+layout: layouts/base.html
+activemenu: ""
+meta:
+  title: "Sitemap | Wasatch Maids"
+  description: "View all of Wasatch Maid's current links"
+  socialimage: "/assets/images/Ogden-Utah.jpg"
+about:
+  heroTitle: "Sitemap"
+  heroContent: ""
+---
+
+{% include "hero.html" %}
+
+<section class="section_text">
+  <div class="section_text-container">
+    <div class="text-content">
+      <h2>Pages</h2>
+      <ul>
+        {% for item in collections.all %} {% if ('xml' not in item.url) and
+        (item.url != '/') %}
+        <li>
+          <a
+            class="blue-link"
+            href="https://wasatchmaids.com{{ item.url | replace('.html', '')}}"
+            >{{ item.url | slugify | replace('-', ' ') | replace('html', '')
+            }}</a
+          >
+        </li>
+        {% endif %} {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
