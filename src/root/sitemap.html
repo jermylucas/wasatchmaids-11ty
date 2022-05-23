@@ -23,8 +23,8 @@ about:
           <a
             class="blue-link"
             href="https://wasatchmaids.com{{ item.url | replace('.html', '')}}"
-            >{{ item.url | slugify | replace('-', ' ') | replace('html', '')
-            }}</a
+            >{{ item.url | slugify | replace('-', ' ') | replace('html', '') |
+            capitalize }}</a
           >
         </li>
         {% endif %} {% endfor %}
