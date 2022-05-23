@@ -43,10 +43,3 @@ You can schedule a one-time, weekly, bi-weekly, or monthly cleaning service to m
 With our 100% satisfaction guarantee, the days of searching for residential cleaning services near you are long gone. Never have to worry about keeping your home fresh and clean with Wasatch Maids.
 
 {% include "city-services.html" %}
-
-</div>
-</div>
-</section>
-
-{% CtaBanner text="Schedule Your Home Cleaning", btnText="Book Now",
-  dark=false %}

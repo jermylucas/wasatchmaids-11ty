@@ -116,7 +116,7 @@
   section#services-checklist {
     background-color: #f8f8ff;
     position: relative;
-    padding: 5% 0px;
+    padding: 50px 0px;
   }
 
   .grid-2 {
@@ -1344,7 +1344,7 @@
   }
 
   .checklist_items {
-    padding: 120px 2.5rem 0px 2.5rem;
+    padding: 0px 2.5rem;
   }
   .checklist_container {
     padding-bottom: 120px;
@@ -1413,9 +1413,6 @@
     height: 18rem;
     border: none;
   }
-  .checklist_items {
-    padding-top: 125px;
-  }
   section.page-content.services-page {
     margin-bottom: 0.5rem;
   }
@@ -1471,7 +1468,7 @@
   }
 
   .checklist_items {
-    padding: 125px 50px 0px 50px;
+    padding: 0px 50px;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -2061,6 +2058,7 @@
   }
   .cta-grid-text {
     font-size: 1.75em;
+    font-weight: 500;
   }
   .button-solid-small {
     line-height: 50px;

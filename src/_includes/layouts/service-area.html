@@ -40,7 +40,14 @@
       </div>
     </div>
   </section>
-  {{ content | safe }}
+  <section>
+    <div>
+      <div>{{ content | safe }}</div>
+    </div>
+  </section>
+
+  {% CtaBanner text="Schedule Your Home Cleaning", btnText="Book Now",
+  dark=false %}
   <section class="section_text">
     <div class="section_text-container">
       <div class="text-content">

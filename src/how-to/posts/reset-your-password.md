@@ -1,5 +1,5 @@
 ---
-layout: post.html
+layout: "layouts/post.html"
 activemenu: ""
 title: "Reset Your Password"
 meta:

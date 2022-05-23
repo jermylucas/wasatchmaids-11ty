@@ -7,8 +7,8 @@
       src="https://identity.netlify.com/v1/netlify-identity-widget.js"
     ></script>
   </head>
-  <header>{% include "header.html" %}</header>
   <body>
+    <header>{% include "header.html" %}</header>
     {% block content %} {{ content | safe }} {% endblock content %} {% include
     "footer.html" %}
     <script defer src="/scripts/app.js"></script>

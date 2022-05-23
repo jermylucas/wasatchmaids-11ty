@@ -10,9 +10,8 @@
     color: var(--text-gray);
     font-size: 1.75rem;
     padding-bottom: 10px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     position: relative;
-    /* font-weight: 700; */
   }
 
   .bullet-point {
