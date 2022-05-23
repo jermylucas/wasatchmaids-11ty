@@ -473,6 +473,7 @@
     transition: 0.2s ease;
     display: inline-block;
   }
+
   .button-link.green {
     background: var(--green);
     color: var(--black-blue);
