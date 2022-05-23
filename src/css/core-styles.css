@@ -2057,6 +2057,11 @@
     margin-left: 50px;
   }
   .cta-grid-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-bottom: 0px;
     font-size: 1.75em;
     font-weight: 500;
   }
