@@ -801,7 +801,7 @@
   }
 
   .features_text-wrapper {
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-left: 0;
   }
@@ -823,15 +823,14 @@
   .features_container {
     display: -ms-grid;
     display: grid;
-    width: 50%;
+    width: 450px;
     margin: auto;
-    margin-top: 0;
-    margin-bottom: -35px;
     grid-auto-columns: 1fr;
     grid-column-gap: 21px;
     grid-row-gap: 31px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
   }
