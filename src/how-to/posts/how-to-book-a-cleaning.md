@@ -1,5 +1,5 @@
 ---
-title: "How to: Book a Cleaning"
+title: Book a Cleaning
 description: "Need to set up a new cleaning appointment with Wasatch Maids?
   Follow these steps to make booking a breeze. "
 date: 2022-05-26T14:50:26.656Z
