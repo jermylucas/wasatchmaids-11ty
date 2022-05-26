@@ -139,9 +139,18 @@ figure,
 
 /** `main` element */
 /** Images */
-article img {
-  max-width: 50%;
-  text-align: center;
+@media screen and (min-width: 0px) {
+  article img {
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  article img {
+    max-width: 50%;
+  }
 }
 
 /** Figures */

@@ -40,7 +40,7 @@
 
   #contact-hero,
   #generic-hero {
-    height: 150px;
+    height: max-content;
     background: url("/assets/images/kitchen2.jpg");
     background-position: center;
     background-size: cover;
@@ -82,7 +82,7 @@
 
   #contact-hero .container,
   #generic-hero .container {
-    margin-top: 0px;
+    margin: 0px auto 1rem auto;
   }
   #contact-hero.checklist .container,
   #generic-hero.checklist .container {
