@@ -6,7 +6,7 @@ meta:
     to reset your psasword and get back into your account.
   socialimage: /assets/images/booking-computer.jpg
 layout: layouts/post.html
-title: "How to: Reset Your Password"
+title: Reset Your Password
 description: Forgot your password? Wasatch Maids makes it easy to reset so you
   can get back into your account and book a cleaning service.
 date: 2022-05-26T15:35:51.818Z
