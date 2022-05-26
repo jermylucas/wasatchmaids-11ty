@@ -126,6 +126,7 @@
   }
 
   .heroText h2,
+  .heroText p,
   .hero-content h3,
   .hero-content p {
     color: #fff;
@@ -133,6 +134,9 @@
     font-weight: normal;
     text-align: center;
     line-height: 1.5em;
+  }
+  .heroText p {
+    margin-bottom: 1.25rem;
   }
 
   .heroText button {
@@ -684,6 +688,7 @@
   }
 
   .heroText h2,
+  .heroText p,
   .hero-content h3,
   .hero-content p {
     /* width: 500px; */
@@ -876,6 +881,7 @@
   }
 
   .heroText h2,
+  .heroText p,
   .hero-content h3,
   .hero-content p {
     text-align: left;

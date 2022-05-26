@@ -124,101 +124,6 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  /* General text content items */
-
-  /* section.general_content {
-  } */
-
-  .general_content.values {
-    padding-top: 10px;
-    border-top: 3px solid var(--primary-blue);
-    border-bottom: 3px solid var(--primary-blue);
-  }
-
-  .general_content-container {
-    max-width: 1200px;
-    margin: auto;
-  }
-  .general_content-component {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-  .general_content-text {
-    width: 90%;
-    margin: 5px auto 50px auto;
-  }
-
-  .checklist_items {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0px 1.25rem;
-  }
-
-  .checklist_items.only {
-    padding-top: 20px;
-  }
-
-  .checklist_container {
-    padding-bottom: 0px;
-    position: relative;
-    z-index: 1;
-  }
-
-  .checklist_item {
-    padding-bottom: 0.75rem;
-  }
-
-  section#cards {
-    padding: 0px 10px;
-  }
-
-  section#hero {
-    padding: 0px 10px;
-    margin-bottom: 0px;
-  }
-  section#contact-hero,
-  section#generic-hero {
-    padding: 0px 10px;
-    margin-bottom: 0px;
-  }
-  section.cta-banner {
-    background-color: var(--green);
-    border-top: 3px solid var(--primary-blue);
-    border-bottom: 3px solid var(--primary-blue);
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  section.cta-banner-dark {
-    color: var(--white);
-    background-color: var(--black-blue);
-    border-top: 3px solid var(--green);
-    border-bottom: 3px solid var(--green);
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  .cta-wrapper {
-    max-width: 1000px;
-    margin: auto;
-  }
-  .cta-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1em;
-  }
-  .cta-banner .cta-grid-text {
-    color: var(--black-blue);
-    font-size: 1.75em;
-    text-align: center;
-  }
-  .cta-banner-dark .cta-grid-text {
-    color: var(--off-white);
-    font-size: 1.75em;
-    text-align: center;
-  }
-  .cta-grid-btn {
-    text-align: center;
-  }
-
   #services {
     padding-top: 0;
     margin-top: -6em;
@@ -812,6 +717,104 @@
 
   .section_text-container.last {
     margin-top: 40px;
+  }
+  /* General text content items */
+
+  /* section.general_content {
+  } */
+
+  .general_content.values {
+    padding-top: 10px;
+    border-top: 3px solid var(--primary-blue);
+    border-bottom: 3px solid var(--primary-blue);
+  }
+
+  .general_content-container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .general_content-component {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .general_content-text {
+    width: 90%;
+    margin: 5px auto 50px auto;
+  }
+
+  .checklist_items {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 1.25rem;
+  }
+
+  .checklist_items.only {
+    padding-top: 20px;
+  }
+
+  .checklist_container {
+    padding-bottom: 0px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .checklist_item {
+    padding-bottom: 0.75rem;
+  }
+
+  section#cards {
+    padding: 0px 10px;
+  }
+
+  section#hero {
+    padding: 0px 10px;
+    margin-bottom: 0px;
+  }
+  section#contact-hero,
+  section#generic-hero {
+    padding: 0px 10px;
+    margin-bottom: 0px;
+  }
+  section.cta-banner {
+    background-color: var(--green);
+    border-top: 3px solid var(--primary-blue);
+    border-bottom: 3px solid var(--primary-blue);
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  section.cta-banner-dark {
+    color: var(--white);
+    background-color: var(--black-blue);
+    border-top: 3px solid var(--green);
+    border-bottom: 3px solid var(--green);
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .cta-wrapper {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .cta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+  .cta-banner .cta-grid-text {
+    color: var(--black-blue);
+    font-size: 1.75em;
+    text-align: center;
+    font-weight: 500;
+  }
+  h4.cta-grid-text {
+    margin-bottom: 0px;
+  }
+  .cta-banner-dark .cta-grid-text {
+    color: var(--off-white);
+    font-size: 1.75em;
+    text-align: center;
+  }
+  .cta-grid-btn {
+    text-align: center;
   }
 
   /*-- -------------------------- -->
@@ -2065,7 +2068,6 @@
     flex-direction: column;
     margin-bottom: 0px;
     font-size: 1.75em;
-    font-weight: 500;
   }
   .button-solid-small {
     line-height: 50px;
