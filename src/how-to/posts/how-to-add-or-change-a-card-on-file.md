@@ -1,5 +1,5 @@
 ---
-title: "How to: Add or Change a Card on File"
+title: Add or Change a Card on File
 description: New card? Follow these steps to easily change your card and be
   ready for your next cleaning!
 date: 2022-05-26T14:56:45.525Z
