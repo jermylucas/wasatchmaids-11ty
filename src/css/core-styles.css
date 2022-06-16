@@ -297,13 +297,15 @@
     transition: all 0.1s;
     font-weight: 700;
     text-decoration: none;
-    color: #505050;
   }
   .key.blue {
     color: var(--primary-blue);
   }
   .key.green {
     color: var(--green);
+  }
+  span.key {
+    color: inherit;
   }
   a.key {
     color: #666;
@@ -960,7 +962,7 @@
   }
 
   .call-nav-body {
-    padding: 15px 0px;
+    padding: 10px 0px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr;
@@ -1534,7 +1536,7 @@
     align-items: center;
     z-index: 10000;
     left: 0;
-    top: 60px;
+    top: 76px;
     background: transparent;
     overflow: visible;
     -webkit-box-sizing: border-box;
@@ -1562,7 +1564,7 @@
   }
 
   .call-nav {
-    height: 60px;
+    height: 76px;
   }
 
   .call-nav-body {
@@ -1592,7 +1594,7 @@
     content: "";
     top: 0;
     width: 100%;
-    height: 155px;
+    height: 171px;
     background: #fff;
     position: absolute;
     z-index: 1000;
