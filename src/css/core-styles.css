@@ -962,7 +962,7 @@
   }
 
   .call-nav-body {
-    padding: 10px 0px;
+    padding: 17px 0px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: 1fr;
@@ -1248,6 +1248,10 @@
     animation-fill-mode: forwards;
   }
 
+  .circle-container-small .circle2.home {
+    top: 170px;
+  }
+
   .circle-container-small .circle2:before {
     content: "";
     display: block;
@@ -1450,13 +1454,13 @@
   }
 
   section#hero {
-    padding: 160px 10px 0px 10px;
+    padding: 190px 10px 0px 10px;
     margin-bottom: 0px;
   }
 
   section#contact-hero,
   section#generic-hero {
-    padding: 160px 10px 0px 10px;
+    padding: 190px 10px 0px 10px;
     margin-bottom: 0px;
   }
 
@@ -1465,7 +1469,7 @@
   }
   section.page-content,
   section#cards {
-    padding: 160px 50px 0px 50px;
+    padding: 190px 50px 0px 50px;
   }
   section.section_text {
     padding: 0px 50px;
@@ -1536,7 +1540,7 @@
     align-items: center;
     z-index: 10000;
     left: 0;
-    top: 76px;
+    top: 90px;
     background: transparent;
     overflow: visible;
     -webkit-box-sizing: border-box;
@@ -1564,7 +1568,7 @@
   }
 
   .call-nav {
-    height: 76px;
+    height: 90px;
   }
 
   .call-nav-body {
@@ -1594,7 +1598,7 @@
     content: "";
     top: 0;
     width: 100%;
-    height: 171px;
+    height: 185px;
     background: #fff;
     position: absolute;
     z-index: 1000;
