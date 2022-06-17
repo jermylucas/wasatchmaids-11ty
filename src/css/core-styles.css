@@ -695,7 +695,7 @@
 
   .text-heading {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.1;
     font-weight: var(--bold-weight);
     margin-bottom: 1.25rem;
@@ -729,6 +729,10 @@
     padding-top: 10px;
     border-top: 3px solid var(--primary-blue);
     border-bottom: 3px solid var(--primary-blue);
+  }
+
+  section.booking {
+    border-top: 1px solid var(--primary-blue);
   }
 
   .general_content-container {
@@ -2048,10 +2052,10 @@
   }
 
   .text-heading {
-    font-size: 3.75rem;
+    font-size: 2.5rem;
   }
   .text-heading.small {
-    font-size: 2.75rem;
+    font-size: 2rem;
   }
   .section-subheading {
     font-size: 2.25rem;
