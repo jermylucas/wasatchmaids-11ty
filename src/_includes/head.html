@@ -3,6 +3,8 @@
 {% if not meta.title %}
 <title>{{ title }} | Wasatch Maids</title>
 
+og:title, og:type, og:image, and og:url
+
 <meta name="description" content="{{ description }}" />
 <meta property="og:title" content="{{ title }} | Wasatch Maids" />
 <meta property="og:description" content="{{ description }}" />
@@ -19,6 +21,10 @@
 <meta name="twitter:title" content="{{ meta.title }}" />
 <meta name="twitter:description" content="{{ meta.description }}" />
 <meta name="twitter:image" content="{{ meta.socialimage }}" />
+{% endif %} {% if meta.type %}
+<meta property="og:type" content="{{ meta.type }}" />
+{% endif %} {% if not meta.type %}
+<meta property="og:type" content="website" />
 {% endif %}
 <!-- Common meta tags -->
 <link
@@ -26,7 +32,7 @@
   href="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
 />
 <meta
-  property="og: url"
+  property="og:url"
   content="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
 />
 <meta property="og:site_name" content="Wasatch Maids" />
