@@ -74,7 +74,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background-image: linear-gradient(to bottom right, #000000, #000000);
     opacity: 0.6;
@@ -647,6 +647,9 @@
   #reviews .button-solid {
     margin-top: 3rem;
   }
+  .normal-weight h1, .normal-weight h2 {
+    font-weight: 500;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -654,10 +657,10 @@
   #generic-hero {
     height: 200px;
   }
-  #contact-hero .container,
+  /* #contact-hero .container,
   #generic-hero .container {
     margin-top: 40px;
-  }
+  } */
   #contact-hero.checklist,
   #generic-hero.checklist {
     height: 300px;
@@ -736,6 +739,10 @@
   }
   #reviews .button-solid {
     margin-top: 3rem;
+  }
+  #contact-hero .container,
+  #generic-hero .container {
+    margin-top: 40px;
   }
 }
 

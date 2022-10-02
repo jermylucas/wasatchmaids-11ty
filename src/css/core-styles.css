@@ -720,6 +720,10 @@
   .section_text-container.last {
     margin-top: 40px;
   }
+    section.section_text.padded {
+   margin-top: 30px;
+    margin-bottom: 30px;
+  }
   /* General text content items */
 
   /* section.general_content {
@@ -1477,9 +1481,6 @@
   }
   section.section_text {
     padding: 0px 50px;
-  }
-  section.section_text.padded {
-    margin-top: 50px;
   }
 
   .checklist_items {
