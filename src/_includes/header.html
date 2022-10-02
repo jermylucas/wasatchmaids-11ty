@@ -26,6 +26,7 @@
   </div>
 
   <nav>
+    {% if not banner %}
     <div class="call-nav">
       <div class="call-nav-body">
       <div>
@@ -41,6 +42,18 @@
         <a href="/booknow.html" class="call-nav-quote-btn">Book Now</a>
       </div>
     </div>
+    {% endif %}
+    {% if banner === 'questions' %}
+    <div class="call-nav questions">
+    <div class="call-nav-body questions">
+      <div>
+        <p class="call-nav-phone">
+         Questions? Call or text us: <a href="tel:8018212316"> (801) 821-2316 </a>
+        </p>
+      </div>
+      </div>
+    </div>
+    {% endif %}
     <div class="navbar-menu">
       <div id="side-menu" class="side-nav">
         <a class="nav-logo" href="/index.html">

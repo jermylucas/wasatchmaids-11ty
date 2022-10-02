@@ -1575,6 +1575,9 @@
   .call-nav {
     height: 90px;
   }
+  .call-nav.questions {
+    height: 62px;
+  }
 
   .call-nav-body {
     max-width: 1000px;
@@ -1583,6 +1586,10 @@
     margin: auto;
     line-height: 1.7rem;
     text-align: left;
+  }
+  .call-nav-body.questions {
+    display: block;
+    text-align: center;
   }
 
   .call-nav-phone {
