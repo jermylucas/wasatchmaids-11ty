@@ -647,7 +647,8 @@
   #reviews .button-solid {
     margin-top: 3rem;
   }
-  .normal-weight h1, .normal-weight h2 {
+  .normal-weight h1,
+  .normal-weight h2 {
     font-weight: 500;
   }
 }
@@ -742,7 +743,7 @@
   }
   #contact-hero .container,
   #generic-hero .container {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 
@@ -865,7 +866,7 @@
   #generic-hero {
     background-attachment: fixed;
     padding-top: 80px;
-    min-height: 350px;
+    min-height: 390px;
   }
   #contact-hero.checklist,
   #generic-hero.checklist {
