@@ -1553,6 +1553,10 @@
     max-width: 1200px;
   }
 
+  .navbar-menu.questions {
+    top: 50%;
+  }
+
   .navbar-menu .nav-logo {
     margin: 0 0 0 30px !important;
     position: absolute;

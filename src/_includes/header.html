@@ -54,7 +54,12 @@
       </div>
     </div>
     {% endif %}
+    {% if banner === 'questions' %}
+    <div class="navbar-menu questions">
+    {% endif %}
+    {% if not banner %}
     <div class="navbar-menu">
+    {% endif %}
       <div id="side-menu" class="side-nav">
         <a class="nav-logo" href="/index.html">
           <img
