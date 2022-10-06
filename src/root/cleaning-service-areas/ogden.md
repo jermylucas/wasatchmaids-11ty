@@ -34,7 +34,7 @@ We know it's not easy picking a maid service or cleaning company. Wasatch Maids 
 
 ### Our Promise
 
-Wasatch Maids offers Ogden residents premium cleaning services. We are completely committed to our work and delivery top quality cleaning to you. AAll our house cleaners and cleaning crews are background checked, certified maids, and have many years of experience cleaning all areas of your home and all conditions, shapes, and sizes. They care about providing customers with the five-star service that Wasatch Maids is known for.
+Wasatch Maids offers Ogden residents premium cleaning services. We are completely committed to our work and delivery top quality cleaning to you. All our house cleaners and cleaning crews are background checked, certified maids, and have many years of experience cleaning all areas of your home and all conditions, shapes, and sizes. They care about providing customers with the five-star service that Wasatch Maids is known for.
 
 There is no initial on-site estimate needed. You can securely book online in minutes. Just head over to our user-friendly online booking system, enter your Ogden zip code, the requested date and time, the total size of the home (then excluding anything not needed) and we'll provide you with a flat rate fee.
 

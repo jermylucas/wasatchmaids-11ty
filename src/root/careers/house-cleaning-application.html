@@ -12,101 +12,338 @@ about:
 
 <main id="main">
   {% include "hero.html" %}
-  <section id="wasatch-form" class="container">
-    <form
-      id="contact-form"
-      name="Contact Form"
-      method="post"
-      data-netlify="true"
-    >
-      <span>Wasatch Maids</span>
-      <h3 class="contact-topper">Send a Message</h3>
-      <p class="form-p">
-        Please reach out for Commercial, Post-Construction, and Short-term
-        Rental Cleanings.
-        <a class="blue-link" href="tel:801-821-2316">Call</a>,
-        <a class="blue-link" href="sms:801-821-2316"> text</a>,
-        <a class="blue-link" href="mailto:contact@wasatchmaids.com">email</a>
-        us, or fill out the form below and we will get back to you as soon as
-        possible.
-      </p>
-
-      <input
-        aria-label="name"
-        class="input1"
-        name="name"
-        placeholder="First Name"
-        type="text"
-        tabindex="1"
-        required
-      />
-      <input
-        aria-label="name"
-        class="input1"
-        name="name"
-        placeholder="Last Name"
-        type="text"
-        tabindex="2"
-        required
-      />
-      <input
-        aria-label="email"
-        class="input1 right"
-        name="email"
-        placeholder="Email Address"
-        type="email"
-        tabindex="3"
-        required
-      />
-      <input
-        aria-label="phone number"
-        class="input1"
-        name="phone"
-        placeholder="Phone Number"
-        type="tel"
-        tabindex="4"
-        required
-      />
-      <input
-        aria-label="location"
-        class="input1 right"
-        name="location"
-        placeholder="City"
-        type="text"
-        tabindex="5"
-        required
-      />
-      <textarea
-        aria-label="write your message"
-        name="message"
-        placeholder="Tell us about your project"
-        tabindex="6"
-        required
-      ></textarea>
-
-      <p class="form-submit">
-        <button
-          name="submit"
-          type="submit"
-          id="contact-submit"
-          class="primary button-solid"
-          data-submit="...Sending"
-        >
-          Submit
-        </button>
-      </p>
-    </form>
-    <div class="contact-right">
-      <h3>Location</h3>
-      <p>Northern Utah</p>
-      <h3>Phone (Call or Text)</h3>
-      <p><a href="tel:801-821-2316">(801) 821-2316</a></p>
-      <h3>Email</h3>
-      <p>
-        <a href="mailto:contact@wasatchmaids.com">contact@wasatchmaids.com</a>
-      </p>
-      <h3>Working Hours</h3>
-      <p>Mon to Sat: 8am to 8pm</p>
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <h3>Name & Contact Information</h3>
+      <hr />
+      <form
+        method="post"
+        name="Job Application"
+        method="post"
+        data-netlify="true">
+        <div class="form-body">
+          <fieldset class="grid-2">
+            <legend>
+              <h3>Name <span class="required">(Required)</span></h3>
+            </legend>
+            <input
+              aria-label="first-name"
+              name="first-name"
+              placeholder="First Name"
+              type="text"
+              required />
+            <input
+              aria-label="last-name"
+              name="last-name"
+              placeholder="Last Name"
+              type="text"
+              required />
+          </fieldset>
+          <fieldset class="grid-2">
+            <legend>
+              <h3>Contact Info <span class="required">(Required)</span></h3>
+            </legend>
+            <input
+              aria-label="phone"
+              name="phone"
+              placeholder="Phone Number"
+              type="tel"
+              required />
+            <input
+              aria-label="email"
+              name="email"
+              placeholder="E-mail"
+              type="email"
+              required />
+          </fieldset>
+          <fieldset>
+            <h3>
+              What's Your Preferred Contact Method?
+              <span class="required">(Required)</span>
+            </h3>
+            <select name="contactmethod" aria-label="contactmethod" required>
+              <option value="" selected="selected">Select One...</option>
+              <option value="Phone">Phone</option>
+              <option value="Email">Email</option>
+              <option value="Text">Text</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>Address <span class="required">(Required)</span></h3>
+              <input
+                aria-label="address1"
+                name="address1"
+                placeholder="Street Address"
+                type="text"
+                required />
+              <input
+                aria-label="address2"
+                name="address2"
+                placeholder="Address Line 2"
+                type="text" />
+              <div class="grid-2">
+                <input
+                  aria-label="city"
+                  name="city"
+                  placeholder="City"
+                  type="text"
+                  required />
+                <input
+                  aria-label="state"
+                  name="state"
+                  placeholder="State"
+                  type="text"
+                  required />
+                <input
+                  aria-label="zip"
+                  name="zip"
+                  placeholder="Zip Code"
+                  type="text"
+                  required />
+                <input
+                  aria-label="country"
+                  name="country"
+                  placeholder="Country"
+                  type="text"
+                  required />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>
+                Are You Currently Working?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="yesWorking"
+                  name="working"
+                  value="yesWorking" />
+                <label for="yesWorking">Yes </label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="noWorking"
+                  name="working"
+                  value="noWorking" />
+                <label for="noWorking">No</label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have paid cleaning experience?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="yesExperience"
+                  name="experience"
+                  value="yesExperience" />
+                <label for="yesExperience">Yes </label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="noExperience"
+                  name="experience"
+                  value="noExperience" />
+                <label for="noExperience">No</label>
+              </div>
+              <p>
+                Please describe the type of experience, what types of people or
+                businesses paid you to clean, and how many years of experience
+                you have. <span class="required">(Required)</span>
+              </p>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Enter your response here"
+                required></textarea>
+            </div>
+            <div>
+              <h3>
+                Do you have daily access to the internet?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="yesInternet"
+                  name="internet"
+                  value="yesInternet" />
+                <label for="yesInternet">Yes </label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="noInternet"
+                  name="internet"
+                  value="noInternet" />
+                <label for="noInternet">No</label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have a valid Driver's License?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="yesLicense"
+                  name="license"
+                  value="yesLicense" />
+                <label for="yesLicense">Yes</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="noLicense"
+                  name="license"
+                  value="noLicense" />
+                <label for="noLicense">No</label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have a vehicle that you are comfortable driving to and
+                from houses in various nearby cities?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="yesVehicle"
+                  name="vehicle"
+                  value="yesVehicle" />
+                <label for="yesVehicle">Yes</label>
+              </div>
+              <div class="choice">
+                <input
+                  type="radio"
+                  id="noVehicle"
+                  name="vehicle"
+                  value="noVehicle" />
+                <label for="noVehicle">No</label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Which days are you available to work?<span class="required"
+                  >(Required)</span
+                >
+              </h3>
+              <p>Select all that apply</p>
+              <div class="choice">
+                <input
+                  name="daySunday"
+                  id="daySunday"
+                  type="checkbox"
+                  value="Sunday" />
+                <label for="daySunday">Sunday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="dayMonday"
+                  id="dayMonday"
+                  type="checkbox"
+                  value="Monday" />
+                <label for="dayMonday">Monday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="dayTuesday"
+                  id="dayTuesday"
+                  type="checkbox"
+                  value="Tuesday" />
+                <label for="dayTuesday">Tuesday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="dayWednesday"
+                  id="dayWednesday"
+                  type="checkbox"
+                  value="Wednesday" />
+                <label for="dayWednesday">Wednesday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="dayThursday"
+                  id="dayThursday"
+                  type="checkbox"
+                  value="Thursday" />
+                <label for="dayThursday">Thursday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="dayFriday"
+                  id="dayFriday"
+                  type="checkbox"
+                  value="Friday" />
+                <label for="dayFriday">Friday</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="daySaturday"
+                  id="daySaturday"
+                  type="checkbox"
+                  value="Saturday" />
+                <label for="daySaturday">Saturday</label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Which language(s) do you speak?
+                <span class="required">(Required)</span>
+              </h3>
+              <p>Select all that apply</p>
+              <div class="choice">
+                <input
+                  name="english"
+                  id="english"
+                  type="checkbox"
+                  value="english" />
+                <label for="english">English</label>
+              </div>
+              <div class="choice">
+                <input
+                  name="spanish"
+                  id="spanish"
+                  type="checkbox"
+                  value="english" />
+                <label for="spanish">Spanish</label>
+              </div>
+              <div class="choice">
+                <input name="other" id="other" type="checkbox" value="other" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>How did you hear about this opportunity?</h3>
+            </div>
+            <input type="text" placeholder="Enter your response here" />
+          </fieldset>
+        </div>
+        <p class="form-submit" style="justify-content: flex-start">
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            class="primary button-solid"
+            data-submit="...Sending">
+            Apply
+          </button>
+        </p>
+      </form>
     </div>
   </section>
 </main>
