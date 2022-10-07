@@ -6,15 +6,53 @@ meta:
   description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
   socialimage: "/assets/images/Ogden-Utah.jpg"
 about:
-  heroTitle: "Contact Us"
-  heroContent: "We have so many ways you can get in touch!"
+  heroTitle: "Work With Us"
+  heroContent: "We are always looking for dedicated cleaners. Great pay & flexible hours!"
 ---
 
 <main id="main">
   {% include "hero.html" %}
   <section class="section_text padded">
     <div class="section_text-container normal-weight">
-      <h3>Name & Contact Information</h3>
+      <div class="description">
+        <h3>Job Description</h3>
+        <div class="text-content">
+          <p>
+            Here at Wasatch Maids, we hold our cleaners up to a high standard.
+            Working as a team, being honest, having great communication, and
+            being able to provide great customer service are all extremely
+            important to us.
+          </p>
+          <p>
+            Home cleaners are not only responsible for cleaning homes, but also
+            for providing great customer service to the customers they clean
+            for.
+          </p>
+          <p>
+            We care about you, and want this to be a great company for you to
+            work for.
+          </p>
+        </div>
+        <div class="text-content">
+          <h3>Benefits</h3>
+          <ul>
+            <li>Weekly pay</li>
+            <li>Full-time or part-time work</li>
+            <li>Work with a company that cares</li>
+            <li>Set your working days</li>
+            <li>No nights or weekends (unless you want to)</li>
+          </ul>
+          <h3>Pay</h3>
+          <ul>
+            <li>
+              $14 to $20+ per hour depending on experience, and job duties
+            </li>
+            <li>Tips</li>
+            <li>Get paid while driving</li>
+            <li>Bonuses for gas when driving</li>
+          </ul>
+        </div>
+      </div>
       <hr />
       <form
         method="post"
@@ -120,9 +158,10 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     id="yesWorking"
-                    name="working"
-                    value="Working" />
+                    name="currently-working"
+                    value="Yes" />
                   Yes</label
                 >
               </div>
@@ -130,9 +169,10 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     id="noWorking"
-                    name="working"
-                    value="Not Working" />
+                    name="currently-working"
+                    value="No" />
                   No</label
                 >
               </div>
@@ -146,18 +186,20 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     id="yesExperience"
-                    name="experience"
-                    value="yes" />Yes
+                    name="has-experience"
+                    value="Yes" />Yes
                 </label>
               </div>
               <div class="choice">
                 <label>
                   <input
                     type="radio"
+                    required
                     id="noExperience"
-                    name="experience"
-                    value="no" />No
+                    name="has-experience"
+                    value="No" />No
                 </label>
               </div>
               <p>
@@ -166,8 +208,6 @@ about:
                 you have. <span class="required">(Required)</span>
               </p>
               <textarea
-                name=""
-                id=""
                 cols="30"
                 rows="10"
                 name="experience-response"
@@ -176,25 +216,117 @@ about:
             </div>
             <div>
               <h3>
-                Do you have daily access to the internet?
+                Are you looking for full-time or part-work?
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
                 <label>
                   <input
                     type="radio"
-                    id="yesInternet"
-                    name="has-internet"
-                    value="Has Internet" />Yes
+                    required
+                    id="fullTime"
+                    name="full-or-part-time"
+                    value="Full Time" />Full-time
                 </label>
               </div>
               <div class="choice">
                 <label>
                   <input
                     type="radio"
+                    required
+                    id="partTime"
+                    name="full-or-part-time"
+                    value="Part Time" />Part-time
+                </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                For full-time work, occasionally the first 1 or 2 weeks are part
+                time as we increase our client base. Is this okay?
+                <span class="required">(Required)</span>
+              </h3>
+              <p>
+                <em
+                  >Usually we are able to start everyone full time on the Monday
+                  following their employment. Especially if you have experience.
+                  However, sometimes the first 1-2 weeks are around 20-30 hours.
+                  If you answer no, this doesn't mean you won't be a good fit,
+                  we will just evaluate things and see if we can start you
+                  full-time right away.
+                </em>
+              </p>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="yesOkay"
+                    name="part-time-at-first"
+                    value="Yes" />Yes, this is okay
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="noAllergies"
+                    name="part-time-at-first"
+                    value="No" />No, I need full-time right away
+                </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have any allergies, asthma, or similar condition, or are
+                you allergic to pets and fur?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="yesAllergies"
+                    name="has-allergies"
+                    value="Yes" />Yes
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="noAllergies"
+                    name="has-allergies"
+                    value="No" />No
+                </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have daily access to the internet on your phone?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="yesInternet"
+                    name="has-internet"
+                    value="Yes" />Yes
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
                     id="noInternet"
                     name="has-internet"
-                    value="Does Not Have Internet" />No
+                    value="No" />No
                 </label>
               </div>
             </div>
@@ -207,14 +339,18 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     name="has-license"
-                    value="Has license" />Yes
+                    value="Yes" />Yes
                 </label>
+              </div>
+              <div class="choice">
                 <label>
                   <input
                     type="radio"
+                    required
                     name="has-license"
-                    value="Does not have license" />No
+                    value="No" />No
                 </label>
               </div>
             </div>
@@ -228,9 +364,10 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     id="yesVehicle"
                     name="has-vehicle"
-                    value="yes" />
+                    value="Yes" />
                   Yes</label
                 >
               </div>
@@ -238,9 +375,10 @@ about:
                 <label>
                   <input
                     type="radio"
+                    required
                     id="noVehicle"
                     name="has-vehicle"
-                    value="no" />
+                    value="No" />
                   No</label
                 >
               </div>
@@ -351,6 +489,69 @@ about:
                     value="other" />Other
                 </label>
               </div>
+            </div>
+            <div>
+              <h3>
+                Our company also does after-hours office cleanings (usually
+                after 5pm). Is this something you would be interested in doing?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input
+                    name="office-cleaning"
+                    id="bothOffice"
+                    type="radio"
+                    value="Yes House and Office"
+                    required />Yes, I would like to do this
+                  <span class="key"> in addition to </span> house cleaning
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="office-cleaning"
+                    id="onlyOffice"
+                    type="radio"
+                    value="Yes Only Office"
+                    required />
+                  Yes, I want to <span class="key"> only </span> do office
+                  cleans after-hours (no houses)
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="office-cleaning"
+                    id="noOffice"
+                    type="radio"
+                    value="No"
+                    required />No, I only want to do house cleaning during
+                  normal hours
+                </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Tell us a little bit about yourself.
+                <span class="required">(Required)</span>
+              </h3>
+              <textarea
+                name="about-me-message"
+                cols="30"
+                rows="5"
+                required></textarea>
+            </div>
+            <div>
+              <h3>
+                What would make this the best job ever for you?
+                <span class="required">(Required)</span>
+              </h3>
+              <textarea
+                name="best-job-ever-message"
+                cols="30"
+                rows="5"
+                required></textarea>
             </div>
           </fieldset>
           <fieldset>
