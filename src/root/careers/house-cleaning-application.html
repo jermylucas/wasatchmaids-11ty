@@ -99,7 +99,7 @@ about:
                   aria-label="zip"
                   name="zip"
                   placeholder="Zip Code"
-                  type="text"
+                  type="tel"
                   required />
                 <input
                   aria-label="country"
@@ -117,16 +117,24 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="yesWorking"
-                  name="working"
-                  value="yes" />
-                <label for="yesWorking">Yes </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="yesWorking"
+                    name="working"
+                    value="Working" />
+                  Yes</label
+                >
               </div>
               <div class="choice">
-                <input type="radio" id="noWorking" name="working" value="no" />
-                <label for="noWorking">No</label>
+                <label>
+                  <input
+                    type="radio"
+                    id="noWorking"
+                    name="working"
+                    value="Not Working" />
+                  No</label
+                >
               </div>
             </div>
             <div>
@@ -135,20 +143,22 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="yesExperience"
-                  name="experience"
-                  value="yes" />
-                <label for="yesExperience">Yes </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="yesExperience"
+                    name="experience"
+                    value="yes" />Yes
+                </label>
               </div>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="noExperience"
-                  name="experience"
-                  value="no" />
-                <label for="noExperience">No</label>
+                <label>
+                  <input
+                    type="radio"
+                    id="noExperience"
+                    name="experience"
+                    value="no" />No
+                </label>
               </div>
               <p>
                 Please describe the type of experience, what types of people or
@@ -170,20 +180,22 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="yesInternet"
-                  name="has-internet"
-                  value="yes" />
-                <label for="yesInternet">Yes </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="yesInternet"
+                    name="has-internet"
+                    value="Has Internet" />Yes
+                </label>
               </div>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="noInternet"
-                  name="has-internet"
-                  value="no" />
-                <label for="noInternet">No</label>
+                <label>
+                  <input
+                    type="radio"
+                    id="noInternet"
+                    name="has-internet"
+                    value="Does Not Have Internet" />No
+                </label>
               </div>
             </div>
             <div>
@@ -192,20 +204,18 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="yesLicense"
-                  name="has-license"
-                  value="yes" />
-                <label for="yesLicense">Yes</label>
-              </div>
-              <div class="choice">
-                <input
-                  type="radio"
-                  id="noLicense"
-                  name="has-license"
-                  value="no" />
-                <label for="noLicense">No</label>
+                <label>
+                  <input
+                    type="radio"
+                    name="has-license"
+                    value="Has license" />Yes
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    name="has-license"
+                    value="Does not have license" />No
+                </label>
               </div>
             </div>
             <div>
@@ -215,20 +225,24 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="yesVehicle"
-                  name="has-vehicle"
-                  value="yes" />
-                <label for="yesVehicle">Yes</label>
+                <label>
+                  <input
+                    type="radio"
+                    id="yesVehicle"
+                    name="has-vehicle"
+                    value="yes" />
+                  Yes</label
+                >
               </div>
               <div class="choice">
-                <input
-                  type="radio"
-                  id="noVehicle"
-                  name="has-vehicle"
-                  value="no" />
-                <label for="noVehicle">No</label>
+                <label>
+                  <input
+                    type="radio"
+                    id="noVehicle"
+                    name="has-vehicle"
+                    value="no" />
+                  No</label
+                >
               </div>
             </div>
             <div>
@@ -239,60 +253,69 @@ about:
               </h3>
               <p>Select all that apply</p>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="daySunday"
-                  type="checkbox"
-                  value="Sunday" />
-                <label for="daySunday">Sunday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="daySunday"
+                    type="checkbox"
+                    value="Sunday" />
+                  Sunday</label
+                >
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="dayMonday"
-                  type="checkbox"
-                  value="Monday" />
-                <label for="dayMonday">Monday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayMonday"
+                    type="checkbox"
+                    value="Monday" />Monday
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="dayTuesday"
-                  type="checkbox"
-                  value="Tuesday" />
-                <label for="dayTuesday">Tuesday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayTuesday"
+                    type="checkbox"
+                    value="Tuesday" />Tuesday
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="dayWednesday"
-                  type="checkbox"
-                  value="Wednesday" />
-                <label for="dayWednesday">Wednesday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayWednesday"
+                    type="checkbox"
+                    value="Wednesday" />Wednesday
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="dayThursday"
-                  type="checkbox"
-                  value="Thursday" />
-                <label for="dayThursday">Thursday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayThursday"
+                    type="checkbox"
+                    value="Thursday" />Thursday
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="dayFriday"
-                  type="checkbox"
-                  value="Friday" />
-                <label for="dayFriday">Friday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayFriday"
+                    type="checkbox"
+                    value="Friday" />
+                  Friday
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="working-days"
-                  id="daySaturday"
-                  type="checkbox"
-                  value="Saturday" />
-                <label for="daySaturday">Saturday</label>
+                <label>
+                  <input
+                    name="working-days"
+                    id="daySaturday"
+                    type="checkbox"
+                    value="Saturday" />Saturday
+                </label>
               </div>
             </div>
             <div>
@@ -302,24 +325,31 @@ about:
               </h3>
               <p>Select all that apply</p>
               <div class="choice">
-                <input
-                  name="languages"
-                  id="english"
-                  type="checkbox"
-                  value="english" />
-                <label for="english">English</label>
+                <label>
+                  <input
+                    name="languages"
+                    id="english"
+                    type="checkbox"
+                    value="english" />English
+                </label>
               </div>
               <div class="choice">
-                <input
-                  name="languages"
-                  id="spanish"
-                  type="checkbox"
-                  value="spanish" />
-                <label for="spanish">Spanish</label>
+                <label>
+                  <input
+                    name="languages"
+                    id="spanish"
+                    type="checkbox"
+                    value="spanish" />Spanish
+                </label>
               </div>
               <div class="choice">
-                <input name="other" id="other" type="checkbox" value="other" />
-                <label for="other">Other</label>
+                <label>
+                  <input
+                    name="languages"
+                    id="other"
+                    type="checkbox"
+                    value="other" />Other
+                </label>
               </div>
             </div>
           </fieldset>
