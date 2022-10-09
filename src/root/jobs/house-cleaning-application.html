@@ -2,8 +2,8 @@
 layout: layouts/base.html
 activemenu: "careers"
 meta:
-  title: "Contact | Wasatch Maids"
-  description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
+  title: "House Cleaning Application | Wasatch Maids"
+  description: "Apply to be a house cleaner with us at Wasatch Maids and start working with a company that actually cares about you."
   socialimage: "/assets/images/Ogden-Utah.jpg"
 about:
   heroTitle: "Work With Us"
@@ -45,7 +45,7 @@ about:
           <h3>Pay</h3>
           <ul>
             <li>
-              $14 to $20+ per hour depending on experience, and job duties
+              $16 to $21+ per hour depending on experience, and job duties
             </li>
             <li>Tips</li>
             <li>Get paid while driving</li>
@@ -58,7 +58,8 @@ about:
         method="post"
         name="Job Application"
         method="post"
-        data-netlify="true">
+        data-netlify="true"
+      >
         <div class="form-body">
           <fieldset class="grid-2">
             <legend>
@@ -69,13 +70,15 @@ about:
               name="first-name"
               placeholder="First Name"
               type="text"
-              required />
+              required
+            />
             <input
               aria-label="last-name"
               name="last-name"
               placeholder="Last Name"
               type="text"
-              required />
+              required
+            />
           </fieldset>
           <fieldset class="grid-2">
             <legend>
@@ -86,13 +89,15 @@ about:
               name="phone"
               placeholder="Phone Number"
               type="tel"
-              required />
+              required
+            />
             <input
               aria-label="email"
               name="email"
               placeholder="E-mail"
               type="email"
-              required />
+              required
+            />
           </fieldset>
           <fieldset>
             <h3>
@@ -114,37 +119,43 @@ about:
                 name="address1"
                 placeholder="Street Address"
                 type="text"
-                required />
+                required
+              />
               <input
                 aria-label="address2"
                 name="address2"
                 placeholder="Address Line 2"
-                type="text" />
+                type="text"
+              />
               <div class="grid-2">
                 <input
                   aria-label="city"
                   name="city"
                   placeholder="City"
                   type="text"
-                  required />
+                  required
+                />
                 <input
                   aria-label="state"
                   name="state"
                   placeholder="State"
                   type="text"
-                  required />
+                  required
+                />
                 <input
                   aria-label="zip"
                   name="zip"
                   placeholder="Zip Code"
                   type="tel"
-                  required />
+                  required
+                />
                 <input
                   aria-label="country"
                   name="country"
                   placeholder="Country"
                   type="text"
-                  required />
+                  required
+                />
               </div>
             </div>
           </fieldset>
@@ -161,7 +172,8 @@ about:
                     required
                     id="yesWorking"
                     name="currently-working"
-                    value="Yes" />
+                    value="Yes"
+                  />
                   Yes</label
                 >
               </div>
@@ -172,7 +184,8 @@ about:
                     required
                     id="noWorking"
                     name="currently-working"
-                    value="No" />
+                    value="No"
+                  />
                   No</label
                 >
               </div>
@@ -189,7 +202,8 @@ about:
                     required
                     id="yesExperience"
                     name="has-experience"
-                    value="Yes" />Yes
+                    value="Yes"
+                  />Yes
                 </label>
               </div>
               <div class="choice">
@@ -199,20 +213,23 @@ about:
                     required
                     id="noExperience"
                     name="has-experience"
-                    value="No" />No
+                    value="No"
+                  />No
                 </label>
               </div>
               <p>
                 Please describe the type of experience, what types of people or
                 businesses paid you to clean, and how many years of experience
-                you have. <span class="required">(Required)</span>
+                you have. (if none, please say so)
+                <span class="required">(Required)</span>
               </p>
               <textarea
                 cols="30"
                 rows="10"
                 name="experience-response"
                 placeholder="Enter your response here"
-                required></textarea>
+                required
+              ></textarea>
             </div>
             <div>
               <h3>
@@ -226,7 +243,8 @@ about:
                     required
                     id="fullTime"
                     name="full-or-part-time"
-                    value="Full Time" />Full-time
+                    value="Full Time"
+                  />Full-time
                 </label>
               </div>
               <div class="choice">
@@ -236,11 +254,12 @@ about:
                     required
                     id="partTime"
                     name="full-or-part-time"
-                    value="Part Time" />Part-time
+                    value="Part Time"
+                  />Part-time
                 </label>
               </div>
             </div>
-            <div>
+            <!-- <div>
               <h3>
                 For full-time work, occasionally the first 1 or 2 weeks are part
                 time as we increase our client base. Is this okay?
@@ -249,11 +268,8 @@ about:
               <p>
                 <em
                   >Usually we are able to start everyone full time on the Monday
-                  following their employment. Especially if you have experience.
-                  However, sometimes the first 1-2 weeks are around 20-30 hours.
-                  If you answer no, this doesn't mean you won't be a good fit,
-                  we will just evaluate things and see if we can start you
-                  full-time right away.
+                  following their employment. However, sometimes the first 1-2
+                  weeks are around 20-30 hours. If you need full-time right
                 </em>
               </p>
               <div class="choice">
@@ -263,7 +279,8 @@ about:
                     required
                     id="yesOkay"
                     name="part-time-at-first"
-                    value="Yes" />Yes, this is okay
+                    value="Yes"
+                  />Yes, this is okay
                 </label>
               </div>
               <div class="choice">
@@ -271,16 +288,17 @@ about:
                   <input
                     type="radio"
                     required
-                    id="noAllergies"
+                    id="notOkay"
                     name="part-time-at-first"
-                    value="No" />No, I need full-time right away
+                    value="No"
+                  />No, I need full-time right away
                 </label>
               </div>
-            </div>
+            </div> -->
             <div>
               <h3>
-                Do you have any allergies, asthma, or similar condition, or are
-                you allergic to pets and fur?
+                Do you have any allergies to pets and fur, asthma, or similar
+                condition?
                 <span class="required">(Required)</span>
               </h3>
               <div class="choice">
@@ -290,7 +308,8 @@ about:
                     required
                     id="yesAllergies"
                     name="has-allergies"
-                    value="Yes" />Yes
+                    value="Yes"
+                  />Yes
                 </label>
               </div>
               <div class="choice">
@@ -300,7 +319,8 @@ about:
                     required
                     id="noAllergies"
                     name="has-allergies"
-                    value="No" />No
+                    value="No"
+                  />No
                 </label>
               </div>
             </div>
@@ -316,7 +336,8 @@ about:
                     required
                     id="yesInternet"
                     name="has-internet"
-                    value="Yes" />Yes
+                    value="Yes"
+                  />Yes
                 </label>
               </div>
               <div class="choice">
@@ -326,7 +347,8 @@ about:
                     required
                     id="noInternet"
                     name="has-internet"
-                    value="No" />No
+                    value="No"
+                  />No
                 </label>
               </div>
             </div>
@@ -341,7 +363,8 @@ about:
                     type="radio"
                     required
                     name="has-license"
-                    value="Yes" />Yes
+                    value="Yes"
+                  />Yes
                 </label>
               </div>
               <div class="choice">
@@ -350,7 +373,8 @@ about:
                     type="radio"
                     required
                     name="has-license"
-                    value="No" />No
+                    value="No"
+                  />No
                 </label>
               </div>
             </div>
@@ -367,7 +391,8 @@ about:
                     required
                     id="yesVehicle"
                     name="has-vehicle"
-                    value="Yes" />
+                    value="Yes"
+                  />
                   Yes</label
                 >
               </div>
@@ -378,7 +403,8 @@ about:
                     required
                     id="noVehicle"
                     name="has-vehicle"
-                    value="No" />
+                    value="No"
+                  />
                   No</label
                 >
               </div>
@@ -396,7 +422,9 @@ about:
                     name="working-days"
                     id="daySunday"
                     type="checkbox"
-                    value="Sunday" />
+                    value="Sunday"
+                    required
+                  />
                   Sunday</label
                 >
               </div>
@@ -406,7 +434,9 @@ about:
                     name="working-days"
                     id="dayMonday"
                     type="checkbox"
-                    value="Monday" />Monday
+                    value="Monday"
+                    required
+                  />Monday
                 </label>
               </div>
               <div class="choice">
@@ -415,7 +445,9 @@ about:
                     name="working-days"
                     id="dayTuesday"
                     type="checkbox"
-                    value="Tuesday" />Tuesday
+                    value="Tuesday"
+                    required
+                  />Tuesday
                 </label>
               </div>
               <div class="choice">
@@ -424,7 +456,9 @@ about:
                     name="working-days"
                     id="dayWednesday"
                     type="checkbox"
-                    value="Wednesday" />Wednesday
+                    value="Wednesday"
+                    required
+                  />Wednesday
                 </label>
               </div>
               <div class="choice">
@@ -433,7 +467,9 @@ about:
                     name="working-days"
                     id="dayThursday"
                     type="checkbox"
-                    value="Thursday" />Thursday
+                    value="Thursday"
+                    required
+                  />Thursday
                 </label>
               </div>
               <div class="choice">
@@ -442,7 +478,9 @@ about:
                     name="working-days"
                     id="dayFriday"
                     type="checkbox"
-                    value="Friday" />
+                    value="Friday"
+                    required
+                  />
                   Friday
                 </label>
               </div>
@@ -452,9 +490,25 @@ about:
                     name="working-days"
                     id="daySaturday"
                     type="checkbox"
-                    value="Saturday" />Saturday
+                    value="Saturday"
+                    required
+                  />Saturday
                 </label>
               </div>
+            </div>
+            <div>
+              <h3>
+                Is there a specific time you need to be off work by each day?
+                <span class="required">(Required)</span>
+              </h3>
+              <input type="text" name="off-work-by" required />
+            </div>
+            <div>
+              <h3>
+                Do you have a target pay rate in mind?
+                <span class="required">(Required)</span>
+              </h3>
+              <input type="text" name="pay-rate" required />
             </div>
             <div>
               <h3>
@@ -468,7 +522,9 @@ about:
                     name="languages"
                     id="english"
                     type="checkbox"
-                    value="english" />English
+                    value="english"
+                    required
+                  />English
                 </label>
               </div>
               <div class="choice">
@@ -477,7 +533,9 @@ about:
                     name="languages"
                     id="spanish"
                     type="checkbox"
-                    value="spanish" />Spanish
+                    value="spanish"
+                    required
+                  />Spanish
                 </label>
               </div>
               <div class="choice">
@@ -486,7 +544,9 @@ about:
                     name="languages"
                     id="other"
                     type="checkbox"
-                    value="other" />Other
+                    value="other"
+                    required
+                  />Other
                 </label>
               </div>
             </div>
@@ -500,11 +560,22 @@ about:
                 <label>
                   <input
                     name="office-cleaning"
+                    id="noOffice"
+                    type="radio"
+                    value="No"
+                    required
+                  />No, I only want to do house cleaning during normal hours
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="office-cleaning"
                     id="bothOffice"
                     type="radio"
                     value="Yes House and Office"
-                    required />Yes, I would like to do this
-                  <span class="key"> in addition to </span> house cleaning
+                    required
+                  />Yes, I would like to do this in addition to house cleaning
                 </label>
               </div>
               <div class="choice">
@@ -514,20 +585,9 @@ about:
                     id="onlyOffice"
                     type="radio"
                     value="Yes Only Office"
-                    required />
-                  Yes, I want to <span class="key"> only </span> do office
-                  cleans after-hours (no houses)
-                </label>
-              </div>
-              <div class="choice">
-                <label>
-                  <input
-                    name="office-cleaning"
-                    id="noOffice"
-                    type="radio"
-                    value="No"
-                    required />No, I only want to do house cleaning during
-                  normal hours
+                    required
+                  />
+                  Yes, I want to only do office cleans after-hours (no houses)
                 </label>
               </div>
             </div>
@@ -540,7 +600,8 @@ about:
                 name="about-me-message"
                 cols="30"
                 rows="5"
-                required></textarea>
+                required
+              ></textarea>
             </div>
             <div>
               <h3>
@@ -551,14 +612,19 @@ about:
                 name="best-job-ever-message"
                 cols="30"
                 rows="5"
-                required></textarea>
+                required
+              ></textarea>
             </div>
           </fieldset>
           <fieldset>
             <div>
               <h3>How did you hear about this opportunity?</h3>
             </div>
-            <input type="text" placeholder="Enter your response here" />
+            <input
+              type="text"
+              name="heard-opportunity"
+              placeholder="Enter your response here"
+            />
           </fieldset>
         </div>
         <p class="form-submit" style="justify-content: flex-start">
@@ -567,7 +633,8 @@ about:
             type="submit"
             id="contact-submit"
             class="primary button-solid"
-            data-submit="...Sending">
+            data-submit="...Sending"
+          >
             Apply
           </button>
         </p>
