@@ -30,10 +30,12 @@
 <!-- Common meta tags -->
 <link
   rel="canonical"
-  href="https://wasatchmaids.com{{ page.url | replace('.html', '') }}" />
+  href="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
+/>
 <meta
   property="og:url"
-  content="https://wasatchmaids.com{{ page.url | replace('.html', '') }}" />
+  content="https://wasatchmaids.com{{ page.url | replace('.html', '') }}"
+/>
 <meta property="og:site_name" content="Wasatch Maids" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@wasatchmaids" />
@@ -43,17 +45,20 @@
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="/assets/favicons/favicon-32x32.png" />
+  href="/assets/favicons/favicon-32x32.png"
+/>
 <link
   rel="icon"
   type="image/png"
   sizes="96x96"
-  href="/assets/favicons/favicon-96x96.png" />
+  href="/assets/favicons/favicon-96x96.png"
+/>
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="/assets/favicons/favicon-16x16.png" />
+  href="/assets/favicons/favicon-16x16.png"
+/>
 
 <!-- CSS -->
 <link rel="stylesheet" href="/css/main.css" />
@@ -63,7 +68,7 @@ or (activemenu === 'careers') %}
 <link rel="stylesheet" href="/css/forms.css" />
 {% endif %} {% if (activemenu === 'blog') or (layout === 'layouts/post.html') %}
 <link rel="stylesheet" href="/css/blog.css" />
-{% endif %} {% if banner === 'questions' %}
+{% endif %} {% if banner %}
 <style>
   body:before {
     height: 170px;
