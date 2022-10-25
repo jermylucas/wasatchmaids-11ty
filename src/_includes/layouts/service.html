@@ -18,7 +18,15 @@
             <br /><a class="blue-link" href="/home-cleaning-checklist.html"
               >View Residential Cleaning Checklist</a
             >
-            {% endif %} {% if about.service %} Questions? Give us a
+            {% endif %} {% if heading.cta === 'contact' %}
+            <a
+              style="width: 110px; margin-top: 10px; margin-right: 10px"
+              class="button-solid"
+              href="/contact.html"
+              >Contact</a
+            >
+            {% endif %} {% if (about.service) and (heading.cta !== 'contact') %}
+            Questions? Give us a
             <a class="blue-link" href="tel:801-821-2316">call</a>, send us a
             <a class="blue-link" href="sms:8018212316">text</a>, or
             <a class="blue-link" href="mailto:contact@wasatchmaids.com"
@@ -27,12 +35,14 @@
             us!
           </p>
           <span>
+            {% if heading.cta !== 'contact' %}
             <a
               style="width: 150px; margin-top: 10px; margin-right: 10px"
               class="button-solid"
               href="/booknow.html"
               >Book Now</a
             >
+            {% endif %}
           </span>
           {% endif %}
         </div>

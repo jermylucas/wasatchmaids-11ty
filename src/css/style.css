@@ -523,7 +523,7 @@
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    gap: 30px;
+    gap: 15px;
     margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -544,7 +544,7 @@
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    gap: 30px;
+    gap: 15px;
     margin-top: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -813,7 +813,7 @@
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    gap: 30px;
+    gap: 15px;
   }
 
   .features_text-wrapper {
@@ -828,7 +828,6 @@
   }
   .flex-grid-2-content {
     width: 50%;
-    margin: auto;
     margin-left: 0;
   }
 
