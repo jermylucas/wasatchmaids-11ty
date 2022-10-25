@@ -648,8 +648,10 @@
     margin-top: 3rem;
   }
   .normal-weight h1,
-  .normal-weight h2 {
+  .normal-weight h2,
+  .normal-weight h3 {
     font-weight: 500;
+    color: var(--black-blue);
   }
 }
 

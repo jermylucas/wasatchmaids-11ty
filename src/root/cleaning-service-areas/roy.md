@@ -4,7 +4,7 @@ activemenu: "locations"
 tags: serviceareanav
 navurl: "roy"
 meta:
-  title: "Premium Home Cleaning and Maid Service in Roy, Utah | Wasatch Maids"
+  title: "Premium Home Cleaning and Maid Services in Roy, Utah | Wasatch Maids"
   description: "Looking for maid or house cleaning service in Ogden? Wasatch Maids is the company that offers the best cleaning services. Book your home cleaning in 60 seconds."
   socialimage: "/assets/images/Roy-Utah.jpg"
 about:
@@ -31,7 +31,7 @@ and maid services near you."
 <div class="section_text-container">
 <div class="text-content">
 
-## House Cleaning & Maid Service in Roy, Utah
+## House Cleaning & Maid Services in Roy, Utah
 
 We know it is not easy picking a maid service or cleaning company. Wasatch Maids has a
 small, dedicated team of professionals to clean your home. Whether you are by Roy

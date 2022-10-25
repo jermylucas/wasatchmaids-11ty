@@ -7,7 +7,7 @@ function CtaBanner({ text, btnText, dark }) {
         <div class="cta-grid">
           <h4 class="cta-grid-text">${text}</h4>
           <div class="cta-grid-btn">
-            <a class="button-solid-small" href="/booknow.html">${btnText}</a>
+            <a class="button-solid-small" href="${btnLink}">${btnText}</a>
           </div>
         </div>
       </div>
