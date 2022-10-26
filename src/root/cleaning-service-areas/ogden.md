@@ -42,15 +42,20 @@ All services including the standard home cleaning, move-in / move-out, deep spri
 
 One of the most common complaints we hear from businesses, is that they feel they are paying too much for the quality they are receiving. Most commercial and office cleanings are franchises, or large corporations where quality control becomes difficult. Even using smaller cleaning companies or individuals, the service may suffer due to quality control and lack of training. But in the end, businesses just "put up" with the service.
 
-You and your workplace <em>deserve better than this.</em> That's why Wasatch Maids offers commercial and office cleaning in the Ogden area. You don't have to worry about jumping "through the hoops" just to get some information across. Our cleaners have gone through unique training specific to all types of offices, and we are based in central Ogden, and are active participants in the community. We care about how Ogden city looks, and especially how your business interior looks to keep gaining those customers and keeping employees happy.
+You and your workplace <em>deserve better than this.</em> That's why Wasatch Maids offers commercial and office cleaning / janitorial services in the Ogden area. You don't have to worry about jumping "through the hoops" just to get some information across. Our cleaners have gone through unique training specific to all types of offices, and we are based in central Ogden, and are active participants in the community. We care about how Ogden city looks, and especially how your business interior looks to keep gaining those customers and keeping employees happy.
 
 Our <span class="key">complete satisfaction guarantee</span> covers our office cleanings too. If something isn’t done to the liking of any person in the company, or even if we can do something a little bit different, we can immediately take care of the issue and it will be noticeable right away.
 
 ### Employees, Not Contractors
 
-Many cleaning companies use contractors who complete the work on behalf of the company. However, at Wasatch Maids, we use employees instead. Unlike contractors, employees have the same onboarding and training, and they understand the company culture and overall values. This means that when we clean your business, you don't need to worry about changes in quality or last minute schedule conflicts. And while we do have overhead like our <span class="key">2 million dollar insurance policy</span> to keep your business protected, we are also able to be much more competitive with our prices than companies that end up contracting out all the work.
+Many cleaning companies use contractors who complete the work on behalf of the company. However, at Wasatch Maids, we use employees instead. Unlike contractors, employees have the same onboarding and training, and they understand the company culture and overall values. This translates to reliability for you. If a cleaner for some reason cannot make it out, we have multiple back-ups, including the co-owners, who all have years of cleaning experience. And while we do have overhead like our <span class="key">2 million dollar insurance policy</span> to keep your business protected, we are also able to be much more competitive with our prices than companies that end up contracting out all the work.
 
-All this results in the <span class="key blue">highest quality</span> of cleaning, increased communication with the cleaning company, and more money in your pocket. We know what it's like to run a business in Ogden, and that's why we want nothing but the best for yours. We believe that this starts by having a clean space for customers and employees.
+All of this means the <span class="key blue">highest quality</span> of cleaning,
+<span class="key blue"> increased communication</span> with your
+cleaning company, and <span class="key blue">more money</span> in your
+pocket. We know what it's like to run a business in Ogden, and that's
+why we want nothing but the best for yours. We believe that this
+starts by having a clean space for customers and employees.
 
 </div>
 </div>
