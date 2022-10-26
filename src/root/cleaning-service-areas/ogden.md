@@ -34,19 +34,21 @@ We know it's not easy picking a maid service or cleaning company. Wasatch Maids 
 
 ## House Cleaning & Maid Services
 
-We interview hundreds of maids and house cleaners, always looking for the best ones who believe in our core values of being clean, honest, thorough, and fair. It isn't easy, but we've found them, and they are cleaning in Ogden Utah.
+We interview hundreds of maids and house cleaners, always looking for the best ones who believe in our core values of being <span class="key">clean, honest, thorough, and fair</span>. It isn't easy, but we've found them, and they are cleaning in Ogden, Utah.
 
-All serices including the standard home cleaning, move-in / move-out, deep spring cleaning, post construction cleaning, and office cleaning are backed by our complete satisfaction guarantee. We are 100% commited to our work and delivering the quality you deserve. Wasatch Maids is locally owned business out of Ogden. We care about our community and would never do anything to harm our reputation here. If you want your home, construction project, or office cleaned with the same love and care you give to it, Wasatch Maids is the company for you.
+All services including the standard home cleaning, move-in / move-out, deep spring cleaning, post construction cleaning, and office cleaning are backed by our <span class="key blue">complete satisfaction guarantee</span>. We are 100% committed to our work and delivering the quality you deserve. Wasatch Maids is locally owned business out of Ogden. We care about our community and would never do anything to harm our reputation here. If you want your home, construction project, or office cleaned with the same love and care you give to it, Wasatch Maids is the company for you.
 
 ## Commercial & Office Cleaning
 
-One of the most common things we hear when it comes to office cleaning, is that businesses feel they are paying too much for the quality they are receiving. Most commercial and office cleanings are franchises, or large corporations where quality control becomes difficult. It can also be nerve-wracking to change a cleaning service, and adjust schedules. In the end, businesses just "put up" with the service.
+One of the most common complaints we hear from businesses, is that they feel they are paying too much for the quality they are receiving. Most commercial and office cleanings are franchises, or large corporations where quality control becomes difficult. Even using smaller cleaning companies or individuals, the service may suffer due to quality control and lack of training. But in the end, businesses just "put up" with the service.
 
-We know you and your workplace deserve better than this. That's why Wasatch Maids offers commercial and office cleaning in the Ogden area. We are based in central Ogden, and are active participants in the community. We care about how Ogden city looks, and especially how your business interior looks to keep gaining those customers and keeping employees happy.
+You and your workplace <em>deserve better than this.</em> That's why Wasatch Maids offers commercial and office cleaning in the Ogden area. You don't have to worry about jumping "through the hoops" just to get some information across. Our cleaners have gone through unique training specific to all types of offices, and we are based in central Ogden, and are active participants in the community. We care about how Ogden city looks, and especially how your business interior looks to keep gaining those customers and keeping employees happy.
+
+Our <span class="key">complete satisfaction guarantee</span> covers our office cleanings too. If something isn’t done to the liking of any person in the company, or even if we can do something a little bit different, we can immediately take care of the issue and it will be noticeable right away.
 
 ### Employees, Not Contractors
 
-Many cleaning companies use contractors who complete the work on behalf of the company. However, at Wasatch Maids, we use employees instead. Unlike contractors, employees are onboarded to all have the same training, and they understand the company culture and overall values. This means that when we clean your business, you don't need to worry about changes in quality or last minute schedule changes. And while we do have some additional overhead like our <span class="key">2 million dollar insurance policy</span> to keep your business protected, we are also able to be much more competitive with our prices than companies that end up contracting out all the work.
+Many cleaning companies use contractors who complete the work on behalf of the company. However, at Wasatch Maids, we use employees instead. Unlike contractors, employees have the same onboarding and training, and they understand the company culture and overall values. This means that when we clean your business, you don't need to worry about changes in quality or last minute schedule conflicts. And while we do have overhead like our <span class="key">2 million dollar insurance policy</span> to keep your business protected, we are also able to be much more competitive with our prices than companies that end up contracting out all the work.
 
 All this results in the <span class="key blue">highest quality</span> of cleaning, increased communication with the cleaning company, and more money in your pocket. We know what it's like to run a business in Ogden, and that's why we want nothing but the best for yours. We believe that this starts by having a clean space for customers and employees.
 
@@ -54,20 +56,20 @@ All this results in the <span class="key blue">highest quality</span> of cleanin
 </div>
 </section>
  {% CtaBanner text="Get A Free Office Cleaning Quote", btnText="Contact Us", btnLink="/contact.html",
-  dark=false %}
+  dark=true %}
 
 <section class="section_text">
 <div class="section_text-container">
-<div class="text-content">
+<div class="text-content normal-weight">
 
 ### Our Promise
 
-Wasatch Maids offers Ogden residents premium cleaning services. We are completely committed to our work and delivery top quality cleaning to you. All our house cleaners and cleaning crews are background checked, certified maids, and have many years of experience cleaning all areas of your home and all conditions, shapes, and sizes. They care about providing customers with the five-star service that Wasatch Maids is known for.
+Wasatch Maids offers Ogden residents premium cleaning services. We are <span class="key">completely committed</span> to our work and delivery top quality cleaning to you. All our house cleaners and cleaning crews are background checked, certified maids, and have many years of experience cleaning all areas of your home, office, and all conditions, shapes, and sizes. They care about providing customers with the <span class="key blue">five-star service</span> that Wasatch Maids is known for.
 
-For house cleaning, there is no initial on-site estimate needed. You can securely book online in minutes. Just head over to our user-friendly online booking system, enter your Ogden zip code, the requested date and time, the total size of the home (then excluding anything not needed) and we'll provide you with a flat rate.
+For house cleaning, there is no initial on-site estimate needed. You can securely book online in minutes. Just head over to our user-friendly online booking system, enter your Ogden zip code, the requested date and time, the total size of the home (then excluding anything not needed) and we'll provide you with a flat rate. You can schedule a one-time, weekly, bi-weekly, or monthly cleaning service to meet all your needs. Repeat scheduled services come at a discount.
 
-You can schedule a one-time, weekly, bi-weekly, or monthly cleaning service to meet all your needs. Repeat scheduled services come at a discount.
+For office cleaning, post-construction cleaning, or short-term rental cleaning like AirBnb / Vrbo, please reach out to us with our <a href="/contact.html" class="key blue">contact form</a>.
 
-With our 100% satisfaction guarantee, the days of searching for residential cleaning services near you are long gone. Never have to worry about keeping your home or office fresh and clean with Wasatch Maids.
+With our 100% satisfaction guarantee, the days of searching for residential, post-construction, commercial, and office cleaning services in Ogden are long gone. Never again worry about keeping your home or office fresh and clean because Wasatch Maids has you taken care of.
 
 {% include "city-services.html" %}

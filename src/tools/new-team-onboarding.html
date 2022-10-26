@@ -1,0 +1,478 @@
+---
+layout: layouts/base.html
+activemenu: "careers"
+banner: "questions"
+meta:
+  title: "New Team Onboarding"
+  description: "Onboarding for new team member"
+  socialimage: ""
+about:
+  heroTitle: "New Team Onboarding"
+  heroContent: "Submit this form every time a new hire is on-boarded"
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <div class="description">
+        <h3>Required Forms, Contracts, and Software</h3>
+        <div class="text-content">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Perferendis qui earum nulla repellendus ea maiores modi architecto
+            laboriosam. Perspiciatis, vitae!
+          </p>
+        </div>
+      </div>
+      <hr />
+      <form
+        method="post"
+        name="New Team Onboarding"
+        class="tools-form"
+        method="post"
+        data-netlify="true">
+        <div class="form-body">
+          <fieldset class="grid-2">
+            <legend>
+              <h3>
+                Name of Person Submitting
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input
+              aria-label="submitting-first-name"
+              name="submitting-first-name"
+              placeholder="First Name"
+              type="text"
+              required />
+            <input
+              aria-label="submitting-last-name"
+              name="submitting-last-name"
+              placeholder="Last Name"
+              type="text"
+              required />
+          </fieldset>
+          <fieldset class="grid-2">
+            <legend>
+              <h3>
+                Name of Team Member <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input
+              aria-label="first-name"
+              name="first-name"
+              placeholder="First Name"
+              type="text"
+              required />
+            <input
+              aria-label="last-name"
+              name="last-name"
+              placeholder="Last Name"
+              type="text"
+              required />
+          </fieldset>
+          <fieldset class="grid-2">
+            <legend>
+              <h3>Contact Info <span class="required">(Required)</span></h3>
+            </legend>
+            <input
+              aria-label="phone"
+              name="phone"
+              placeholder="Phone Number"
+              type="tel"
+              required />
+            <input
+              aria-label="email"
+              name="email"
+              placeholder="E-mail"
+              type="email"
+              required />
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>Address <span class="required">(Required)</span></h3>
+              <input
+                aria-label="address1"
+                name="address1"
+                placeholder="Street Address"
+                type="text"
+                required />
+              <input
+                aria-label="address2"
+                name="address2"
+                placeholder="Address Line 2"
+                type="text" />
+              <div class="grid-2">
+                <input
+                  aria-label="city"
+                  name="city"
+                  placeholder="City"
+                  type="text"
+                  required />
+                <input
+                  aria-label="state"
+                  name="state"
+                  placeholder="State"
+                  type="text"
+                  required />
+                <input
+                  aria-label="zip"
+                  name="zip"
+                  placeholder="Zip Code"
+                  type="tel"
+                  required />
+                <input
+                  aria-label="country"
+                  name="country"
+                  placeholder="Country"
+                  type="text"
+                  required />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="grid-2">
+            <span>
+              <h3>
+                Has A New Folder Been Created In G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select
+                name="new-folder-drive"
+                aria-label="new-folder-drive"
+                required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Link to Drive Folder <span class="required">(Required)</span>
+              </h3>
+              <input
+                type="text"
+                name="drive-folder"
+                aria-label="drive-folder"
+                required />
+            </span>
+            <span>
+              <h3>
+                Has A Copy of SSN Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select name="ssn-saved" aria-label="ssn-saved" required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Has A Copy of Valid ID Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select name="id-saved" aria-label="id-saved" required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Has A Copy of License Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select name="license-saved" aria-label="license-saved" required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not-Applicable">Not Applicable</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Has A Copy of Car Insurance Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select
+                name="insurance-saved"
+                aria-label="insurance-saved"
+                required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not-Applicable">Not Applicable</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Has A Copy of W2 Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select name="w2-saved" aria-label="w2-saved" required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not-Applicable">Not Applicable</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Has A Copy of I-9 Been Saved To G-Drive?
+                <span class="required">(Required)</span>
+              </h3>
+              <select name="i9-saved" aria-label="i9-saved" required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not-Applicable">Not Applicable</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Have they been added to Utah New Hire?
+                <span class="required">(Required)</span>
+              </h3>
+              <select
+                name="utah-new-hire-submitted"
+                aria-label="utah-new-hire-submitted"
+                required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+            </span>
+            <span>
+              <h3>
+                Have they been given a copy of the checklist?
+                <span class="required">(Required)</span>
+              </h3>
+              <select
+                name="given-checklist"
+                aria-label="given-checklist"
+                required>
+                <option value="" selected="selected">Select One...</option>
+                <option value="Yes">Yes - Digital AND Paper</option>
+                <option value="No">No</option>
+              </select>
+            </span>
+          </fieldset>
+
+          <fieldset>
+            <div class="grid-2">
+              <span>
+                <h3>
+                  Start Date
+                  <span class="required">(Required)</span>
+                </h3>
+                <input type="date" name="start-date" required />
+              </span>
+            </div>
+            <div>
+              <h3>
+                Are they full-time or part-time?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="fullTime"
+                    name="full-or-part-time"
+                    value="Full Time" />Full-time
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="partTime"
+                    name="full-or-part-time"
+                    value="Part Time" />Part-time
+                </label>
+              </div>
+            </div>
+            <div class="grid-2">
+              <span>
+                <h3>
+                  Have they been set up in Booking Koala?
+                  <span class="required">(Required)</span>
+                </h3>
+                <span><small>Follow set up from links above</small></span>
+                <select name="added-to-bk" aria-label="added-to-bk" required>
+                  <option value="" selected="selected">Select One...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </span>
+              <span>
+                <h3>
+                  Booking Koala Provider ID
+                  <span class="required">(Required)</span>
+                </h3>
+                <span
+                  ><small
+                    >These are the numbers in the URL on the provider's
+                    dashboard</small
+                  ></span
+                >
+                <input type="text" name="provider-id" required />
+              </span>
+              <span>
+                <h3>
+                  Have they been set up in Patriot Payroll?
+                  <span class="required">(Required)</span>
+                </h3>
+                <span><small>Follow set up from links above</small></span>
+                <select
+                  name="added-to-patriot"
+                  aria-label="added-to-patriot"
+                  required>
+                  <option value="" selected="selected">Select One...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </span>
+              <span>
+                <h3>
+                  Have they been set up in QB Time?
+                  <span class="required">(Required)</span>
+                </h3>
+                <span><small>Follow set up from links above</small></span>
+                <select
+                  name="added-to-qbtime"
+                  aria-label="added-to-qbtime"
+                  required>
+                  <option value="" selected="selected">Select One...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </span>
+            </div>
+            <div>
+              <h3>
+                Default Availability <span class="required">(Required)</span>
+              </h3>
+              <p>Select all that apply</p>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="daySunday"
+                    type="checkbox"
+                    value="Sunday" />
+                  Sunday</label
+                >
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayMonday"
+                    type="checkbox"
+                    value="Monday" />Monday
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayTuesday"
+                    type="checkbox"
+                    value="Tuesday" />Tuesday
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayWednesday"
+                    type="checkbox"
+                    value="Wednesday" />Wednesday
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayThursday"
+                    type="checkbox"
+                    value="Thursday" />Thursday
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="dayFriday"
+                    type="checkbox"
+                    value="Friday" />
+                  Friday
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="working-days"
+                    id="daySaturday"
+                    type="checkbox"
+                    value="Saturday" />Saturday
+                </label>
+              </div>
+            </div>
+            <div class="grid-2">
+              <span>
+                <h3>
+                  Is there a specific time they need to be off work by on any
+                  day?
+                  <span class="required">(Required)</span>
+                </h3>
+                <input type="text" name="off-work-by" required />
+              </span>
+              <span>
+                <h3>
+                  Has this availability been added into Booking Koala?
+                  <span class="required">(Required)</span>
+                </h3>
+                <select
+                  name="availability-saved-bk"
+                  aria-label="availability-saved-bk"
+                  required>
+                  <option value="" selected="selected">Select One...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </span>
+            </div>
+            <div>
+              <h3>
+                What specific things do we know while hiring that we need to
+                remember?
+                <span class="required">(Required)</span>
+              </h3>
+              <textarea
+                placeholder="Unique challenges, things that may interfere with work, availability issues, etc"
+                name="info-while-hiring"
+                cols="30"
+                rows="5"
+                required></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <p class="form-submit" style="justify-content: flex-start">
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            class="primary button-solid"
+            data-submit="...Sending">
+            Submit
+          </button>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>

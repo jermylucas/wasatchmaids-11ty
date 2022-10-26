@@ -17,6 +17,11 @@
     box-sizing: border-box;
   }
 
+  .tools-form input,
+  .tools-form select {
+    padding: 10px 10px 10px 5px;
+  }
+
   fieldset,
   legend {
     border: none;
@@ -151,6 +156,7 @@
   } */
 
   .form-body .grid-2 {
+    grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
   }

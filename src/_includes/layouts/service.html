@@ -6,7 +6,7 @@
         <div class="content-text-wrapper">
           <h1 class="text-heading">
             Wasatch Maids
-            <span class="text-blue"> {{ about.service }} </span>Service
+            <span class="text-blue"> {{ about.service }} </span>Services
           </h1>
           <p>
             {{ heading.intro }}
@@ -41,6 +41,14 @@
               class="button-solid"
               href="/booknow.html"
               >Book Now</a
+            >
+            {% endif %} {% if (navurl === 'house-cleaning') or (navurl ===
+            'deep-cleaning') %}
+            <a
+              style="width: 150px; margin-top: 10px; margin-right: 10px"
+              class="button-solid green"
+              href="/home-cleaning-checklist.html"
+              >View Checklist</a
             >
             {% endif %}
           </span>

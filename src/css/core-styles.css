@@ -342,6 +342,10 @@
     transition: 0.2s ease;
     display: inline-block;
   }
+  .button-solid.green {
+    background: var(--green);
+    color: var(--black-blue);
+  }
   .button-solid.active-menu {
     background: var(--green);
   }
@@ -390,8 +394,14 @@
   }
 
   .button-solid:hover {
-    color: #000;
-    background: var(--green);
+    background: var(--primary-blue-darkest);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .button-solid.green:hover {
+    color: #fff;
+    background: var(--primary-blue-darkest);
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;

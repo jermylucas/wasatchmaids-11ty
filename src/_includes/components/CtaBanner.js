@@ -1,6 +1,6 @@
 const { html } = require("common-tags");
 
-function CtaBanner({ text, btnText, dark }) {
+function CtaBanner({ text, btnText, btnLink, dark }) {
   return html`
     <section class="${dark ? `cta-banner-dark` : `cta-banner`}">
       <div class="cta-wrapper">

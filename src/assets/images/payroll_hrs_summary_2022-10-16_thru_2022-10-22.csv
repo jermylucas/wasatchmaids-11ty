@@ -1,0 +1,9 @@
+"Payroll ID","Employee Number","Name","Group","Salaried","Exempt","Reg Hours","Holiday Hours","Sick Hours","Vacation Hours","Approval State"
+"","0","Cano, Luz","-","0","0","46.15","0.00","0.00","0.00","no"
+"","0","Escareno, Alicia","-","0","0","44.14","0.00","0.00","0.00","no"
+"","0","Guzman, Guadalupe","-","0","0","15.24","0.00","0.00","0.00","no"
+"","0","Mel, Yarit","-","0","0","32.18","0.00","0.00","0.00","no"
+,,SUBTOTAL,,,,=SUM(G2:G5),=SUM(H2:H5),=SUM(I2:I5),=SUM(J2:J5),
+
+
+,,GRAND TOTAL,,,,"=SUM(G6,G1)","=SUM(H6,H1)","=SUM(I6,I1)","=SUM(J6,J1)",
