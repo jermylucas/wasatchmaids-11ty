@@ -1,0 +1,39 @@
+---
+layout: layouts/base.html
+activemenu: "howto"
+meta:
+  title: "How To | Wasatch Maids"
+  description: "Read and learn about facts, home cleaning tips, how to guides, and updates from Wasatch Maids."
+  socialimage: "/assets/images/Ogden-Utah.jpg"
+about:
+  heroTitle: "Wasatch Maids How-To"
+  heroContent: "All you need to know about our online booking software."
+---
+
+<main>
+  {% include "hero.html" %}
+
+  <section class="general_content">
+    <div class="general_content-container">
+      <div class="general_content-component">
+        <div class="general_content-text">
+          <div class="blog-stuff">
+            <p>
+              Wasatch Maids wants our online booking process to be as seamless
+              as possible. Learn everything you need to know about our system
+              with the links below.
+            </p>
+            <h2 style="margin-top: 1.25rem">How-Tos:</h2>
+            <ul class="post-list">
+              {%- for post in collections.howto -%} {% if post.data.title %}
+              <li>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+              </li>
+              {% endif %} {%- endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

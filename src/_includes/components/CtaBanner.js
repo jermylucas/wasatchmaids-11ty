@@ -1,13 +1,13 @@
 const { html } = require("common-tags");
 
-function CtaBanner({ text, btnText, dark }) {
+function CtaBanner({ text, btnText, btnLink, dark }) {
   return html`
     <section class="${dark ? `cta-banner-dark` : `cta-banner`}">
       <div class="cta-wrapper">
         <div class="cta-grid">
           <h4 class="cta-grid-text">${text}</h4>
           <div class="cta-grid-btn">
-            <a class="button-solid-small" href="/booknow.html">${btnText}</a>
+            <a class="button-solid-small" href="${btnLink}">${btnText}</a>
           </div>
         </div>
       </div>

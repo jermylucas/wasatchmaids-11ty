@@ -223,6 +223,7 @@
     --green: #92efa6;
     --bold-weight: 700;
     --red: #ec7e7e;
+    --dark-red: #320707;
     /* #f8f8ff */
   }
 
@@ -331,7 +332,7 @@
     text-align: center;
     text-decoration: none;
     background: var(--primary-blue);
-    line-height: 50px;
+    line-height: 40px;
     width: 250px;
     border-radius: 3px;
     font-size: 18px;
@@ -340,6 +341,10 @@
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
     display: inline-block;
+  }
+  .button-solid.green {
+    background: var(--green);
+    color: var(--black-blue);
   }
   .button-solid.active-menu {
     background: var(--green);
@@ -389,8 +394,14 @@
   }
 
   .button-solid:hover {
-    color: #000;
-    background: var(--green);
+    background: var(--primary-blue-darkest);
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .button-solid.green:hover {
+    color: #fff;
+    background: var(--primary-blue-darkest);
     -webkit-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
