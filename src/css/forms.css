@@ -2,6 +2,7 @@
   input,
   textarea,
   button[type="submit"],
+  a#contact-submit,
   select {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -48,7 +49,8 @@
     margin-bottom: 0px;
   }
 
-  button[type="submit"] {
+  button[type="submit"],
+  a#contact-submit {
     cursor: pointer;
     width: 100%;
     font-weight: 800;
@@ -69,16 +71,22 @@
     border-color: var(--primary-blue);
   }
 
-  .form-body button[type="submit"]:hover {
+  .form-body button[type="submit"]:hover,
+  a#contact-submit:hover {
     opacity: 0.6;
     -webkit-transition: background 0.3s ease-in-out;
     -webkit-transition: background-color 0.3s ease-in-out;
     -o-transition: background-color 0.3s ease-in-out;
     transition: background-color 0.3s ease-in-out;
   }
-  .form-body button[type="submit"]:active {
+  .form-body button[type="submit"]:active,
+  a#contact-submit:active {
     -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  a#contact-submit:active {
+    text-transform: uppercase;
   }
 
   .form-body input:focus,

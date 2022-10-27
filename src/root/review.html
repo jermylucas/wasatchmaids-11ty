@@ -1,0 +1,95 @@
+---
+layout: layouts/base.html
+activemenu: "review"
+banner: "contact"
+meta:
+  title: "Contact | Wasatch Maids"
+  description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
+  socialimage: "/assets/images/Ogden-Utah.jpg"
+about:
+  heroTitle: "How Did We Do?"
+  heroContent: "Please Leave Us A Review!"
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content normal-weight">
+        <form action="">
+          <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="starIcon" viewBox="0 0 24 24">
+              <polygon
+                points="12,0 15.708,7.514 24,8.718 18,14.566 19.416,22.825 12,18.926 4.583,22.825 6,14.566 0,8.718 8.292,7.514" />
+            </symbol>
+          </svg>
+          <!-- <div class="row"> -->
+          <fieldset class="rating">
+            <legend><h3>Rate Your Cleaning:</h3></legend>
+            <div class="stars">
+              <input
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+                onclick="toReview()" />
+              <label for="star5" title="Amazing!">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input
+                type="radio"
+                id="star4"
+                name="rating"
+                value="4"
+                onclick="toReview()" />
+              <label for="star4" title="Pretty good">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input
+                type="radio"
+                id="star3"
+                name="rating"
+                value="3"
+                onclick="toFeedback()" />
+              <label for="star3" title="Meh">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input
+                type="radio"
+                id="star2"
+                name="rating"
+                value="2"
+                onclick="toFeedback()" />
+              <label for="star2" title="Kinda bad">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+              <input
+                type="radio"
+                id="star1"
+                name="rating"
+                value="1"
+                onclick="toFeedback()" />
+              <label for="star1" title="Sucks big time">
+                <svg class="icon icon-star">
+                  <use xlink:href="#starIcon" />
+                </svg>
+              </label>
+            </div>
+          </fieldset>
+          <div id="content">
+            <!-- space for quick formatting -->
+            <div style="display: block; padding-bottom: 40px"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

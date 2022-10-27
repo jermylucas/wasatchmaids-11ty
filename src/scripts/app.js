@@ -53,3 +53,53 @@ if (document.getElementById("spinner")) {
     }
   }, 8000);
 }
+
+let content = document.getElementById("content");
+
+function toFeedback() {
+  content.innerHTML = `
+            <fieldset>
+              <p>
+                We're so sorry to hear that 😔. Please let us know what we can
+                do better, and include your name if you want us to get back out
+                for a free reclean. Your satisfaction is guaranteed and we want
+                to make it right! <span class="required">(Required)</span>
+              </p>
+              <textarea
+                cols="30"
+                rows="10"
+                name="experience-response"
+                placeholder="Enter your response here"
+                required></textarea>
+            </fieldset>
+            <p class="form-submit" style="justify-content: flex-start">
+              <button
+                name="submit"
+                type="submit"
+                id="contact-submit"
+                class="primary button-solid"
+                data-submit="...Sending">
+                Submit
+              </button>
+            </p>
+  `;
+  console.log("clicked");
+}
+
+function toReview() {
+  content.innerHTML = `
+            <fieldset>
+              <p>
+                We're so happy to hear that! 🤩. Please take a quick second to leave us a google review.</span>
+              </p>
+            </fieldset>
+            <p class="form-submit" style="justify-content: flex-start">
+              <a href="https://g.page/r/CaFUSZgK9hg2EBM/review"
+                name="submit"
+                id="contact-submit"
+                class="primary button-solid"
+                data-submit="...Sending">
+                Submit</a>
+            </p>
+  `;
+}
