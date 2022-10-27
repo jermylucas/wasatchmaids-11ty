@@ -685,7 +685,7 @@
 
   .rating:not(:checked) > div > label {
     float: right;
-    width: 2em;
+    width: 3em;
     padding: 0 0.1em;
     margin-right: 5px;
     overflow: hidden;
@@ -695,8 +695,8 @@
   }
 
   .icon-star {
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     fill: #ccc;
     transition: all 0.3s;
     pointer-events: none;
