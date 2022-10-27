@@ -1,9 +1,10 @@
 ---
 layout: layouts/base.html
 activemenu: "review"
-banner: "contact"
+banner: "review"
+noindex: true
 meta:
-  title: "Contact | Wasatch Maids"
+  title: "Leave Us A Review | Wasatch Maids"
   description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
   socialimage: "/assets/images/Ogden-Utah.jpg"
 about:
@@ -16,7 +17,10 @@ about:
   <section class="section_text">
     <div class="section_text-container">
       <div class="text-content normal-weight">
-        <form action="">
+        <form
+          action="https://formspree.io/f/xqkjylda"
+          method="POST"
+          id="review-form">
           <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
             <symbol id="starIcon" viewBox="0 0 24 24">
               <polygon

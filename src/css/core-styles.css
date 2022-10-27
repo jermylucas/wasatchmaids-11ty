@@ -75,8 +75,14 @@
 <--- -------------------------- -*/
 
 @media screen and (min-width: 0px) {
-  .grid-2 {
+  .grid-2,
+  .grid-3 {
     display: block;
+  }
+
+  .grid-3 > div {
+    border-top: 1px solid var(--primary-blue);
+    padding-top: 15px;
   }
 
   .bubbles-bottom {
@@ -1412,6 +1418,16 @@
 }
 
 @media only screen and (min-width: 791px) {
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-3 > div {
+    border-top: none;
+    padding-top: 0px;
+  }
+
   #services {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

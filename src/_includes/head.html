@@ -25,8 +25,9 @@
 <meta property="og:type" content="{{ meta.type }}" />
 {% endif %} {% if not meta.type and not tags %}
 <meta property="og:type" content="website" />
+{% endif %} {% if noindex %}
+<meta name="robots" content="noindex" />
 {% endif %}
-
 <!-- Common meta tags -->
 <link
   rel="canonical"

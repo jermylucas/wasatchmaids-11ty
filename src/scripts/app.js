@@ -34,14 +34,14 @@ let toggleNav = function () {
   }
 };
 
-// Remove spiner if iframe loaded after 2 seconds
+// Remove spinner if iframe loaded after 2 seconds
 if (document.getElementsByTagName("iframe").length) {
   document.getElementsByTagName("iframe")[0].onload = () => {
     setTimeout(() => {
       if (document.getElementById("spinner")) {
         document.getElementById("spinner").remove();
       }
-    }, 2000);
+    }, 1000);
   };
 }
 
@@ -63,18 +63,17 @@ function toFeedback() {
                 We're so sorry to hear that 😔. Please let us know what we can
                 do better, and include your name if you want us to get back out
                 for a free reclean. Your satisfaction is guaranteed and we want
-                to make it right! <span class="required">(Required)</span>
+                to make it right!
               </p>
               <textarea
                 cols="30"
-                rows="10"
+                rows="5"
                 name="experience-response"
                 placeholder="Enter your response here"
                 required></textarea>
             </fieldset>
             <p class="form-submit" style="justify-content: flex-start">
               <button
-                name="submit"
                 type="submit"
                 id="contact-submit"
                 class="primary button-solid"
@@ -90,12 +89,13 @@ function toReview() {
   content.innerHTML = `
             <fieldset>
               <p>
-                We're so happy to hear that! 🤩</span>
+                We're so happy to hear that! 🤩 Press "Submit" to be redirected and leave a review on Google</span>
               </p>
             </fieldset>
+            <input type="hidden" name="experience-response" value="Sent To Google" />
             <p class="form-submit" style="justify-content: flex-start">
-              <a href="https://g.page/r/CaFUSZgK9hg2EBM/review"
-                name="submit"
+              <a
+                "https://g.page/r/CaFUSZgK9hg2EBM/review"
                 id="contact-submit"
                 class="primary button-solid"
                 data-submit="...Sending">
