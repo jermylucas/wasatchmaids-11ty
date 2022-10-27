@@ -90,7 +90,7 @@ function toReview() {
   content.innerHTML = `
             <fieldset>
               <p>
-                We're so happy to hear that! 🤩. Please take a quick second to leave us a google review.</span>
+                We're so happy to hear that! 🤩</span>
               </p>
             </fieldset>
             <p class="form-submit" style="justify-content: flex-start">
