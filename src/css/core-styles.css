@@ -1624,10 +1624,19 @@
     text-align: center;
   }
 
+  .call-nav-body.questions {
+    display: block;
+    text-align: center;
+  }
+
   .call-nav-phone {
     padding-bottom: 0;
     margin-left: 30px;
     margin-right: 0px;
+  }
+
+  .call-nav-body.questions.call-nav-phone {
+    margin-left: 0px;
   }
 
   .call-nav-quote-btn {
