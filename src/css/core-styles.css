@@ -85,6 +85,11 @@
     padding-top: 15px;
   }
 
+  .grid-3 > div:first-of-type {
+    border-top: none;
+    padding-top: 0px;
+  }
+
   .bubbles-bottom {
     position: absolute;
     width: 100%;
@@ -330,6 +335,14 @@
     color: var(--primary-blue-darkest);
     background-size: 0% 1px;
   }
+
+  li > a.key {
+    display: inline;
+  }
+
+  /* li > a.key {
+    text-
+  } */
 
   /* Buttons */
   .button-solid {

@@ -736,6 +736,10 @@
 }
 
 @media screen and (min-width: 600px) {
+  li > a.key {
+    display: inline-block;
+  }
+
   #contact-hero,
   #generic-hero {
     height: 200px;
