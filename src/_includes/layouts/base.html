@@ -74,6 +74,49 @@
   `;
       }
     </script>
+    {% endif %} {% if banner === 'tools' %}
+    <script>
+      function workersOnJob(val) {
+        console.log(val);
+        let content =
+          '<div><h3> Team / Staff Name(s) <span class="required">(Required)</span></h3>';
+        if (+val) {
+          for (let i = 0; i < +val; i++) {
+            let div = `
+          <span>Team member ${i + 1}</span>
+          <select name="team-member-${
+            i + 1
+          }" aria-label="team-member-1" required>
+            <option value="" selected>Select one....</option>
+            <option value="Alicia">Alicia</option>
+            <option value="Glenda">Glenda</option>
+            <option value="Guadalupe">Guadalupe</option>
+            <option value="Luz">Luz</option>
+            <option value="Adam">Adam</option>
+            <option value="Jeremy">Jeremy</option>
+            <option value="Michell">Michell</option>
+          </select>
+          `;
+            content += div;
+          }
+          document.getElementById("workers-involved").innerHTML =
+            content + `</div>`;
+        } else {
+          console.log("else");
+          document.getElementById("workers-involved").innerHTML = "";
+        }
+      }
+
+      function spentMoney(val) {
+        if (val === "Yes") {
+          document.getElementById("money-spent").innerHTML = `
+       <legend><h3>How Much Was Spent? <span>(Required)</span></h3></legend> <input required type="text" name="amount-spent" style="width: 150px" />
+    `;
+        } else {
+          document.getElementById("money-spent").innerHTML = "";
+        }
+      }
+    </script>
     {% endif %}
   </body>
 </html>
