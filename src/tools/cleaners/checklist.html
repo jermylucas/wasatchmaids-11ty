@@ -3,6 +3,7 @@ layout: layouts/base.html
 activemenu: "careers"
 banner: "tools"
 noindex: true
+eleventyExcludeFromCollections: true
 meta:
   title: "Cleaner Quality Checklist | Wasatch Maids"
   description: "Use this checklist to ensure we deliver a quality cleaning, happy customers, and no recleans. Every time."
@@ -16,7 +17,10 @@ about:
   {% include "hero.html" %}
   <section class="section_text padded">
     <div class="section_text-container normal-weight center">
-      <a class="button-solid-small" href="/assets/tools/cleaner-checklist.pdf"
+      <a
+        class="button-solid-small"
+        href="/assets/tools/cleaner-checklist.pdf"
+        target="_blank"
         >Open PDF</a
       >
     </div>

@@ -4,7 +4,8 @@
     {% include "head.html" %}
     <script
       defer
-      src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
   </head>
   <body>
     <header>{% include "header.html" %}</header>
@@ -92,6 +93,8 @@
             <option value="Glenda">Glenda</option>
             <option value="Guadalupe">Guadalupe</option>
             <option value="Luz">Luz</option>
+            <option value="Valentin">Valentin</option>
+            <option value="Eva">Eva</option>
             <option value="Adam">Adam</option>
             <option value="Jeremy">Jeremy</option>
             <option value="Michell">Michell</option>
@@ -110,7 +113,7 @@
       function spentMoney(val) {
         if (val === "Yes") {
           document.getElementById("money-spent").innerHTML = `
-       <legend><h3>How Much Was Spent? <span>(Required)</span></h3></legend> <input required type="text" name="amount-spent" style="width: 150px" />
+       <legend><h3>How Much Was Spent? <span class="required">(Required)</span></h3></legend> <input required   type="number" min="0.01" step="0.01" max="2500" name="amount-spent" style="width: 150px" placeholder="0.00" />
     `;
         } else {
           document.getElementById("money-spent").innerHTML = "";
