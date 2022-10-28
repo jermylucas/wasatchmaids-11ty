@@ -116,6 +116,16 @@
           document.getElementById("money-spent").innerHTML = "";
         }
       }
+
+      function relatedToBooking(val) {
+        if (val === "Yes") {
+          document.getElementById("customer-involved").innerHTML = `
+       <legend><h3>Customer Name & Booking ID<span class="required">(Required)</span></h3></legend>
+            <div class="grid-2"><div><input type="text" name="customer-name" required placeholder="Customer Name" /><input type="text" name="booking-id" required placeholder="Booking ID" /> </div></div>`;
+        } else {
+          document.getElementById("customer-involved").innerHTML = "";
+        }
+      }
     </script>
     {% endif %}
   </body>

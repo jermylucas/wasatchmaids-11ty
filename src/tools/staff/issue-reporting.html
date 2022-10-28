@@ -90,24 +90,29 @@ about:
           <fieldset>
             <legend>
               <h3>
-                Customer Name & Booking ID
+                Is This Related To A Customer/Booking?
                 <span class="required">(Required)</span>
               </h3>
             </legend>
             <div class="grid-2">
               <div>
-                <input
-                  type="text"
-                  name="customer-name"
+                <span
+                  >On the way to a cleaning, happened while cleaning, or a
+                  customer is involved</span
+                >
+                <select
+                  name="related-to-booking"
+                  id="related-to-booknig"
                   required
-                  placeholder="Customer Name" /><input
-                  type="text"
-                  name="booking-id"
-                  required
-                  placeholder="Booking ID" />
+                  onchange="relatedToBooking(value)">
+                  <option value="" selected>Select One...</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
               </div>
             </div>
           </fieldset>
+          <fieldset id="customer-involved"></fieldset>
           <fieldset>
             <div class="grid-2">
               <span>
