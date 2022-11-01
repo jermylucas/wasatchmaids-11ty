@@ -1,0 +1,89 @@
+---
+layout: layouts/base.html
+activemenu: "gift-cards"
+meta:
+  title: "Gift Certificates & Gift Cards | Wasatch Maids"
+  description: "Purchase gift cards for anyone in your life. With a few clicks you can send them a gift card or gift certificate right away!"
+  socialimage: "/assets/images/Ogden-Utah.jpg"
+about:
+  heroTitle: "Buy & Send a Gift Card"
+  heroContent: "Give the gift of a clean home"
+---
+
+<main id="main">
+  {% include "hero.html" %}
+
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="normal-weight">
+        <div class="text-content">
+          <h3>Give the Perfect Gift</h3>
+          <div>
+            Nothing beats the feeling of a clean home. Give this gift to someone
+            in your life, and it's guaranteed to put a smile on their face.
+          </div>
+        </div>
+        <div class="text-content">
+          <h3>Sending Your Gift</h3>
+          <div>
+            When you check out, your gift card will be sent via email either
+            immediately, or on a scheduled date.
+          </div>
+        </div>
+        <div class="text-content">
+          <h3>Using a Gift Card</h3>
+          <div>
+            Your gift card recipient will get a unique code they can use while
+            booking a cleaning. It's easy, there is no card to lose, and the
+            balance is tracked automatically. Gift cards can be applied to any
+            of our services.
+          </div>
+          <div>
+            The perfect gift for someone in your life, no matter the occasion
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blue-line"></div>
+  </section>
+
+  <div>
+    <div class="spinner-container">
+      <div id="spinner" class="loading-spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <iframe
+      src="https://wasatchmaids.bookingkoala.com/gift-cards/send?embed=true"
+      style="border: none; height: 1000px"
+      width="100%"
+      scrolling="no"></iframe>
+    <script
+      src="https://wasatchmaids.bookingkoala.com/resources/embed.js"
+      defer></script>
+  </div>
+
+  <section class="section_text">
+    <div class="blue-line"></div>
+    <div class="section_text-container">
+      <div class="normal-weight">
+        <div class="text-content">
+          <h3>Want To Gift In Person?</h3>
+          <div>
+            If you want something to give in person, or something they can
+            unwrap, email the gift card to yourself, and print it out. This will
+            include the customized code and have everything they need to apply
+            the gift card.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
