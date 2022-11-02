@@ -26,8 +26,7 @@ about:
         name="Admin Time Off"
         action="https://formspree.io/f/mwkzwaar"
         class="tools-form"
-        method="post"
-      >
+        method="post">
         <div class="form-body">
           <fieldset class="grid-2">
             <legend>
@@ -41,24 +40,13 @@ about:
               name="submitting-first-name"
               placeholder="First Name"
               type="text"
-              required
-            />
+              required />
             <input
               aria-label="submitting-last-name"
               name="submitting-last-name"
               placeholder="Last Name"
               type="text"
-              required
-            />
-          </fieldset>
-          <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Date Off
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <input type="date" name="date-off-work" id="date-off-work" />
+              required />
           </fieldset>
           <fieldset>
             <div class="grid-2">
@@ -67,16 +55,20 @@ about:
                   From
                   <span class="required">(Required)</span>
                 </h3>
-                <span>What time will you be unavailabe?</span>
-                <input type="time" name="time-start" id="time-start" required />
+                <span>What time will you be unavailable?</span>
+                <input
+                  type="datetime-local"
+                  name="time-start"
+                  id="time-start"
+                  required />
               </div>
               <div>
                 <h3>
                   To
                   <span class="required">(Required)</span>
                 </h3>
-                <span>Until what time will you be unavailabe?</span>
-                <input type="time" name="time-end" id="time-end" />
+                <span>Until what time will you be unavailable?</span>
+                <input type="datetime-local" name="time-end" id="time-end" />
               </div>
             </div>
           </fieldset>
@@ -112,8 +104,7 @@ about:
                 placeholder=""
                 cols="30"
                 rows="5"
-                name="notes"
-              ></textarea>
+                name="notes"></textarea>
             </div>
           </fieldset>
         </div>
@@ -123,8 +114,7 @@ about:
             type="submit"
             id="time-off-submit"
             class="primary button-solid"
-            data-submit="...Sending"
-          >
+            data-submit="...Sending">
             Submit
           </button>
         </p>
