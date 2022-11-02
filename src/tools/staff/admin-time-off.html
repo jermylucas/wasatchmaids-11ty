@@ -1,0 +1,134 @@
+---
+layout: layouts/base.html
+activemenu: "careers"
+banner: "tools"
+noindex: true
+eleventyExcludeFromCollections: true
+meta:
+  title: "Admin Time Off| Wasatch Maids"
+  description: "Form for submitting time off for admin"
+  socialimage: ""
+about:
+  heroTitle: "Admin Time Off"
+  heroContent: "Submit this form when you will be unavailabe during normal business hours"
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <p class="text-content">
+        For longer multiple days, just text/send a message
+      </p>
+
+      <form
+        method="post"
+        name="Admin Time Off"
+        action="https://formspree.io/f/mwkzwaar"
+        class="tools-form"
+        method="post"
+      >
+        <div class="form-body">
+          <fieldset class="grid-2">
+            <legend>
+              <h3>
+                Name of Person Submitting
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input
+              aria-label="submitting-first-name"
+              name="submitting-first-name"
+              placeholder="First Name"
+              type="text"
+              required
+            />
+            <input
+              aria-label="submitting-last-name"
+              name="submitting-last-name"
+              placeholder="Last Name"
+              type="text"
+              required
+            />
+          </fieldset>
+          <fieldset class="grid-2">
+            <legend>
+              <h3>
+                Date Off
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input type="date" name="date-off-work" id="date-off-work" />
+          </fieldset>
+          <fieldset>
+            <div class="grid-2">
+              <div>
+                <h3>
+                  From
+                  <span class="required">(Required)</span>
+                </h3>
+                <span>What time will you be unavailabe?</span>
+                <input type="time" name="time-start" id="time-start" required />
+              </div>
+              <div>
+                <h3>
+                  To
+                  <span class="required">(Required)</span>
+                </h3>
+                <span>Until what time will you be unavailabe?</span>
+                <input type="time" name="time-end" id="time-end" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="grid-2">
+              <div>
+                <h3>
+                  Reason?
+                  <span class="required">(Required)</span>
+                </h3>
+                <span>For logging purposes</span>
+                <select name="time-off-reason" required>
+                  <option value="" selected>Select one....</option>
+                  <option value="School Work">School Work</option>
+                  <option value="Vacation">Vacation</option>
+                  <option value="Last Minute Emergency">
+                    Last Minute Emergency
+                  </option>
+                  <option value="Out of Service">Out of Service</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>Notes</h3>
+              <span
+                >Please include any notes that may be relevant
+                <em>(Optional)</em>
+              </span>
+              <textarea
+                placeholder=""
+                cols="30"
+                rows="5"
+                name="notes"
+              ></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <p class="form-submit" style="justify-content: flex-start">
+          <button
+            name="submit"
+            type="submit"
+            id="time-off-submit"
+            class="primary button-solid"
+            data-submit="...Sending"
+          >
+            Submit
+          </button>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
