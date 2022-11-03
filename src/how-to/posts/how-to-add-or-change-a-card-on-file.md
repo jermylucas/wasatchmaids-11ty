@@ -12,7 +12,7 @@ imageAlt: Change Credit Card
 
 Navigate to the Wasatch Maids [login page here](https://wasatchmaids.com/login), or by going to h[ttps://wasatchmaids.com/login](https://wasatchmaids.com/login) and enter in your login details. 
 
-> *If you have forgotten your password refer to this page* <a href="https://wasatchmaids.com/how-to/reset-your-password-1">here</a> *for help.* 
+> *If you have forgotten your password refer to this page* <a href="https://wasatchmaids.com/how-to/reset-your-password">here</a> *for help.* 
 
 ![sign_In_Form_Normal](/assets/posts/sign_in_form_normal.png "Sign In Form")
 
@@ -33,8 +33,6 @@ Fill in card information and click the blue button "Add Card".
 Your profile will now show updated card information. 
 
 ![confirmed_Card](/assets/posts/confirmed_card.png "Confirmed Card Information")
-
-
 
 You can now go back to your dashboard to make a booking or you can go to <https://wasatchmaids.com/booknow> to make a booking with your updated card information. 
 
