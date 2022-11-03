@@ -12,7 +12,7 @@ imageAlt: Booking
 
 Navigate to the Wasatch Maids [login page here](https://wasatchmaids.com/login), or by going to h[ttps://wasatchmaids.com/login](https://wasatchmaids.com/login) and enter in your login details. 
 
-> *If you have forgotten your password refer to this page* <a href="https://wasatchmaids.com/how-to/reset-your-password-1">here</a> *for help.* 
+> *If you have forgotten your password refer to this page* <a href="https://wasatchmaids.com/how-to/reset-your-password">here</a> *for help.* 
 
 ![sign_In_Form_Normal](/assets/posts/sign_in_form_normal.png "Sign In Form")
 
@@ -43,8 +43,6 @@ Choose your new cleaning date and time
 Once you have confirmed your changes, scroll back up to the top and click the blue button that says "Save Changes"
 
 ![save_Changes](/assets/posts/save_changes.png "Save Changes")
-
-
 
 Your booking will now be confirmed and you are good to exit this page. 
 
