@@ -22,8 +22,7 @@ about:
         name="Issue Reporting"
         action="https://formspree.io/f/xrgdyopv"
         class="tools-form"
-        method="post"
-      >
+        method="post">
         <div class="form-body">
           <fieldset class="grid-2">
             <legend>
@@ -37,15 +36,13 @@ about:
               name="submitting-first-name"
               placeholder="First Name"
               type="text"
-              required
-            />
+              required />
             <input
               aria-label="submitting-last-name"
               name="submitting-last-name"
               placeholder="Last Name"
               type="text"
-              required
-            />
+              required />
           </fieldset>
           <fieldset>
             <h3>
@@ -64,8 +61,7 @@ about:
               <select
                 name="complaint-type"
                 aria-label="complaint-type"
-                required
-              >
+                required>
                 <option value="" selected="selected">Select One...</option>
                 <option value="client-complaint">Client Complaint</option>
                 <option value="internal-issue">Internal Issue</option>
@@ -85,8 +81,7 @@ about:
                 name="cleaners-at-job"
                 id="cleaners-at-job"
                 required
-                onchange="workersOnJob(value)"
-              >
+                onchange="workersOnJob(value)">
                 <option value="" selected>Select One...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -113,8 +108,7 @@ about:
                   name="related-to-booking"
                   id="related-to-booknig"
                   required
-                  onchange="relatedToBooking(value)"
-                >
+                  onchange="relatedToBooking(value)">
                   <option value="" selected>Select One...</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -150,7 +144,7 @@ about:
                     Last Minute Reschedule
                   </option>
                   <option value="possible-injury">Possible Injury</option>
-                  <option value="other">other</option>
+                  <option value="Other">Other</option>
                 </select>
               </span>
             </div>
@@ -170,8 +164,7 @@ about:
                 cols="30"
                 rows="5"
                 name="issue-details"
-                required
-              ></textarea>
+                required></textarea>
             </div>
           </fieldset>
           <fieldset class="grid-2">
@@ -198,8 +191,7 @@ about:
               <select
                 name="received-pictures"
                 aria-label="received-pictures"
-                required
-              >
+                required>
                 <option value="" selected="selected">Select One...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -218,8 +210,7 @@ about:
                 name="spent-money"
                 aria-label="spent-money"
                 required
-                onchange="spentMoney(value)"
-              >
+                onchange="spentMoney(value)">
                 <option value="" selected="selected">Select One...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
@@ -242,15 +233,13 @@ about:
                 name="fix-hours"
                 maxlength="2"
                 placeholder="HH"
-                style="width: 75px"
-              />
+                style="width: 75px" />
               <i>:</i
               ><input
                 type="number"
                 name="fix-minutes"
                 placeholder="MM"
-                style="width: 75px"
-              />
+                style="width: 75px" />
             </div>
           </fieldset>
         </div>
@@ -260,8 +249,7 @@ about:
             type="submit"
             id="contact-submit"
             class="primary button-solid"
-            data-submit="...Sending"
-          >
+            data-submit="...Sending">
             Submit
           </button>
         </p>

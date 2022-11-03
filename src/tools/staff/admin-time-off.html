@@ -5,12 +5,12 @@ banner: "tools"
 noindex: true
 eleventyExcludeFromCollections: true
 meta:
-  title: "Admin Time Off| Wasatch Maids"
+  title: "Admin Time Off | Wasatch Maids"
   description: "Form for submitting time off for admin"
   socialimage: ""
 about:
   heroTitle: "Admin Time Off"
-  heroContent: "Submit this form when you will be unavailabe during normal business hours"
+  heroContent: "Submit this form when you will be unavailable during normal business hours"
 ---
 
 <main id="main">
@@ -18,7 +18,7 @@ about:
   <section class="section_text padded">
     <div class="section_text-container normal-weight">
       <p class="text-content">
-        For longer multiple days, just text/send a message
+        For multiple day requests, just text/send a message
       </p>
 
       <form
@@ -55,7 +55,7 @@ about:
                   From
                   <span class="required">(Required)</span>
                 </h3>
-                <span>What time will you be unavailable?</span>
+                <span>Starting at what time will you be unavailable?</span>
                 <input
                   type="datetime-local"
                   name="time-start"
@@ -82,11 +82,11 @@ about:
                 <span>For logging purposes</span>
                 <select name="time-off-reason" required>
                   <option value="" selected>Select one....</option>
-                  <option value="School Work">School Work</option>
                   <option value="Vacation">Vacation</option>
                   <option value="Last Minute Emergency">
                     Last Minute Emergency
                   </option>
+                  <option value="School Work">School Work</option>
                   <option value="Out of Service">Out of Service</option>
                   <option value="Other">Other</option>
                 </select>
