@@ -1,0 +1,31 @@
+---
+layout: layouts/base.html
+activemenu: ""
+banner: "questions"
+meta:
+  title: "Add Us To Your Contacts | Wasatch Maids"
+  description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
+  socialimage: "/assets/images/Ogden-Utah.jpg"
+about:
+  heroTitle: "Text or Call Us"
+  heroContent: "Adding us to your contacts is the easiest way to keep us on hand for any cleaning need! "
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content normal-weight center">
+        <p>
+          Keeping Wasatch Maids in your contacts makes it so you know it's us if
+          we need to reach out! It also lets you get ahold of us in a moment's
+          notice for all your cleaning needs without needing to look back
+          through messages or calls. Simply click the button below and get our
+          contact info instantly saved into your phone so you can just search
+          "Cleaning", "Maid", or "Wasatch Maids" and get right in touch.
+        </p>
+        {% AddToContactsBtn %}
+      </div>
+    </div>
+  </section>
+</main>
