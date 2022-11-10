@@ -56,9 +56,9 @@ if (document.getElementById("spinner")) {
 
 var widget_container = document.getElementById("msgr-widget");
 
-var open_btn = document.getElementById("msgrw-btn");
+var open_btn = document.getElementById("contact-btn");
 var widget = document.getElementById("msgrw-body");
-var widget_close = document.getElementById("msgrw--close");
+var widget_close = document.getElementById("close-btn");
 var widget_msg = document.getElementById("msgrw-msg");
 var widget_avatar = document.getElementById("msgrw-ava");
 
@@ -73,3 +73,9 @@ open_btn.onclick = function () {
 widget_close.onclick = function () {
   widget.className = "msgrw-body";
 };
+
+var testing = document.getElementById("time-btn");
+
+setTimeout(() => {
+  testing.style.opacity = "1";
+}, 2000);

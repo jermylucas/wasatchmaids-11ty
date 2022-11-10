@@ -207,8 +207,7 @@ meta:
       <div class="msgrw-body" id="msgrw-body">
         <div class="msgrw-body-wrapper">
           <span>
-            <span class="close-btn">close</span>
-            <div class="msgrw--close" id="msgrw--close"></div>
+            <span class="close-btn" id="close-btn">close x</span>
           </span>
           <div class="msgrw--avatar" id="msgrw-ava"></div>
           <div class="msgrw--msg" id="msgrw-msg">
@@ -220,63 +219,138 @@ meta:
           </div>
         </div>
       </div>
-      <button class="msgrw-btn" id="msgrw-btn">
-        <span
+      <div id="contact-btn" class="contact-btn">
+        <button
+          id="time-btn"
           style="
+            padding: 0px;
+            box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+            border-radius: 30px;
+            width: 200px;
+            height: 85px;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            transition: 0.15s;
+            border: var(--red);
+
             display: flex;
-            color: rgb(43, 46, 49);
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 22px;
-            padding-left: 12px;
-            padding-right: 0px;
-            flex-direction: row;
-            justify-content: right;
-            align-items: center;
+            box-shadow: none;
+            max-height: 85px;
+            align-items: flex-start;
+            justify-content: center;
+            line-height: 20px;
+            padding-top: 1px;
+
+            background-color: var(--red);
+            opacity: 0;
+            transform: none;
+            transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 10ms,
+              transform 333ms cubic-bezier(0.4, 0, 0.2, 1) 10ms;
+
+            z-index: 999;
           ">
-          <span style="padding-right: 10px">Text Us</span>
           <span
             style="
-              background-color: rgb(228, 76, 46);
-              width: 50px;
-              height: 50px;
-              display: flex;
-              align-self: flex-end;
-              text-align: center;
-              align-items: center;
-              padding-left: 10px;
-              align-content: center;
-              border-radius: 50%;
-              padding-right: 10px;
-              margin-right: 2px;
-            "
-            ><svg
-              width="24px"
-              height="24px"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              focusable="false"
+              color: rgb(255, 255, 255);
+              font-size: 10px;
+              font-weight: 700;
+              padding-left: 0px;
+              padding-right: 0px;
+              letter-spacing: normal;
+              text-transform: uppercase;
+            ">
+            <span
               style="
-                height: 28px;
-                width: 28px;
-                margin: 0px auto;
-                color: rgb(255, 255, 255);
+                display: flex;
+                align-items: center;
+                place-content: center;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
               ">
-              <path
-                d="M16.317 23H6.683A1.68 1.68 0 015 21.335V2.665A1.68 1.68 0 016.683 1h9.634C17.241 1 18 1.75 18 2.665v18.67A1.68 1.68 0 0116.317 23zM6.683 1.816a.847.847 0 00-.858.849v18.67c0 .49.396.849.858.849h9.634a.847.847 0 00.858-.849V2.665a.847.847 0 00-.858-.849H6.683z"
-                fill="#fff"
-                stroke="#fff"
-                stroke-width="0.5"></path>
-              <path
-                d="M12.886 20.096h-2.738a.38.38 0 01-.396-.392.38.38 0 01.396-.392h2.739a.38.38 0 01.395.392.38.38 0 01-.396.392zM14.404 1.033v1.175c0 .392-.33.718-.726.718H9.322a.728.728 0 01-.725-.718V1.033h-.792v1.175c0 .816.693 1.502 1.517 1.502h4.356c.825 0 1.518-.686 1.518-1.502V1.033h-.792z"
-                fill="#fff"
-                stroke="#fff"
-                stroke-width="0.5"></path></svg
-          ></span>
-        </span>
-      </button>
+              <span style="display: inline-flex">
+                <svg
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  style="height: 20px; padding-right: 5px">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></svg
+              ></span>
+              <span style="color: white">Avg. Reply: &lt; 10 minutes</span>
+            </span>
+            <!--
+          <span style="display: flex;
+    align-items: center;
+    place-content: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;"
+            >Avg reply: < 10 minutes</span
+          > -->
+          </span>
+        </button>
+        <button class="msgrw-btn" id="msgrw-btn">
+          <span
+            style="
+              display: flex;
+              color: rgb(43, 46, 49);
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 22px;
+              padding-left: 12px;
+              padding-right: 0px;
+              flex-direction: row;
+              justify-content: right;
+              align-items: center;
+            ">
+            <span style="margin: 0 auto">Text Us</span>
+            <span
+              style="
+                background-color: var(--red);
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-self: flex-end;
+                text-align: center;
+                align-items: center;
+                padding-left: 10px;
+                align-content: center;
+                border-radius: 50%;
+                padding-right: 10px;
+                margin-right: 2px;
+              "
+              ><svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                style="
+                  height: 28px;
+                  width: 28px;
+                  margin: 0px auto;
+                  color: rgb(255, 255, 255);
+                ">
+                <path
+                  d="M16.317 23H6.683A1.68 1.68 0 015 21.335V2.665A1.68 1.68 0 016.683 1h9.634C17.241 1 18 1.75 18 2.665v18.67A1.68 1.68 0 0116.317 23zM6.683 1.816a.847.847 0 00-.858.849v18.67c0 .49.396.849.858.849h9.634a.847.847 0 00.858-.849V2.665a.847.847 0 00-.858-.849H6.683z"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="0.5"></path>
+                <path
+                  d="M12.886 20.096h-2.738a.38.38 0 01-.396-.392.38.38 0 01.396-.392h2.739a.38.38 0 01.395.392.38.38 0 01-.396.392zM14.404 1.033v1.175c0 .392-.33.718-.726.718H9.322a.728.728 0 01-.725-.718V1.033h-.792v1.175c0 .816.693 1.502 1.517 1.502h4.356c.825 0 1.518-.686 1.518-1.502V1.033h-.792z"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="0.5"></path></svg
+            ></span>
+          </span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
