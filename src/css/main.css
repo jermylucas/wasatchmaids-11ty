@@ -1,2 +1,169 @@
 @import url("./core-styles.css");
 @import url("./style.css");
+
+#msgr-widget {
+  position: absolute;
+  left: -9000px;
+}
+
+.msgrw {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+}
+
+.msgrw-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.msgrw-body {
+  position: absolute;
+  bottom: 100px;
+  right: -800px;
+  width: 310px;
+  height: 115px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  transition: 0.15s;
+}
+
+.msgrw-body__opened {
+  right: 40px;
+}
+
+.msgrw-body-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn-container {
+  background: grey;
+  position: absolute;
+  right: 25px;
+  width: 100px;
+  top: -100px;
+  z-index: 1000000000;
+}
+.close-btn {
+  position: absolute;
+  right: 25px;
+  font-size: 14px;
+  opacity: 0.65;
+}
+.close-btn:hover {
+  cursor: pointer;
+  opacity: 0.55;
+}
+
+.msgrw--close {
+  top: 10px;
+  right: 15px;
+  position: absolute;
+  opacity: 0.33;
+  transition: 0.15s;
+}
+
+.msgrw--close::before,
+.msgrw--close::after {
+  content: "";
+  height: 10px;
+  width: 2px;
+  background: #444;
+  position: absolute;
+}
+
+.msgrw--close::before {
+  transform: rotate(45deg);
+}
+
+.msgrw--close::after {
+  transform: rotate(-45deg);
+}
+
+.msgrw--close:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.msgrw--avatar {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  border-radius: 100%;
+  background: url("https://habrastorage.org/web/bed/d12/28a/bedd1228ac8742c6bb91e32251a89515.png")
+    no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  top: 30px;
+  left: 15px;
+  float: left;
+}
+
+.msgrw--msg {
+  border: 1px solid #eee;
+  padding: 10px;
+  width: 180px;
+  position: relative;
+  margin-top: 30px;
+  margin-right: 20px;
+  float: right;
+  border-radius: 5px;
+  font-family: helvetica;
+  font-size: 0.9em;
+  color: #181818;
+}
+
+.msgrw--msg:hover {
+  cursor: default;
+}
+
+.msgrw--avatar img {
+  width: 100%;
+}
+
+.msgrw-btn {
+  padding: 0px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* background-color: #e30001; */
+  /* border-radius: 100%; */
+  border-radius: 30px;
+  width: 160px;
+  height: 57px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  /* background-image: url("https://habrastorage.org/web/a45/e8e/3a3/a45e8e3a378e41eda77fe5fbc6ee575a.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-size: 70%; */
+  transition: 0.15s;
+  /* float: right; */
+}
+
+.msgrw-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media (max-width: 500px) {
+  .msgrw-body {
+    bottom: 90px;
+  }
+
+  .msgrw-btn {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .msgrw-body__opened {
+    right: 5px;
+  }
+}

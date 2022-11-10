@@ -53,3 +53,23 @@ if (document.getElementById("spinner")) {
     }
   }, 8000);
 }
+
+var widget_container = document.getElementById("msgr-widget");
+
+var open_btn = document.getElementById("msgrw-btn");
+var widget = document.getElementById("msgrw-body");
+var widget_close = document.getElementById("msgrw--close");
+var widget_msg = document.getElementById("msgrw-msg");
+var widget_avatar = document.getElementById("msgrw-ava");
+
+open_btn.onclick = function () {
+  if (widget.className == "msgrw-body") {
+    widget.className += " msgrw-body__opened";
+  } else {
+    widget.className = "msgrw-body";
+  }
+};
+
+widget_close.onclick = function () {
+  widget.className = "msgrw-body";
+};
