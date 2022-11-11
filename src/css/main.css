@@ -1,6 +1,55 @@
 @import url('./core-styles.css');
 @import url('./style.css');
 
+.text-form input,
+.text-form textarea {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 0.9em;
+  width: 100%;
+  border: none;
+  /* border: 1px solid transparent; */
+  border: 1px solid rgb(212, 212, 212);
+  background: #fff;
+  margin: 0 0 15px;
+  padding: 10px 10px 10px 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: vertical;
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+:-moz-placeholder {
+  color: #888;
+}
+::-moz-placeholder {
+  color: #888;
+}
+:-ms-input-placeholder {
+  color: #888;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+button[type='submit'],
+a#contact-submit {
+  cursor: pointer;
+  width: 100%;
+  font-weight: 800;
+  font-size: 1em;
+  margin: 0;
+  background: var(--primary-blue);
+  color: #fff;
+  width: auto;
+  padding: 10px 30px;
+  border: none;
+}
+
 #msgr-widget {
   position: absolute;
   left: -9000px;
@@ -20,6 +69,35 @@
 }
 
 @media only screen and (min-width: 0px) {
+  .floating-cta-btn {
+    display: flex;
+    color: rgb(43, 46, 49);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding-left: 12px;
+    padding-right: 0px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+  }
+  .floating-cta-icon {
+    background-color: var(--red);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    align-items: center;
+    padding-left: 10px;
+    align-content: center;
+    border-radius: 50%;
+    padding-right: 10px;
+    margin-right: 2px;
+  }
+  .cta-text {
+    margin: 0 auto;
+  }
   .msgrw_opened {
     position: static;
   }
@@ -69,6 +147,9 @@
   box-shadow: inset 0px 0px 0px var(--red);
   animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
 }
+.checkmark.back {
+  stroke-width: 1;
+}
 .checkmark__check {
   transform-origin: 50% 50%;
   stroke-dasharray: 29;
@@ -102,15 +183,17 @@
     right: -800px;
     width: 310px;
     height: 150px;
-    background: #fff;
     border-radius: 10px;
     margin-bottom: 30px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     transition: 0.15s;
   }
   .msgrw-body__opened {
+    position: fixed;
     right: 40px;
-    bottom: 100px;
+    bottom: 0px;
+    width: 385px;
+    height: 650px;
   }
 }
 
@@ -120,17 +203,26 @@
   height: 100%;
 }
 
-.close-btn {
+.close-btn,
+.back-btn {
   position: absolute;
   bottom: 0px;
-  right: 10px;
   text-align: right;
   margin-right: 5px;
   padding: 10px 0;
 }
-.close-btn:hover {
+.close-btn {
+  text-align: right;
+  right: 10px;
+}
+.close-btn:hover,
+.back-btn:hover {
   cursor: pointer;
   opacity: 0.55;
+}
+.back-btn {
+  text-align: left;
+  left: 15px;
 }
 
 .msgrw--close {
@@ -175,10 +267,14 @@
 .text-cta-content {
   padding: 15px;
 }
-.text-cta-content.btns {
-  margin: 80px 10px auto 10px;
+.text-cta-content.btns,
+.text-cta-content.text-form {
+  margin: 60px 0px auto 0px;
   background: #fff;
   border-radius: 10px;
+}
+.hours {
+  margin-top: 15px;
 }
 .text-cta-content > .hours > span {
   display: block;
@@ -240,7 +336,7 @@
   box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   border-radius: 30px;
   width: 185px;
-  height: 83px;
+  height: 85px;
   position: absolute;
   bottom: 30px;
   right: 30px;
@@ -248,7 +344,7 @@
   border: var(--red);
   display: flex;
   box-shadow: none;
-  max-height: 83px;
+  max-height: 85px;
   align-items: flex-start;
   justify-content: center;
   line-height: 20px;
