@@ -109,15 +109,15 @@ let prevHtml;
 
 function textUs() {
   prevHtml = textCtaWrapper.innerHTML;
-  // if (!this.mobileCheck()) {
-  //   let element = document.getElementById('hiddenAppLink');
-  //   element && element.click();
-  // }
 
-  // widget.className = 'msgrw-body';
-  // msgrw.className = 'msgrw';
+  if (this.mobileCheck()) {
+    let element = document.getElementById('hiddenAppLink');
+    element && element.click();
+  } else {
+    // widget.className = 'msgrw-body';
+    // msgrw.className = 'msgrw';
 
-  textCtaWrapper.innerHTML = `
+    textCtaWrapper.innerHTML = `
   <div class="text-cta-content text-form">
     <form action="https://formspree.io/f/xeqdvbaa" method="POST">
      <input placeholder="Name" type="text"  name="name" required />
@@ -132,7 +132,7 @@ function textUs() {
   </div>
   `;
 
-  backBtn.innerHTML = `
+    backBtn.innerHTML = `
       <span class="back-btn" onclick="goBack()">
        <svg class="checkmark back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.051 30.051">
         <path
@@ -144,6 +144,7 @@ function textUs() {
           </svg>
         </span>
   `;
+  }
 }
 
 function goBack() {
