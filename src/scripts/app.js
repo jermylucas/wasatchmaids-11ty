@@ -109,10 +109,10 @@ let prevHtml;
 
 function textUs() {
   prevHtml = textCtaWrapper.innerHTML;
-  if (!this.mobileCheck()) {
-    let element = document.getElementById('hiddenAppLink');
-    element && element.click();
-  }
+ 
+  window.open("sms:8018212316");
+ //  let element = document.getElementById('hiddenAppLink');
+ //  element && element.click();
 
   widget.className = 'msgrw-body';
   msgrw.className = 'msgrw';
