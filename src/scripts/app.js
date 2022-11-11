@@ -113,10 +113,10 @@ function textUs() {
   if (this.mobileCheck()) {
     let element = document.getElementById('hiddenAppLink');
     element && element.click();
-  } else {
-    // widget.className = 'msgrw-body';
-    // msgrw.className = 'msgrw';
 
+    widget.className = 'msgrw-body';
+    msgrw.className = 'msgrw';
+  } else {
     textCtaWrapper.innerHTML = `
   <div class="text-cta-content text-form">
     <form action="https://formspree.io/f/xeqdvbaa" method="POST">
