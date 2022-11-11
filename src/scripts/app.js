@@ -58,20 +58,28 @@ var widget_container = document.getElementById("msgr-widget");
 
 var open_btn = document.getElementById("contact-btn");
 var widget = document.getElementById("msgrw-body");
+var msgrw = document.getElementById("msgrw");
 var widget_close = document.getElementById("close-btn");
 var widget_msg = document.getElementById("msgrw-msg");
 var widget_avatar = document.getElementById("msgrw-ava");
 
 open_btn.onclick = function () {
   if (widget.className == "msgrw-body") {
+    msgrw.className += " msgrw_opened";
     widget.className += " msgrw-body__opened";
+
+    widget_close.innerHTML = `
+    <span id="close-btn"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg"                 viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> <path class="checkmark__check" fill="none" d="M16 16 36 36 M36 16 16 36" /> </svg> </span>`;
   } else {
+    widget_close.innerHTML = "";
+    msgrw.className = "msgrw";
     widget.className = "msgrw-body";
   }
 };
 
 widget_close.onclick = function () {
   widget.className = "msgrw-body";
+  msgrw.className = "msgrw";
 };
 
 var testing = document.getElementById("time-btn");

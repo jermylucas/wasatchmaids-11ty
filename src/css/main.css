@@ -1,5 +1,5 @@
-@import url("./core-styles.css");
-@import url("./style.css");
+@import url('./core-styles.css');
+@import url('./style.css');
 
 #msgr-widget {
   position: absolute;
@@ -19,21 +19,99 @@
   height: 100%;
 }
 
-.msgrw-body {
-  position: absolute;
-  bottom: 100px;
-  right: -800px;
-  width: 310px;
-  height: 115px;
-  background: #fff;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  transition: 0.15s;
+@media only screen and (min-width: 0px) {
+  .msgrw_opened {
+    position: static;
+  }
+  .msgrw-body {
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    z-index: 100000000;
+    overflow: hidden;
+    height: 100%;
+    min-height: unset;
+    max-height: unset;
+    /* height: calc(100vh - 70px); */
+    /* z-index: 10000; */
+    /* width: 310px; */
+    right: -800px;
+    /* height: 150px; */
+    background: var(--off-white);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.15s;
+  }
+  .msgrw-body__opened {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+  }
 }
 
-.msgrw-body__opened {
-  right: 40px;
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: var(--red);
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px var(--red);
+  animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px var(--red);
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .msgrw-body {
+    position: absolute;
+    bottom: 100px;
+    right: -800px;
+    width: 310px;
+    height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.15s;
+  }
+  .msgrw-body__opened {
+    right: 40px;
+    bottom: 100px;
+  }
 }
 
 .msgrw-body-wrapper {
@@ -43,16 +121,12 @@
 }
 
 .close-btn {
-  background-color: rgb(212, 211, 211);
-  width: 50px;
-  text-align: center;
-  border-radius: 5px;
   position: absolute;
-  right: 15px;
-  font-size: 14px;
-  line-height: 15px;
-  opacity: 0.65;
-  margin-top: 10px;
+  bottom: 0px;
+  right: 10px;
+  text-align: right;
+  margin-right: 5px;
+  padding: 10px 0;
 }
 .close-btn:hover {
   cursor: pointer;
@@ -69,7 +143,7 @@
 
 .msgrw--close::before,
 .msgrw--close::after {
-  content: "";
+  content: '';
   height: 10px;
   width: 2px;
   background: #444;
@@ -89,38 +163,43 @@
   opacity: 0.75;
 }
 
-.msgrw--avatar {
-  width: 60px;
-  height: 60px;
-  overflow: hidden;
-  border: 1px solid #eee;
-  border-radius: 100%;
-  background: url("https://habrastorage.org/web/bed/d12/28a/bedd1228ac8742c6bb91e32251a89515.png")
-    no-repeat;
-  background-size: cover;
-  background-position: center center;
+.text-cta-header {
+  background-color: var(--black-blue);
+  height: 165px;
   position: relative;
-  top: 30px;
-  left: 15px;
-  float: left;
+}
+.text-cta-header span {
+  color: #fff;
+}
+
+.text-cta-content {
+  padding: 15px;
+}
+.text-cta-content.btns {
+  margin: 80px 10px auto 10px;
+  background: #fff;
+  border-radius: 10px;
+}
+.text-cta-content > .hours > span {
+  display: block;
+}
+.text-cta-content > .hours > .grid {
+  display: grid;
+  grid-template-columns: 80px 5px 1fr;
 }
 
 .msgrw--msg {
   border: 1px solid #eee;
   padding: 10px;
-  width: 180px;
+  /* width: 180px; */
   position: relative;
   margin-top: 35px;
-  margin-right: 20px;
-  float: right;
-  border-radius: 5px;
-  font-family: helvetica;
+  /* margin-right: 20px; */
+  /* float: right; */
+  /* border-radius: 5px; */
+  /* font-family: helvetica; */
   font-size: 0.9em;
   color: #181818;
-}
-
-.msgrw--msg:hover {
-  cursor: default;
 }
 
 .msgrw--avatar img {
@@ -128,6 +207,8 @@
 }
 
 .msgrw-btn {
+  font-family: inherit;
+  font-weight: 700;
   padding: 0px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   /* background-color: #e30001; */
@@ -135,7 +216,7 @@
   border-radius: 30px;
   background: white;
   border: none;
-  width: 200px;
+  width: 185px;
   height: 57px;
   position: absolute;
   bottom: 30px;
@@ -154,17 +235,35 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.time-btn {
+  padding: 0px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  border-radius: 30px;
+  width: 185px;
+  height: 83px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  transition: 0.15s;
+  border: var(--red);
+  display: flex;
+  box-shadow: none;
+  max-height: 83px;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 20px;
+  padding-top: 1px;
+  background-color: var(--red);
+  opacity: 0;
+  transform: none;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 10ms, transform 333ms cubic-bezier(0.4, 0, 0.2, 1) 10ms;
+  z-index: 999;
+}
+
 @media (max-width: 500px) {
-  .msgrw-body {
-    bottom: 90px;
-  }
-
-  .msgrw-btn {
-    right: 20px;
-    bottom: 20px;
-  }
-
-  .msgrw-body__opened {
-    right: 5px;
+  .msgrw-btn,
+  .time-btn {
+    right: 13px;
+    bottom: 12px;
   }
 }
