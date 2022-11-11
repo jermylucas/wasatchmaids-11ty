@@ -109,41 +109,41 @@ let prevHtml;
 
 function textUs() {
   prevHtml = textCtaWrapper.innerHTML;
-  if (!this.mobileCheck()) {
-    let element = document.getElementById('hiddenAppLink');
-    element && element.click();
-  }
+  // if (!this.mobileCheck()) {
+  //   let element = document.getElementById('hiddenAppLink');
+  //   element && element.click();
+  // }
 
-  widget.className = 'msgrw-body';
-  msgrw.className = 'msgrw';
+  // widget.className = 'msgrw-body';
+  // msgrw.className = 'msgrw';
 
-  // textCtaWrapper.innerHTML = `
-  // <div class="text-cta-content text-form">
-  //   <form action="">
-  //    <input placeholder="Name" type="text" required />
-  //     <input placeholder="Phone Number" type="text" />
-  //     <textarea placeholder="Message" name="" id="" cols="30" rows="5"></textarea>
-  //    <div class="center">
-  //       <button type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">
-  //         Send
-  //       </button>
-  //     </div>
-  //   </form>
-  // </div>
-  // `;
+  textCtaWrapper.innerHTML = `
+  <div class="text-cta-content text-form">
+    <form action="https://formspree.io/f/xeqdvbaa" method="POST">
+     <input placeholder="Name" type="text"  name="name" required />
+      <input placeholder="Phone Number" type="text" name="phone-number" />
+      <textarea placeholder="Message" name="message" id="" cols="30" rows="5"></textarea>
+     <div class="center">
+        <button type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+  `;
 
-  // backBtn.innerHTML = `
-  //     <span class="back-btn" onclick="goBack()">
-  //      <svg class="checkmark back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.051 30.051">
-  //       <path
-  //        fill="var(--red)"
-  //         d="M7.99,14.943l5.428-4.484c0,0,0.641-0.681,0.641,0.056c0,0.741,0,2.526,0,2.526s0.435,0,1.1,0c1.91,0,5.383,0,6.795,0
-  //          c0,0,0.382-0.101,0.382,0.482c0,0.586,0,3.146,0,3.559c0,0.422-0.319,0.412-0.319,0.412c-1.374,0-4.964,0-6.807,0
-  //           c-0.6,0-1.155,0-1.155,0s0,1.433,0,2.331c0,0.9-0.64,0.12-0.64,0.12S8.478,16.232,7.946,15.7C7.56,15.312,7.99,14.943,7.99,14.943z
-  //           " />
-  //         </svg>
-  //       </span>
-  // `;
+  backBtn.innerHTML = `
+      <span class="back-btn" onclick="goBack()">
+       <svg class="checkmark back" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.051 30.051">
+        <path
+         fill="var(--red)"
+          d="M7.99,14.943l5.428-4.484c0,0,0.641-0.681,0.641,0.056c0,0.741,0,2.526,0,2.526s0.435,0,1.1,0c1.91,0,5.383,0,6.795,0
+           c0,0,0.382-0.101,0.382,0.482c0,0.586,0,3.146,0,3.559c0,0.422-0.319,0.412-0.319,0.412c-1.374,0-4.964,0-6.807,0
+            c-0.6,0-1.155,0-1.155,0s0,1.433,0,2.331c0,0.9-0.64,0.12-0.64,0.12S8.478,16.232,7.946,15.7C7.56,15.312,7.99,14.943,7.99,14.943z
+            " />
+          </svg>
+        </span>
+  `;
 }
 
 function goBack() {
