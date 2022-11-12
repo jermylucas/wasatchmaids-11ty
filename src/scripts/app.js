@@ -34,55 +34,42 @@ let toggleNav = function () {
   }
 };
 
-// Remove spinner if iframe loaded after 2 seconds
-if (document.getElementsByTagName('iframe').length) {
-  document.getElementsByTagName('iframe')[0].onload = () => {
-    setTimeout(() => {
-      if (document.getElementById('spinner')) {
-        document.getElementById('spinner').remove();
-      }
-    }, 1000);
-  };
-}
-
-// Remove spinner if there's no iframe so it doesn't spin forever
-if (document.getElementById('spinner')) {
+window.addEventListener('load', (event) => {
   setTimeout(() => {
-    if (document.getElementById('spinner')) {
-      document.getElementById('spinner').remove();
-    }
-  }, 8000);
-}
+    respTime.style.opacity = '1';
+  }, 1500);
+  console.log('page is fully loaded');
+});
 
-var widget_container = document.getElementById('msgr-widget');
+let widget_container = document.getElementById('text-widget');
+let widget_body = document.getElementById('widget-body');
+let widget = document.getElementById('widget');
+let widget_open = document.getElementById('widget-open');
+let widget_close = document.getElementById('close-btn');
+let respTime = document.getElementById('response-time');
+let textCtaWrapper = document.getElementById('text-cta-wrapper');
+let backBtn = document.getElementById('back-btn');
+let prevHtml;
 
-var open_btn = document.getElementById('contact-btn');
-var widget = document.getElementById('msgrw-body');
-var msgrw = document.getElementById('msgrw');
-var widget_close = document.getElementById('close-btn');
-var widget_msg = document.getElementById('msgrw-msg');
-var widget_avatar = document.getElementById('msgrw-ava');
-
-open_btn.onclick = function () {
-  if (widget.className == 'msgrw-body') {
-    msgrw.className += ' msgrw_opened';
-    widget.className += ' msgrw-body__opened';
+widget_open.onclick = function () {
+  if (widget_body.className == 'widget-body') {
+    widget.className += ' widget_opened';
+    widget_body.className += ' widget-body__opened';
 
     widget_close.innerHTML = `
     <span id="close-btn"> <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" /> <path class="checkmark__check" fill="none" d="M16 16 36 36 M36 16 16 36" /> </svg> </span>`;
   } else {
     widget_close.innerHTML = '';
-    msgrw.className = 'msgrw';
-    widget.className = 'msgrw-body';
+    widget.className = 'msgrw';
+    widget_body.className = 'widget-body';
   }
 };
 
 widget_close.onclick = function () {
-  widget.className = 'msgrw-body';
-  msgrw.className = 'msgrw';
+  widget_body.className = 'widget-body';
+  widget.className = 'widget';
 };
 
-var testing = document.getElementById('time-btn');
 window.mobileCheck = function () {
   let check = false;
   (function (a) {
@@ -99,13 +86,10 @@ window.mobileCheck = function () {
   return check;
 };
 
-setTimeout(() => {
-  testing.style.opacity = '1';
-}, 1500);
-
-let textCtaWrapper = document.getElementById('text-cta-wrapper');
-let backBtn = document.getElementById('back-btn');
-let prevHtml;
+function goBack() {
+  textCtaWrapper.innerHTML = prevHtml;
+  backBtn.innerHTML = '';
+}
 
 function textUs() {
   prevHtml = textCtaWrapper.innerHTML;
@@ -114,8 +98,8 @@ function textUs() {
     let element = document.getElementById('hiddenAppLink');
     element && element.click();
 
-    widget.className = 'msgrw-body';
-    msgrw.className = 'msgrw';
+    widget_body.className = 'widget-body';
+    widget.className = 'msgrw';
   } else {
     textCtaWrapper.innerHTML = `
   <div class="text-cta-content text-form">
@@ -147,10 +131,22 @@ function textUs() {
   }
 }
 
-function goBack() {
-  textCtaWrapper.innerHTML = prevHtml;
-  backBtn.innerHTML = '';
+// Remove spinner if iframe loaded after 2 seconds
+if (document.getElementsByTagName('iframe').length) {
+  document.getElementsByTagName('iframe')[0].onload = () => {
+    setTimeout(() => {
+      if (document.getElementById('spinner')) {
+        document.getElementById('spinner').remove();
+      }
+    }, 1000);
+  };
 }
 
-// Add on "text" click
-//
+// Remove spinner if there's no iframe so it doesn't spin forever
+if (document.getElementById('spinner')) {
+  setTimeout(() => {
+    if (document.getElementById('spinner')) {
+      document.getElementById('spinner').remove();
+    }
+  }, 8000);
+}

@@ -1,0 +1,139 @@
+<div id="text-widget">
+  <div class="widget" id="widget">
+    <div class="widget-wrapper">
+      <div class="widget-body" id="widget-body">
+        <div class="widget-body-wrapper">
+          <div class="text-cta-header">
+            <div class="text-cta-content">
+              <span><strong>Text with us.</strong> Book a home cleaning online, or use our contact form.</span>
+            </div>
+            <div
+              style="
+                width: 125px;
+                height: 125px;
+                border: 5px solid white;
+                bottom: -56px;
+                left: 0px;
+                right: 0px;
+                margin: 15px auto 0px;
+                position: absolute;
+                text-align: center;
+                border-radius: 50%;
+                background-color: white;
+              ">
+              <img style="width: 100px; height: 100px" src="/assets/images/maid_logo.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="text-cta-content" id="text-cta-wrapper">
+            <div class="text-cta-content btns">
+              <div>
+                <a class="button-solid" onclick="textUs()">Text Us</a>
+                <a class="button-solid red" href="/booknow.html" target="_blank">Book Now</a>
+                <a class="button-solid red" href="/contact.html" target="_blank">Contact Form</a>
+                <div style="margin-top: 5px; font-weight: 700; text-align: center">
+                  Or Call Us:
+                  <a style="color: var(--primary-blue); font-weight: 700; text-decoration: none" href="tel:8018212316">
+                    (801) 821-2316
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="hours">
+              <span> Hours of operation </span>
+              <span class="grid"><span> Mon-Fri</span><span></span><span>8am-6pm </span> </span>
+              <span class="grid"><span> Mon-Sat</span><span></span><span>8am-8pm (For estimates) </span> </span>
+            </div>
+          </div>
+        </div>
+        <div id="back-btn"></div>
+        <div id="close-btn" class="close-btn"></div>
+        <a style="display: none" href="sms:8018212316" id="hiddenAppLink"></a>
+      </div>
+      <div id="widget-open" class="widget-open">
+        <button class="response-time" id="response-time">
+          <span
+            style="
+              color: rgb(255, 255, 255);
+              font-size: 10px;
+              font-weight: 700;
+              padding-left: 0px;
+              padding-right: 0px;
+              letter-spacing: normal;
+              text-transform: uppercase;
+            ">
+            <span
+              style="
+                display: flex;
+                align-items: center;
+                place-content: center;
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              ">
+              <span style="display: inline-flex">
+                <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true" style="height: 20px; padding-right: 5px">
+                  <path
+                    fill="#fff"
+                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path>
+                </svg>
+              </span>
+              <span style="color: white; text-transform: capitalize; font-weight: 500; font-size: 11px">
+                Avg. Reply: &lt; 10 minutes
+              </span>
+            </span>
+            <!--
+          <span style="display: flex;
+    align-items: center;
+    place-content: center;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;"
+            >Avg reply: < 10 minutes</span
+          > -->
+          </span>
+        </button>
+        <button class="widget-btn" id="widget-btn">
+          <span class="floating-cta-btn">
+            <span class="cta-text">Text Us</span>
+            <svg class="checkmark cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -3 23 30">
+              <path
+                d="M16.317 23H6.683A1.68 1.68 0 015 21.335V2.665A1.68 1.68 0 016.683 1h9.634C17.241 1 18 1.75 18 2.665v18.67A1.68 1.68 0 0116.317 23zM6.683 1.816a.847.847 0 00-.858.849v18.67c0 .49.396.849.858.849h9.634a.847.847 0 00.858-.849V2.665a.847.847 0 00-.858-.849H6.683z"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="0.5"></path>
+              <path
+                d="M12.886 20.096h-2.738a.38.38 0 01-.396-.392.38.38 0 01.396-.392h2.739a.38.38 0 01.395.392.38.38 0 01-.396.392zM14.404 1.033v1.175c0 .392-.33.718-.726.718H9.322a.728.728 0 01-.725-.718V1.033h-.792v1.175c0 .816.693 1.502 1.517 1.502h4.356c.825 0 1.518-.686 1.518-1.502V1.033h-.792z"
+                fill="#fff"
+                stroke="#fff"
+                stroke-width="0.5"></path>
+            </svg>
+            <!-- <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                focusable="false"
+                style="height: 28px; width: 28px; margin: 0px auto; color: rgb(255, 255, 255)">
+                <path
+                  d="M16.317 23H6.683A1.68 1.68 0 015 21.335V2.665A1.68 1.68 0 016.683 1h9.634C17.241 1 18 1.75 18 2.665v18.67A1.68 1.68 0 0116.317 23zM6.683 1.816a.847.847 0 00-.858.849v18.67c0 .49.396.849.858.849h9.634a.847.847 0 00.858-.849V2.665a.847.847 0 00-.858-.849H6.683z"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="0.5"></path>
+                <path
+                  d="M12.886 20.096h-2.738a.38.38 0 01-.396-.392.38.38 0 01.396-.392h2.739a.38.38 0 01.395.392.38.38 0 01-.396.392zM14.404 1.033v1.175c0 .392-.33.718-.726.718H9.322a.728.728 0 01-.725-.718V1.033h-.792v1.175c0 .816.693 1.502 1.517 1.502h4.356c.825 0 1.518-.686 1.518-1.502V1.033h-.792z"
+                  fill="#fff"
+                  stroke="#fff"
+                  stroke-width="0.5"></path>
+              </svg> -->
+            <!-- </span> -->
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
