@@ -1,43 +1,30 @@
 ---
 layout: layouts/base.html
-activemenu: "contact"
+activemenu: 'contact'
+textUs: true
 meta:
-  title: "Contact | Wasatch Maids"
-  description: "Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning."
-  socialimage: "/assets/images/Ogden-Utah.jpg"
+  title: 'Contact | Wasatch Maids'
+  description: 'Call, text, email, or fill out our online form to contact us at Wasatch Maids in order to schedule your next home, office, or rental cleaning.'
+  socialimage: '/assets/images/Ogden-Utah.jpg'
 about:
-  heroTitle: "Contact Us"
-  heroContent: "We have so many ways you can get in touch!"
+  heroTitle: 'Contact Us'
+  heroContent: 'We have so many ways you can get in touch!'
 ---
 
 <main id="main">
   {% include "hero.html" %}
   <section id="wasatch-form" class="container">
-    <form
-      id="contact-form"
-      name="Contact Form"
-      method="post"
-      data-netlify="true">
+    <form id="contact-form" name="Contact Form" method="post" data-netlify="true">
       <span>Wasatch Maids</span>
       <h3 class="contact-topper">Send a Message</h3>
       <p class="form-p">
-        Please reach out for Commercial, Post-Construction, and Short-term
-        Rental Cleanings.
-        <a class="blue-link" href="tel:801-821-2316">Call</a>,
-        <a class="blue-link" href="sms:801-821-2316"> text</a>,
+        Please reach out for Commercial, Post-Construction, and Short-term Rental Cleanings.
+        <a class="blue-link" href="tel:801-821-2316">Call</a>, <a class="blue-link" href="sms:801-821-2316"> text</a>,
         <a class="blue-link" href="mailto:contact@wasatchmaids.com">email</a>
-        us, or fill out the form below and we will get back to you as soon as
-        possible.
+        us, or fill out the form below and we will get back to you as soon as possible.
       </p>
 
-      <input
-        aria-label="name"
-        class="input1"
-        name="name"
-        placeholder="Name"
-        type="text"
-        tabindex="1"
-        required />
+      <input aria-label="name" class="input1" name="name" placeholder="Name" type="text" tabindex="1" required />
       <input
         aria-label="email"
         class="input1 right"
@@ -65,17 +52,12 @@ about:
       <textarea
         aria-label="write your message"
         name="message"
-        placeholder="Tell us about your project"
+        placeholder="Tell us more..."
         tabindex="5"
         required></textarea>
 
       <p class="form-submit">
-        <button
-          name="submit"
-          type="submit"
-          id="contact-submit"
-          class="primary button-solid"
-          data-submit="...Sending">
+        <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">
           Submit
         </button>
       </p>
@@ -90,7 +72,12 @@ about:
         <a href="mailto:contact@wasatchmaids.com">contact@wasatchmaids.com</a>
       </p>
       <h3>Working Hours</h3>
-      <p>Mon to Fri: 8am to 6pm</p>
+      <div>
+        <p>
+          Mon to Fri: 8am to 6pm <br />
+          Mon to Sat: 8am to 8pm for estimates
+        </p>
+      </div>
     </div>
   </section>
 </main>

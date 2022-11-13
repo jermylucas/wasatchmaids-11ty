@@ -1,14 +1,15 @@
 ---
 layout: layouts/service-area.html
-activemenu: "locations"
+activemenu: 'locations'
+textUs: true
 tags: serviceareanav
-navurl: "ogden"
+navurl: 'ogden'
 meta:
-  title: "Premium Cleaning Services in Ogden, Utah | Wasatch Maids"
-  description: "Looking for house cleaning, office cleaning, or maid services in Ogden? Wasatch Maids is the company that offers the best cleaning services. Book your home cleaning in 60 seconds."
-  socialimage: "/assets/images/Ogden-Utah.jpg"
+  title: 'Premium Cleaning Services in Ogden, Utah | Wasatch Maids'
+  description: 'Looking for house cleaning, office cleaning, or maid services in Ogden? Wasatch Maids is the company that offers the best cleaning services. Book your home cleaning in 60 seconds.'
+  socialimage: '/assets/images/Ogden-Utah.jpg'
 about:
-  city: "Ogden"
+  city: 'Ogden'
 heading:
   intro: " Wasatch Maids ensures you'll love your professional home cleaners in
     Ogden, Utah and we have dedicated cleaners and maids to keep your home
@@ -17,11 +18,11 @@ heading:
     and fair cleaning service can be booked online in less than 60
     seconds."
   image:
-    url: "/assets/images/Ogden-Utah.jpg"
-    text: "Sign that says It pays to live in Ogden home of Weber State University in Ogden, Utah"
+    url: '/assets/images/Ogden-Utah.jpg'
+    text: 'Sign that says It pays to live in Ogden home of Weber State University in Ogden, Utah'
 main:
   text: "We know it's not easy picking a maid service or cleaning company. Wasatch Maids has a small, dedicated team of professionals to clean your home. Whether you're by Weber State, in North Ogden, South Ogden, or anything in between, Wasatch Maids provides home cleaning and maid services near you."
-  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96030.62898905447!2d-112.04271385851796!3d41.22270413111622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530e94da9c4d7b%3A0x61dcd77b34b32c!2sOgden%2C+UT!5e0!3m2!1sen!2sus!4v1482436098799"
+  map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96030.62898905447!2d-112.04271385851796!3d41.22270413111622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530e94da9c4d7b%3A0x61dcd77b34b32c!2sOgden%2C+UT!5e0!3m2!1sen!2sus!4v1482436098799'
 ---
 
 <section class="section_text">

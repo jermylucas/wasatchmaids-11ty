@@ -1,6 +1,7 @@
 ---
 layout: layouts/service-area.html
 activemenu: "locations"
+textUs: true
 tags: serviceareanav
 navurl: "roy"
 meta:
