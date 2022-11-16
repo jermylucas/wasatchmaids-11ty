@@ -1,0 +1,401 @@
+---
+layout: layouts/base.html
+activemenu: 'careers'
+banner: 'questions'
+meta:
+  title: 'House Cleaning Application | Wasatch Maids'
+  description: 'Apply to be a house cleaner with us at Wasatch Maids and start working with a company that actually cares about you.'
+  socialimage: '/assets/images/Ogden-Utah.jpg'
+about:
+  heroTitle: 'Work With Us'
+  heroContent: 'We are always looking for dedicated cleaners. Great pay & flexible hours!'
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <div class="description">
+        <h3>Job Description</h3>
+        <div class="text-content">
+          <p>
+            Here at Wasatch Maids, we hold our cleaners up to a high standard. Working as a team, being honest, having
+            great communication, and being able to provide great customer service are all extremely important to us.
+          </p>
+          <p>
+            Work from home answering phones, emails, and solving customer and team member issues. Manage schedules, and
+            help deliver on our <span class="key blue">#1 promise: extremely detailed and quality cleaning</span>.
+          </p>
+          <p>
+            You'll be responsible not only for helping customer, but also the teams that clean for them. Setting
+            expectations, solving issues, setting up schedules, and passing on feedback to the team.
+          </p>
+        </div>
+        <div class="text-content">
+          <h3>Benefits</h3>
+          <ul>
+            <li>Weekly pay</li>
+            <li>Work with a company that cares</li>
+            <li>Set your working days</li>
+            <li>Management opportunity</li>
+            <li>Salary pay, plus a percentage of profit</li>
+            <li>Flexible work that is from home 99% of the time</li>
+          </ul>
+          <h3>Requirements</h3>
+          <ul>
+            <li>Respond to texts and calls quickly</li>
+            <li>Being self-reliant</li>
+            <li>Go above and beyond to deliver on our #1 promise</li>
+            <li>Ability to use logic and critical thinking skills</li>
+            <li>Great english written and verbal communication skills</li>
+            <li>Speak Spanish (fluency not required, just basic conversational)</li>
+            <li>Know the basics of operating a computer and smartphone</li>
+          </ul>
+          <h3>Responsibilities</h3>
+          <ul>
+            <li>Answer calls, texts, and emails in a timely manner</li>
+            <li>Be <i>available</i> betweeen 7:30am - 6:00pm</li>
+            <li>Set up appointments and make sales</li>
+            <li>Make a great impression with the customer</li>
+            <li>
+              Detect if a customer may be an issue in the future and do what's needed to fix issues before they arrive
+            </li>
+            <li>Set up and manage cleaner schedules based on their availability and the customer addresses</li>
+          </ul>
+          <p>
+            We're looking for someone who has logical and critical thinking skills as well as the skills to keep
+            customers happy. If you can think for yourself and use problem solving skills this may be the job for you.
+            Being able to deliver on our #1 promise means doing whatever is needed to ensure and detailed clean that
+            meets all expectations.
+          </p>
+          <p>
+            This job is work from home 99% of the time (unless it requires you to individually help deliver on the #1
+            promise), so requires you to be able to manage your own time and get tasks done. There is a lot of
+            flexibility, since some days there is a lot to do and other days not much at all. Being able to manage your
+            time and stay motivated while working remotely is extremely important.
+          </p>
+          <h3>Bonus</h3>
+          <ul>
+            <li>You have sales or customer service experience</li>
+            <li>You are able to work sometimes on Saturdays</li>
+          </ul>
+          <br />
+          <div>
+            If you think this is the job for you, please apply below or call/text Jeremy for more information
+            <a class="key blue" href="sms:8018216846">(801) 821-6848</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <form method="post" name="Job Application" method="post" data-netlify="true">
+        <div class="form-body">
+          <fieldset class="grid-2">
+            <legend>
+              <h3>Name <span class="required">(Required)</span></h3>
+            </legend>
+            <input aria-label="first-name" name="first-name" placeholder="First Name" type="text" required />
+            <input aria-label="last-name" name="last-name" placeholder="Last Name" type="text" required />
+          </fieldset>
+          <fieldset class="grid-2">
+            <legend>
+              <h3>Contact Info <span class="required">(Required)</span></h3>
+            </legend>
+            <input aria-label="phone" name="phone" placeholder="Phone Number" type="tel" required />
+            <input aria-label="email" name="email" placeholder="E-mail" type="email" required />
+          </fieldset>
+          <fieldset>
+            <h3>
+              What's Your Preferred Contact Method?
+              <span class="required">(Required)</span>
+            </h3>
+            <select name="contactmethod" aria-label="contactmethod" required>
+              <option value="" selected="selected">Select One...</option>
+              <option value="Phone">Phone</option>
+              <option value="Email">Email</option>
+              <option value="Text">Text</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>Address <span class="required">(Required)</span></h3>
+              <input aria-label="address1" name="address1" placeholder="Street Address" type="text" required />
+              <input aria-label="address2" name="address2" placeholder="Address Line 2" type="text" />
+              <div class="grid-2">
+                <input aria-label="city" name="city" placeholder="City" type="text" required />
+                <input aria-label="state" name="state" placeholder="State" type="text" required />
+                <input aria-label="zip" name="zip" placeholder="Zip Code" type="tel" required />
+                <input aria-label="country" name="country" placeholder="Country" type="text" required />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>
+                Are You Currently Working?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="yesWorking" name="currently-working" value="Yes" />
+                  Yes</label
+                >
+              </div>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="noWorking" name="currently-working" value="No" />
+                  No</label
+                >
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have paid cleaning experience?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label> <input type="radio" required id="yesExperience" name="has-experience" value="Yes" />Yes </label>
+              </div>
+              <div class="choice">
+                <label> <input type="radio" required id="noExperience" name="has-experience" value="No" />No </label>
+              </div>
+              <p>
+                Please describe the type of experience, what types of people or businesses paid you to clean, and how
+                many years of experience you have. (if none, please say so)
+                <span class="required">(Required)</span>
+              </p>
+              <textarea
+                cols="30"
+                rows="10"
+                name="experience-response"
+                placeholder="Enter your response here"
+                required></textarea>
+            </div>
+            <div>
+              <h3>
+                Are you looking for full-time or part-time work?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="fullTime" name="full-or-part-time" value="Full Time" />Full-time
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="partTime" name="full-or-part-time" value="Part Time" />Part-time
+                </label>
+              </div>
+            </div>
+            <!-- <div>
+              <h3>
+                For full-time work, occasionally the first 1 or 2 weeks are part
+                time as we increase our client base. Is this okay?
+                <span class="required">(Required)</span>
+              </h3>
+              <p>
+                <em
+                  >Usually we are able to start everyone full time on the Monday
+                  following their employment. However, sometimes the first 1-2
+                  weeks are around 20-30 hours. If you need full-time right
+                </em>
+              </p>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="yesOkay"
+                    name="part-time-at-first"
+                    value="Yes"
+                  />Yes, this is okay
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    type="radio"
+                    required
+                    id="notOkay"
+                    name="part-time-at-first"
+                    value="No"
+                  />No, I need full-time right away
+                </label>
+              </div>
+            </div> -->
+            <div>
+              <h3>
+                Do you have any allergies to pets and fur, asthma, or similar condition?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label> <input type="radio" required id="yesAllergies" name="has-allergies" value="Yes" />Yes </label>
+              </div>
+              <div class="choice">
+                <label> <input type="radio" required id="noAllergies" name="has-allergies" value="No" />No </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have daily access to the internet on your phone?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label> <input type="radio" required id="yesInternet" name="has-internet" value="Yes" />Yes </label>
+              </div>
+              <div class="choice">
+                <label> <input type="radio" required id="noInternet" name="has-internet" value="No" />No </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have a valid Driver's License?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label> <input type="radio" required name="has-license" value="Yes" />Yes </label>
+              </div>
+              <div class="choice">
+                <label> <input type="radio" required name="has-license" value="No" />No </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Do you have a vehicle that you are comfortable driving to and from houses in various nearby cities?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="yesVehicle" name="has-vehicle" value="Yes" />
+                  Yes</label
+                >
+              </div>
+              <div class="choice">
+                <label>
+                  <input type="radio" required id="noVehicle" name="has-vehicle" value="No" />
+                  No</label
+                >
+              </div>
+            </div>
+            <div>
+              <h3>Which days are you available to work?<span class="required">(Required)</span></h3>
+              <p>Select all that apply</p>
+              <div class="choice">
+                <label>
+                  <input name="working-days" id="daySunday" type="checkbox" value="Sunday" />
+                  Sunday</label
+                >
+              </div>
+              <div class="choice">
+                <label> <input name="working-days" id="dayMonday" type="checkbox" value="Monday" />Monday </label>
+              </div>
+              <div class="choice">
+                <label> <input name="working-days" id="dayTuesday" type="checkbox" value="Tuesday" />Tuesday </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input name="working-days" id="dayWednesday" type="checkbox" value="Wednesday" />Wednesday
+                </label>
+              </div>
+              <div class="choice">
+                <label> <input name="working-days" id="dayThursday" type="checkbox" value="Thursday" />Thursday </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input name="working-days" id="dayFriday" type="checkbox" value="Friday" />
+                  Friday
+                </label>
+              </div>
+              <div class="choice">
+                <label> <input name="working-days" id="daySaturday" type="checkbox" value="Saturday" />Saturday </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Is there a specific time you need to be off work by each day?
+                <span class="required">(Required)</span>
+              </h3>
+              <input type="text" name="off-work-by" required />
+            </div>
+            <div>
+              <h3>
+                Do you have a target pay rate in mind?
+                <span class="required">(Required)</span>
+              </h3>
+              <input type="text" name="pay-rate" required />
+            </div>
+            <div>
+              <h3>
+                Which language(s) do you speak?
+                <span class="required">(Required)</span>
+              </h3>
+              <p>Select all that apply</p>
+              <div class="choice">
+                <label> <input name="languages" id="english" type="checkbox" value="english" />English </label>
+              </div>
+              <div class="choice">
+                <label> <input name="languages" id="spanish" type="checkbox" value="spanish" />Spanish </label>
+              </div>
+              <div class="choice">
+                <label> <input name="languages" id="other" type="checkbox" value="other" />Other </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Our company also does after-hours office cleanings (usually after 5pm). Is this something you would be
+                interested in doing?
+                <span class="required">(Required)</span>
+              </h3>
+              <div class="choice">
+                <label>
+                  <input name="office-cleaning" id="noOffice" type="radio" value="No" required />No, I only want to do
+                  house cleaning during normal hours
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input
+                    name="office-cleaning"
+                    id="bothOffice"
+                    type="radio"
+                    value="Yes House and Office"
+                    required />Yes, I would like to do this in addition to house cleaning
+                </label>
+              </div>
+              <div class="choice">
+                <label>
+                  <input name="office-cleaning" id="onlyOffice" type="radio" value="Yes Only Office" required />
+                  Yes, I want to only do office cleans after-hours (no houses)
+                </label>
+              </div>
+            </div>
+            <div>
+              <h3>
+                Tell us a little bit about yourself.
+                <span class="required">(Required)</span>
+              </h3>
+              <textarea name="about-me-message" cols="30" rows="5" required></textarea>
+            </div>
+            <div>
+              <h3>
+                What would make this the best job ever for you?
+                <span class="required">(Required)</span>
+              </h3>
+              <textarea name="best-job-ever-message" cols="30" rows="5" required></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>How did you hear about this opportunity?</h3>
+            </div>
+            <input type="text" name="heard-opportunity" placeholder="Enter your response here" />
+          </fieldset>
+        </div>
+        <p class="form-submit" style="justify-content: flex-start">
+          <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">
+            Apply
+          </button>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>
