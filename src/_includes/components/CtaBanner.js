@@ -1,4 +1,4 @@
-const { html } = require("common-tags");
+const { html } = require('common-tags');
 
 function CtaBanner({ text, btnText, btnLink, dark }) {
   return html`
@@ -7,7 +7,7 @@ function CtaBanner({ text, btnText, btnLink, dark }) {
         <div class="cta-grid">
           <h4 class="cta-grid-text">${text}</h4>
           <div class="cta-grid-btn">
-            <a class="button-solid-small" href="${btnLink}">${btnText}</a>
+            <a class="button-solid-small" href="${btnLink}" aria-label="Book with us">${btnText}</a>
           </div>
         </div>
       </div>
