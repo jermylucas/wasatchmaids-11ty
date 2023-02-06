@@ -82,7 +82,7 @@
     <div class="call-nav-body questions">
       <div>
         <p class="call-nav-phone">
-         Preguntas? Llámenos o envíenos un mensaje: <a href="tel:8018212316"> (801) 821-2316 </a>
+         Preguntas? Llámenos o envíenos un mensaje: <a href="tel:8018212316" aria-label="Call us" > (801) 821-2316 </a>
         </p>
       </div>
       </div>
@@ -95,7 +95,7 @@
     <div class="navbar-menu">
     {% endif %}
       <div id="side-menu" class="side-nav">
-        <a class="nav-logo" href="/index.html">
+        <a class="nav-logo" href="/index.html" aria-label="Go to our main landing page">
           <img
             class="light"
             aria-hidden="true"
@@ -106,36 +106,37 @@
         </a>
         <ul id="on-top" class="navbar-links">
           <li class="nav-li">
-            <a {% if activemenu === 'home' %} class="active-menu" {% endif %} href="/index.html">Home</a>
+            <a {% if activemenu === 'home' %} class="active-menu" {% endif %} href="/index.html" aria-label="Read about us and our services">Home</a>
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html">Services </a>
+              <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html" aria-label="View all our cleaning services">Services </a>
               <div class="dropdown-list">
-                <a href="/cleaning-services.html" class="dropdown-item"
+                <a href="/cleaning-services.html" class="dropdown-item" aria-label="View all our cleaning services"
                   >All Services</a
                 >
-                <a href="/cleaning-services/house-cleaning.html" class="dropdown-item"
+                <a href="/cleaning-services/house-cleaning.html" class="dropdown-item" aria-label="Read about our residential cleaning services"
                   >Residential Cleaning</a
                 >
                 <a
+                  aria-label="Read about our deep cleaning services"
                   href="/cleaning-services/deep-cleaning.html"
                   class="dropdown-item"
                   >Deep Cleaning</a
                 >
-                <a href="/cleaning-services/move-in-move-out-cleaning.html" class="dropdown-item"
+                <a href="/cleaning-services/move-in-move-out-cleaning.html" class="dropdown-item" aria-label="Read about our move in and move out cleaning services"
                   >Move-in Move-out</a
                 >
-                <a href="/cleaning-services/post-construction-cleaning.html" class="dropdown-item"
+                <a href="/cleaning-services/post-construction-cleaning.html" class="dropdown-item" aria-label="Read about our post-construction cleaning services"
                   >Post-Construction</a
                 >
-                <a href="/cleaning-services/office-cleaning.html" class="dropdown-item"
+                <a href="/cleaning-services/office-cleaning.html" class="dropdown-item" aria-label="Read about our janitorial cleaning services"
                   >Janitorial Services</a
                 >
-                <a href="/cleaning-services/office-cleaning.html" class="dropdown-item"
+                <a href="/cleaning-services/office-cleaning.html" class="dropdown-item" aria-label="Read about our office cleaning services"
                   >Office Cleaning</a
                 >
-                <a href="/contact.html" class="dropdown-item"
+                <a href="/contact.html" class="dropdown-item" aria-label="Read about our rental and short term rental cleaning services"
                   >Rental Cleaning</a
                 >
               </div>
@@ -143,15 +144,16 @@
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html">Locations </a>
+              <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html" aria-label="View all our cleaning locations">Locations </a>
               <div class="dropdown-list">
-                <a href="/cleaning-service-areas.html" class="dropdown-item"
+                <a href="/cleaning-service-areas.html" class="dropdown-item" aria-label="View all our cleaning locations"
                   >All Locations</a
                 >
                 {% for page in collections.serviceareanav %}
                 <a
                   href="/cleaning-service-areas/{{ page.data.navurl }}.html"
                   class="dropdown-item"
+                  aria-label="Read about our {{page.data.about.city}} cleaning services"
                   >{{ page.data.about.city }} Cleaning Services</a
                 >
                 {% endfor %}
@@ -159,11 +161,11 @@
             </div>
           </li>
           <li class="nav-li">
-            <a {% if activemenu === 'blog' %} class="active-menu" {% endif %} href="/blog/">Blog</a>
+            <a {% if activemenu === 'blog' %} class="active-menu" {% endif %} href="/blog/" aria-label="Read our blog">Blog</a>
           </li>
-          <li {% if activemenu === 'contact' %} class="active-menu" {% endif %} class="nav-li"><a href="/contact.html">Contact</a></li>
+          <li {% if activemenu === 'contact' %} class="active-menu" {% endif %} class="nav-li"><a href="/contact.html" aria-label="Use our contact form to get in touch and find other ways to contact us">Contact</a></li>
           <li class="nav-li">
-            <a {% if activemenu === 'booknow' %} class="active-menu button-solid" {% endif %} class="button-solid" href="/booknow.html">Book Now</a>
+            <a {% if activemenu === 'booknow' %} class="active-menu button-solid" {% endif %} class="button-solid" href="/booknow.html" aria-label="Book online using our web portal">Book Now</a>
           </li>
         </ul>
       </div>
