@@ -1,0 +1,60 @@
+---
+layout: layouts/base.html
+activemenu: 'careers'
+noindex: true
+eleventyExcludeFromCollections: true
+banner: 'tools'
+meta:
+  title: 'Tools | Wasatch Maids'
+  description: 'Read and learn about facts, home cleaning tips, how to guides, and updates from Wasatch Maids.'
+  socialimage: '/assets/images/Ogden-Utah.jpg'
+about:
+  heroTitle: 'Wasatch Maids Tools'
+  heroContent: 'Tools and Resources to get the job done best'
+---
+
+<main>
+  {% include "hero.html" %}
+
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content">
+        <form method="post" name="Job Application" method="post" data-netlify="true">
+          <div class="form-body">
+            <div>
+              <h3>Bi-Weekly Meeting Topic</h3>
+              <p>
+                We try to have meetings every 2 weeks on Monday morning. Please feel free to submit anything specific
+                that you'd like to talk about in the upcoming meeting. /
+                <em>
+                  Tratamos de tener reuniones cada 2 semanas los lunes por la mañana. No dude en enviar cualquier cosa
+                  específica de la que le gustaría hablar en la próxima reunión.
+                </em>
+              </p>
+              <p>
+                What is something you'd like to bring up or talk about in the next bi-weekly meeting? /
+                <em>Qué es algo que le gustaría mencionar o hablar en la próxima reunión quincenal?</em>
+              </p>
+              <textarea
+                cols="30"
+                rows="5"
+                name="experience-response"
+                placeholder="Enter your response here"
+                required></textarea>
+            </div>
+          </div>
+          <p class="form-submit" style="justify-content: flex-start">
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              class="primary button-solid"
+              data-submit="...Sending">
+              Submit
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
