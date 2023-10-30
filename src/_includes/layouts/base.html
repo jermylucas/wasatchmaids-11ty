@@ -83,13 +83,11 @@
           <span>Team member ${i + 1}</span>
           <select name="team-member-${i + 1}" aria-label="team-member-1" required>
             <option value="" selected>Select one....</option>
-            <option value="Alicia">Alicia</option>
-            <option value="Glenda">Glenda</option>
+            <option value="Teherly">Teherly</option>
+            <option value="Angela">Angela</option>
             <option value="Guadalupe">Guadalupe</option>
             <option value="Luz">Luz</option>
-            <option value="Valentin">Valentin</option>
-            <option value="Eva">Eva</option>
-            <option value="Adam">Adam</option>
+            <option value="Isabel">Isabel</option>
             <option value="Jeremy">Jeremy</option>
             <option value="Michell">Michell</option>
           </select>
@@ -116,8 +114,8 @@
       function relatedToBooking(val) {
         if (val === 'Yes') {
           document.getElementById('customer-involved').innerHTML = `
-       <legend><h3>Customer Name & Booking ID<span class="required">(Required)</span></h3></legend>
-            <div class="grid-2"><div><input type="text" name="customer-name" required placeholder="Customer Name" /><input type="text" name="booking-id" required placeholder="Booking ID" /> </div></div>`;
+       <legend><h3>Customer Name & Booking ID (if known)<span class="required">(Required)</span></h3></legend>
+            <div class="grid-2"><div><input type="text" name="customer-name" required placeholder="Customer Name" /><input type="text" name="booking-id" placeholder="Booking ID" /> </div></div>`;
         } else {
           document.getElementById('customer-involved').innerHTML = '';
         }

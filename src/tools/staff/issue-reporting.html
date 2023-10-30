@@ -1,16 +1,16 @@
 ---
 layout: layouts/base.html
-activemenu: "careers"
-banner: "tools"
+activemenu: 'careers'
+banner: 'tools'
 noindex: true
 eleventyExcludeFromCollections: true
 meta:
-  title: "Issue Reporting | Wasatch Maids"
-  description: "Issue reporting for all types of issues from theft to tardiness"
-  socialimage: ""
+  title: 'Issue Reporting | Wasatch Maids'
+  description: 'Issue reporting for all types of issues from theft to tardiness'
+  socialimage: ''
 about:
-  heroTitle: "Issue Reporting"
-  heroContent: "Submit this form to track all issues"
+  heroTitle: 'Issue Reporting'
+  heroContent: 'Submit this form to track all issues'
 ---
 
 <main id="main">
@@ -24,7 +24,7 @@ about:
         class="tools-form"
         method="post">
         <div class="form-body">
-          <fieldset class="grid-2">
+          <!-- <fieldset class="grid-2">
             <legend>
               <h3>
                 Name of Person Submitting
@@ -43,25 +43,18 @@ about:
               placeholder="Last Name"
               type="text"
               required />
-          </fieldset>
+          </fieldset> -->
           <fieldset>
             <h3>
               Client Complaint of Internal Issue?
               <span class="required">(Required)</span>
             </h3>
+            <div>*Client Complaint: A customer had an issue with a service that was done.</div>
             <div>
-              *Client Complaint: A customer had an issue with a service that was
-              done.
-            </div>
-            <div>
-              *Internal Issue: Any other issue that didn't involve a service. An
-              example would be a last-minute change to a teams schedule.
+              *Internal Issue: An issue that didn't involve a customer. An example would be not showing up to work.
             </div>
             <div class="grid-2">
-              <select
-                name="complaint-type"
-                aria-label="complaint-type"
-                required>
+              <select name="complaint-type" aria-label="complaint-type" required>
                 <option value="" selected="selected">Select One...</option>
                 <option value="client-complaint">Client Complaint</option>
                 <option value="internal-issue">Internal Issue</option>
@@ -77,11 +70,7 @@ about:
             </legend>
             <div>
               <span>How many workers were involved?</span>
-              <select
-                name="cleaners-at-job"
-                id="cleaners-at-job"
-                required
-                onchange="workersOnJob(value)">
+              <select name="cleaners-at-job" id="cleaners-at-job" required onchange="workersOnJob(value)">
                 <option value="" selected>Select One...</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -100,15 +89,8 @@ about:
             </legend>
             <div class="grid-2">
               <div>
-                <span
-                  >On the way to a cleaning, happened while cleaning, or a
-                  customer is involved</span
-                >
-                <select
-                  name="related-to-booking"
-                  id="related-to-booknig"
-                  required
-                  onchange="relatedToBooking(value)">
+                <span>On the way to a cleaning, happened while cleaning, or a customer is involved</span>
+                <select name="related-to-booking" id="related-to-booknig" required onchange="relatedToBooking(value)">
                   <option value="" selected>Select One...</option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
@@ -126,27 +108,35 @@ about:
                 </h3>
                 <select name="issue-type" aria-label="issue-type" required>
                   <option value="" selected>Select One...</option>
-                  <option value="attention-to-detail">
-                    Attention to Detail
-                  </option>
-                  <option value="accusation-of-theft">
-                    Accusation of Theft
-                  </option>
-                  <option value="communication-issue">
-                    Communication Issue (team not at fault)
-                  </option>
-                  <option value="customer-issues">
-                    Customer Issue (team not at fault)
-                  </option>
+                  <option value="attention-to-detail">Attention to Detail</option>
+                  <option value="accusation-of-theft">Accusation of Theft</option>
+                  <option value="broken-items">Broken Items</option>
+                  <option value="communication-issue">Communication Issue</option>
+                  <option value="customer-issues">Customer Issue</option>
+                  <option value="didnt-show-up">Didn't Show Up To Work</option>
                   <option value="dishonesty">Dishonesty</option>
                   <option value="timeliness">Timeliness</option>
-                  <option value="last-minute-reschedule">
-                    Last Minute Reschedule
-                  </option>
+                  <option value="last-minute-reschedule">Last Minute Reschedule</option>
                   <option value="possible-injury">Possible Injury</option>
                   <option value="Other">Other</option>
                 </select>
               </span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h3>
+                Are the cleaers at fault?
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <div class="grid-2">
+              <select name="cleaners-at-fault" id="related-to-booknig" required>
+                <option value="" selected>Select One...</option>
+                <option value="at-fault">At Fault</option>
+                <option value="not-at-fault">Not At Fault</option>
+                <option value="unknown">Unknown</option>
+              </select>
             </div>
           </fieldset>
           <fieldset>
@@ -156,15 +146,10 @@ about:
                 <span class="required">(Required)</span>
               </h3>
               <span
-                >What was the nature of the complaint? Be as detailed as
-                possible without any accusatory or offensive language.</span
+                >What was the nature of the complaint? Be as detailed as possible without any accusatory or offensive
+                language.</span
               >
-              <textarea
-                placeholder=""
-                cols="30"
-                rows="5"
-                name="issue-details"
-                required></textarea>
+              <textarea placeholder="" cols="30" rows="5" name="issue-details" required></textarea>
             </div>
           </fieldset>
           <fieldset class="grid-2">
@@ -188,17 +173,14 @@ about:
             </legend>
             <div>
               <span>Did we get any photos from the cleaners or customers?</span>
-              <select
-                name="received-pictures"
-                aria-label="received-pictures"
-                required>
+              <select name="received-pictures" aria-label="received-pictures" required>
                 <option value="" selected="selected">Select One...</option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
               </select>
             </div>
           </fieldset>
-          <fieldset class="grid-2">
+          <!-- <fieldset class="grid-2">
             <legend>
               <h3>
                 Did we have to spend money to fix this issue?
@@ -241,18 +223,20 @@ about:
                 placeholder="MM"
                 style="width: 75px" />
             </div>
-          </fieldset>
+          </fieldset> 
         </div>
-        <p class="form-submit" style="justify-content: flex-start">
-          <button
-            name="submit"
-            type="submit"
-            id="contact-submit"
-            class="primary button-solid"
-            data-submit="...Sending">
-            Submit
-          </button>
-        </p>
+        -->
+          <p class="form-submit" style="justify-content: flex-start">
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              class="primary button-solid"
+              data-submit="...Sending">
+              Submit
+            </button>
+          </p>
+        </div>
       </form>
     </div>
   </section>
