@@ -731,6 +731,11 @@
     width: 100%;
     margin: 20px auto;
   }
+  .text-content h2,
+  .text-content h3,
+  .text-content h4 {
+    font-weight: 500;
+  }
   .text-content p {
     margin: 20px auto;
   }
@@ -2116,8 +2121,8 @@
   }
   section.cta-banner,
   section.cta-banner-dark {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 
   .cta-grid {

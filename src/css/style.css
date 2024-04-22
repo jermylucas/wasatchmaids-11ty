@@ -640,8 +640,11 @@
     width: 96%;
     max-width: 66em;
   }
+  #reviews .container:first-of-type {
+    margin-bottom: 5em;
+  }
   #reviews .button-solid {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .normal-weight h1,
   .normal-weight h2,
@@ -820,8 +823,9 @@
     justify-content: space-between;
     padding: 0;
   }
+
   #reviews .button-solid {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   #contact-hero .container,
   #generic-hero .container {
