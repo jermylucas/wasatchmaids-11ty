@@ -13,43 +13,30 @@
             <br />
             {% if about.service === NaN %}
             <br />
-            Manage appointments online, and get e-mail or SMS reminders when
-            your cleaning is coming up.
-            <br /><a class="blue-link" href="/home-cleaning-checklist.html"
-              >View Residential Cleaning Checklist</a
-            >
+            Manage appointments online, and get e-mail or SMS reminders when your cleaning is coming up.
+            <br /><a class="blue-link" href="/home-cleaning-checklist.html">View Residential Cleaning Checklist</a>
             {% endif %} {% if heading.cta === 'contact' %}
-            <a
-              style="width: 110px; margin-top: 10px; margin-right: 10px"
-              class="button-solid"
-              href="/contact.html"
+            <a style="width: 110px; margin-top: 10px; margin-right: 10px" class="button-solid" href="/contact.html"
               >Contact</a
             >
-            {% endif %} {% if (about.service) and (heading.cta !== 'contact') %}
-            Questions? Give us a
+            {% endif %} {% if (about.service) and (heading.cta !== 'contact') %} Questions? Give us a
             <a class="blue-link" href="tel:801-821-2316">call</a>, send us a
             <a class="blue-link" href="sms:8018212316">text</a>, or
-            <a class="blue-link" href="mailto:contact@wasatchmaids.com"
-              >e-mail</a
-            >
+            <a class="blue-link" href="mailto:contact@wasatchmaids.com">e-mail</a>
             us!
           </p>
           <span>
             {% if heading.cta !== 'contact' %}
-            <a
-              style="width: 150px; margin-top: 10px; margin-right: 10px"
-              class="button-solid"
-              href="/booknow.html"
+            <a style="width: 150px; margin-top: 10px; margin-right: 10px" class="button-solid" href="/booknow.html"
               >Book Now</a
             >
-            {% endif %} {% if (navurl === 'house-cleaning') or (navurl ===
-            'deep-cleaning') %}
-            <a
+            {% endif %} {% if (navurl === 'house-cleaning') or (navurl === 'deep-cleaning') %}
+            <!-- <a
               style="width: 150px; margin-top: 10px; margin-right: 10px"
               class="button-solid green"
               href="/home-cleaning-checklist.html"
               >View Checklist</a
-            >
+            > -->
             {% endif %}
           </span>
           {% endif %}

@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0px) {
   #hero {
     height: auto;
-    background: url("/assets/images/kitchen2.jpg");
+    background: url('/assets/images/kitchen2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
   }
 
   #hero:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -41,7 +41,7 @@
   #contact-hero,
   #generic-hero {
     height: max-content;
-    background: url("/assets/images/kitchen2.jpg");
+    background: url('/assets/images/kitchen2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,7 +70,7 @@
 
   #contact-hero:before,
   #generic-hero:before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
@@ -187,12 +187,8 @@
     border-bottom: 3px solid var(--green);
     position: relative;
     background-color: var(--primary-blue);
-    background-image: url("/assets/images/bg-shape.png");
-    background: repeating-conic-gradient(
-      at 50% 60%,
-      #00aad8 0 10deg,
-      var(--primary-blue) 10deg 20deg
-    );
+    background-image: url('/assets/images/bg-shape.png');
+    background: repeating-conic-gradient(at 50% 60%, #00aad8 0 10deg, var(--primary-blue) 10deg 20deg);
     /* background: radial-gradient(circle at center, #01b3e4, #17a6ce); */
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
@@ -279,7 +275,7 @@
   }
 
   .banner_card:after {
-    content: url("/assets/images/star-figure.png");
+    content: url('/assets/images/star-figure.png');
     position: absolute;
     top: 0;
     right: 0;
@@ -382,7 +378,7 @@
     margin-bottom: 20px;
   }
   .card-content button:before {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -10px;
     width: 86px;
@@ -795,7 +791,7 @@
   }
 
   #features-section {
-    margin: 40px auto 0px auto;
+    margin: 30px auto 0px auto;
   }
 
   #reviews {
@@ -1069,7 +1065,7 @@
     margin: auto 40px;
   } */
   #banner {
-    padding: 50px 0;
+    padding: 40px 0;
   }
   .banner-container {
     max-width: 1200px;
