@@ -1,37 +1,39 @@
 ---
 layout: layouts/service-area.html
-activemenu: 'locations'
+activemenu: "locations"
 textUs: true
 tags: serviceareanav
-navurl: 'ogden'
+navurl: "eden"
 meta:
-  title: 'The Ogden Cleaning Service You Can Trust and Count On - House Cleaning, Airbnb Cleaning, Office Cleaning, and Post-Construction Cleaning in Ogden, Utah'
-  description: 'Wasatch Maids is a top-rated cleaning company. Our values are clear: Clean. Honest. Thorough. Fair. From easy online bookings, to outstanding customer service, to high-quality home, post-construction and commercial cleaning - our clients receive the best experience for their needs.'
-  socialimage: '/assets/images/Ogden-Utah.jpg'
+  title: "Eden Cleaning Service You Can Trust and Count On - House Cleaning, Airbnb Cleaning, Office Cleaning, and Post-Construction Cleaning in Eden, Hunstville, Liberty Utah "
+  description: "Wasatch Maids is a top-rated cleaning company. Our values are clear: Clean. Honest. Thorough. Fair. From easy online bookings, to outstanding customer service, to high-quality home, post-construction and commercial cleaning - our clients receive the best experience for their needs."
+  socialimage: "/assets/images/Eden-Utah.jpg"
 about:
-  city: 'Ogden'
+  city: "Eden"
 heading:
   intro: " Wasatch Maids ensures you'll love your professional home cleaners in
-    Ogden, Utah and we have dedicated cleaners and maids to keep your home
+    Eden, Utah and we have dedicated cleaners and maids to keep your home
     feeling fresh. Our office is located in central Ogden, so your home
     will never be more than a few minutes away. Our honest, thorough,
     and fair cleaning service can be booked online in less than 60
     seconds."
   image:
-    url: '/assets/images/Ogden-Utah.jpg'
-    text: 'Sign that says It pays to live in Ogden home of Weber State University in Ogden, Utah'
+    url: "/assets/images/Eden-Utah.jpg"
+    text: "Image of the mountains in the fall - in Eden, UT"
 main:
-  text: "We know it's not easy picking a maid service or cleaning company. Wasatch Maids has a small, dedicated team of professionals to clean your home. Whether you're by Weber State, in North Ogden, South Ogden, or anything in between, Wasatch Maids provides home cleaning and maid services near you."
-  map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96030.62898905447!2d-112.04271385851796!3d41.22270413111622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87530e94da9c4d7b%3A0x61dcd77b34b32c!2sOgden%2C+UT!5e0!3m2!1sen!2sus!4v1482436098799'
+  text: "We know it is not easy picking a maid service or cleaning company. Wasatch Maids has a
+small, dedicated team of professionals to clean your home. Whether you are by Powder Mountain, Nordic Valley, closer to Pineview, or anywhere in between, Wasatch Maids provides home cleaning
+and maid services near you."
+  map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47956.65936231233!2d-111.88548136329644!3d41.30252809857323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8753a1273f3b0fb1%3A0xb86392c2e581623c!2sEden%2C%20UT%2084310!5e0!3m2!1sen!2sus!4v1713844940097!5m2!1sen!2sus"
 ---
 
 <section class="section_text">
 <div class="section_text-container">
-<div class="text-content normal-weight">
+<div class="text-content">
 
-## Cleaning Services in Ogden, Utah
+## Home Cleaning Services in Eden, Utah
 
-We know it's not easy picking a cleaning service. Wasatch Maids has a dedicated team of professionals to clean your home, office, rental or construction project. Whether you're by Weber State, in North Ogden, South Ogden, or anything in between, Wasatch Maids provides cleaning services near you. We offer a range of services but focus on doing one thing right - cleaning. Whether that's for your business, home, or Airbnb rental, we are committed to doing the best job for you.
+We know it's not easy picking a cleaning service. Wasatch Maids has a dedicated team of professionals to clean your home, office, rental or construction project. Whether you're by Powder Mountain, Pineview, or anything in between, Wasatch Maids provides cleaning services near you. We offer a range of services but focus on doing one thing right - cleaning. Whether that's for your business, home, or Airbnb rental, we are committed to doing the best job for you.
 
 ## Who is Wasatch Maids?
 
@@ -45,7 +47,7 @@ All our cleaning and work is highly insured and your satisfaction is guaranteed.
 
 ## House Cleaning & Maid Services
 
-We interview hundreds of maids and house cleaners, always looking for the best ones who believe in our core values of being <span class="key">clean, honest, thorough, and fair</span>. It isn't easy, but we've found them, and they are cleaning in Ogden, Utah.
+We interview hundreds of maids and house cleaners, always looking for the best ones who believe in our core values of being <span class="key">clean, honest, thorough, and fair</span>. It isn't easy, but we've found them, and they are ready to clean for you in Eden, Utah.
 
 All services - standard home cleaning, move-in / move-out, deep spring cleaning, post construction cleaning, and office cleaning are backed by our <span class="key blue">complete satisfaction guarantee</span>. We are 100% committed to our work and delivering the quality you deserve. Wasatch Maids is locally owned business out of Ogden. We care about our community and would never do anything to harm our reputation here. If you want your home, construction project, or office cleaned with the same love and care you give to it, Wasatch Maids is the company for you.
 
@@ -62,7 +64,7 @@ All services - standard home cleaning, move-in / move-out, deep spring cleaning,
 
 One of the most common complaints we hear from businesses, is that they feel they are paying too much for the quality they are receiving. Most commercial and office cleanings are franchises, or large corporations where quality control becomes difficult. Even using smaller cleaning companies or individuals, the service may suffer due to quality control and lack of training. But in the end, businesses just "put up" with the service.
 
-You and your workplace <em>deserve better than this.</em> That's why Wasatch Maids offers commercial and office cleaning / janitorial services in the Ogden area. You don't have to worry about jumping "through the hoops" just to get some information across. Our cleaners have gone through unique training specific to all types of offices, we are based in central Ogden, and are active participants in the community. We care about how Ogden looks, and especially how your business interior looks to keep gaining those customers and keeping your employees happy.
+You and your workplace <em>deserve better than this.</em> That's why Wasatch Maids offers commercial and office cleaning / janitorial services in the Eden area. You don't have to worry about jumping "through the hoops" just to get some information across. Our cleaners have gone through unique training specific to all types of offices, we are based in central Ogden, and are active participants in the community. We care about how the Ogden Valley looks, and especially how your business interior looks to keep gaining those customers and keeping your employees happy.
 
 Our <span class="key">complete satisfaction guarantee</span> covers our office cleanings too. While unlikely, if something isn’t done to the liking of any person in the company, or even if we can do something a little bit different, we will immediately take care of the issue.
 
@@ -89,12 +91,19 @@ starts by having a clean space for customers and employees.
 
 ### Our Promise
 
-Wasatch Maids offers Ogden residents premium cleaning services. We are <span class="key">completely committed</span> to our work and delivery top quality cleaning to you. All our house cleaners and cleaning crews are background checked, certified maids, and have many years of experience cleaning all areas of your home, office, and all conditions, shapes, and sizes. They care about providing customers with the <span class="key blue">five-star service</span> that Wasatch Maids is known for.
+Wasatch Maids offers Eden residents premium cleaning services. We are completely committed to our
+work and delivery top quality cleaning to you. All our house cleaners and cleaning crews are background
+checked, certified maids, and have many years of experience cleaning all areas of your home and all
+conditions, shapes, and sizes. They care about providing customers with the five-star service that
+Wasatch Maids is known for.
 
-For house cleaning, there is no initial on-site estimate needed. You can securely book online in minutes. Just head over to our user-friendly online booking system, enter your Ogden zip code, the requested date and time, the total size of the home (then excluding anything not needed) and we'll provide you with a flat rate. You can schedule a one-time, weekly, bi-weekly, or monthly cleaning service to meet all your needs. Repeat scheduled services come at a discount.
+There is no initial on-site estimate needed. You can securely book online in minutes. Just head over to
+our user-friendly online booking system, enter your Eden zip code, the requested date and time, the total
+size of the home (then excluding anything not needed) and we will provide you with a flat rate fee.
+You can schedule a one-time, weekly, bi-weekly, or monthly cleaning service to meet all your needs.
+Repeat scheduled services come at a discount.
 
-For office cleaning, post-construction cleaning, or short-term rental cleaning like AirBnb / Vrbo, please reach out to us with our <a href="/contact.html" class="key blue">contact form</a>.
-
-With our 100% satisfaction guarantee, the days of searching for residential, post-construction, commercial, and office cleaning services in Ogden are long gone. Never again worry about keeping your home or office fresh and clean because Wasatch Maids has you taken care of.
+With our 100% satisfaction guarantee, the days of searching for residential cleaning services near you
+are long gone. Never have to worry about keeping your home fresh and clean with Wasatch Maids.
 
 {% include "city-services.html" %}

@@ -731,6 +731,11 @@
     width: 100%;
     margin: 20px auto;
   }
+  .text-content h2,
+  .text-content h3,
+  .text-content h4 {
+    font-weight: 500;
+  }
   .text-content p {
     margin: 20px auto;
   }
@@ -741,7 +746,7 @@
   }
 
   .section_text-container.last {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   section.section_text.padded {
     margin-top: 30px;
@@ -2098,11 +2103,11 @@
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .general_content {
-    margin: 40px auto;
+    margin: 30px auto;
   }
   .general_content.values {
     margin: auto;
-    padding: 40px 0px;
+    padding: 30px 0px;
   }
 
   .text-heading {
@@ -2116,8 +2121,8 @@
   }
   section.cta-banner,
   section.cta-banner-dark {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 
   .cta-grid {
