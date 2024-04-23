@@ -5,8 +5,8 @@ textUs: true
 tags: serviceareanav
 navurl: 'ogden'
 meta:
-  title: 'Premium Cleaning Services in Ogden, Utah | Wasatch Maids'
-  description: 'Looking for house cleaning, office cleaning, or maid services in Ogden? Wasatch Maids is the company that offers the best cleaning services. Book your home cleaning in 60 seconds.'
+  title: 'The Ogden Cleaning Service You Can Trust and Count On - House Cleaning, Airbnb Cleaning, Office Cleaning, and Post-Construction Cleaning in Ogden, Utah'
+  description: 'Wasatch Maids is a top-rated cleaning company. Our values are clear: Clean. Honest. Thorough. Fair. From easy online bookings, to outstanding customer service, to high-quality home, post-construction and commercial cleaning - our clients receive the best experience for their needs.'
   socialimage: '/assets/images/Ogden-Utah.jpg'
 about:
   city: 'Ogden'
