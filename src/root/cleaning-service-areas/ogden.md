@@ -26,22 +26,74 @@ main:
 ---
 
 <section class="section_text">
-<div class="section_text-container">
-<div class="text-content normal-weight">
+  <div class="section_text-container">
+    <div class="text-content">
 
 ## Cleaning Services in Ogden, Utah
 
 We know it's not easy picking a cleaning service. Wasatch Maids has a dedicated team of professionals to clean your home, office, rental or construction project. Whether you're by Weber State, in North Ogden, South Ogden, or anything in between, Wasatch Maids provides cleaning services near you. We offer a range of services but focus on doing one thing right - cleaning. Whether that's for your business, home, or Airbnb rental, we are committed to doing the best job for you.
 
-## Who is Wasatch Maids?
+</div>
+</div>
+</section>
+
+<section class="section_text">
+  <div class="cs-container">
+    <!-- Left Image Section -->
+    <div class="cs-left">
+      <picture class="cs-picture cs-picture1" aria-hidden="true">
+        <!-- <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/carpet-cleaning-m.jpg" />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/carpet-cleaning.jpg" /> -->
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/cleaning-bottles.jpg"
+          alt="house"
+          width="522"
+          height="581"
+        />
+      </picture>
+      <picture class="cs-picture cs-picture2" aria-hidden="true">
+        <!-- <source
+          media="(max-width: 600px)"
+          srcset="/assets/images/headshot.jpg" />
+        <source
+          media="(min-width: 601px)"
+          srcset="/assets/images/headshot.jpg" /> -->
+        <img
+          loading="lazy"
+          decoding="async"
+          src="/assets/images/airbnb-kitchen-view.jpg"
+          alt="house"
+          width="414"
+          height="400"
+        />
+      </picture>
+    </div>
+    <!-- Right Content Section-->
+    <div class="cs-right">
+      <span class="cs-topper">About Us</span>
+
+## Who Is Wasatch Maids
 
 Wasatch Maids is a top-rated, locally-owned cleaning company based in Ogden, cleaning houses and offices in Eden, Utah. Our values are clear: Clean. Honest. Thorough. Fair. From easy <a class="key blue" href="/booknow.html">online booking</a>, to outstanding customer service, to high-quality home, post-construction, Airbnb/rental, and commercial cleaning - our clients receive the best experience for their needs.
 
-We price our home cleaning as a flat-rate so you always know what to expect. On top of this, there's no initial on-site estimate needed and you can book online and have us cleaning your home riht away.
+We price our home cleaning as a flat-rate so you always know what to expect. On top of this, there's no initial on-site estimate needed and you can book online and have us cleaning your home right away.
 
 Having been in the cleaning industry for years, we know that a lot goes into picking a great house cleaner. Because of our commitment to excellence, we can only afford the best cleaners. Wasatch Maids employs a small team of experienced cleaners, and goes through consistent and regular training will all of them. In result, you get the same <span class="key">effective, friendly, honest, and thorough</span> cleaning experience every time we come out to your home.
 
 All our cleaning and work is highly insured and your satisfaction is guaranteed.
+
+  </div>
+</section>
+
+<section class="section_text">
+<div class="section_text-container">
+<div class="text-content normal-weight">
 
 ## House Cleaning & Maid Services
 

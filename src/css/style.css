@@ -3,6 +3,174 @@
 <--- -------------------------- -*/
 
 @media only screen and (min-width: 0px) {
+  #section_text,
+  .section_text {
+    padding: 0px 1.25rem 10px 1.25rem;
+    padding-bottom: 0px;
+  }
+  #section_text .cs-container,
+  .section_text .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  #section_text .cs-left,
+  .section_text .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 49.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+
+  #section_text .cs-picture,
+  .section_text .cs-picture {
+    border-radius: 1.5em;
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #section_text .cs-picture img,
+  .section_text .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: cover;
+  }
+  #section_text .cs-picture1,
+  .section_text .cs-picture1 {
+    width: 32.625em;
+    height: 36.3125em;
+    left: 0;
+    top: 0;
+  }
+  .section_text .cs-picture1.single {
+    width: 100%;
+    height: 100%;
+  }
+
+  #section_text .cs-picture2,
+  .section_text .cs-picture2 {
+    width: 25.875em;
+    height: 25em;
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+  }
+  #section_text .cs-picture1,
+  .section_text .cs-picture1,
+  .section_text .cs-picture2,
+  #section_text .cs-picture2 {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+  }
+  #section_text .cs-right,
+  .section_text .cs-right {
+    margin: auto;
+    /* max-width: 46.875rem; */
+  }
+  #section_text .cs-topper,
+  .section_text .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: var(--primary-blue);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #section_text .cs-text,
+  .section_text .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+  /*
+  #sbs .cs-title.txt-center,
+  .sbs .cs-title.txt-center {
+    text-align: center;
+  }
+  #sbs p,
+  .sbs p {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+  #sbs p.txt-center,
+  .sbs p.txt-center {
+    text-align: center;
+  }
+  #sbs p:last-of-type,
+  .sbs p:last-of-type {
+    margin-bottom: 0px;
+  }
+  #sbs .cs-flex-group,
+  .sbs .cs-flex-group {
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #f7f7f7;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #sbs .cs-flex-p,
+  .sbs .cs-flex-p {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #404040;
+  }
+  #sbs .cs-name,
+  .sbs .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--primary-blue);
+    display: block;
+  }
+  #sbs .cs-job,
+  .sbs .cs-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #404040;
+    display: block;
+  }
+  #sbs .cs-quote-icon,
+  .sbs .cs-quote-icon {
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    right: clamp(1rem, 4vw, 2rem);
+  }
+  #sbs .button-solid,
+  .sbs .button-solid {
+    margin-top: 2rem;
+  }
+*/
   #hero {
     height: auto;
     background: url('/assets/images/kitchen2.jpg');
@@ -860,6 +1028,32 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  #section_text .cs-container,
+  .section_text .cs-container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+    padding: 10px 50px 0px 50px;
+  }
+  #section_text .cs-left,
+  .section_text .cs-left {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+  #section_text .cs-right,
+  .section_text .cs-right {
+    margin: 0;
+  }
+  #section_text .cs-left,
+  .section_text .cs-left {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, 0.7em);
+    /* using ems so we can use font size to scale the whole section */
+    width: 39.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+
   .content-component {
     margin-top: 50px;
     margin-bottom: 30px;

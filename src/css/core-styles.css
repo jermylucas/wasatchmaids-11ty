@@ -217,6 +217,8 @@
     --bold-weight: 700;
     --red: #e65710;
     --dark-red: #320707;
+
+    --sectionPadding: 2em;
     /* #f8f8ff */
   }
 
@@ -731,6 +733,12 @@
     width: 100%;
     margin: 20px auto;
   }
+  .cs-right h2,
+  .cs-right h3,
+  .cs-right h4,
+  .cs-left h2,
+  .cs-right h3,
+  .cs-right h4,
   .text-content h2,
   .text-content h3,
   .text-content h4 {
@@ -1518,7 +1526,7 @@
     padding: 200px 50px 0px 50px;
   }
   section.section_text {
-    padding: 0px 50px;
+    padding: 10px 50px 0px 50px;
   }
 
   .checklist_items {
