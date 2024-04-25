@@ -738,10 +738,7 @@
   .cs-right h4,
   .cs-left h2,
   .cs-right h3,
-  .cs-right h4,
-  .text-content h2,
-  .text-content h3,
-  .text-content h4 {
+  .cs-right h4 {
     font-weight: 500;
   }
   .text-content p {

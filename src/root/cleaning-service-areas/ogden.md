@@ -27,7 +27,7 @@ main:
 
 <section class="section_text">
   <div class="section_text-container">
-    <div class="text-content">
+    <div class="text-content normal-weight">
 
 ## Cleaning Services in Ogden, Utah
 

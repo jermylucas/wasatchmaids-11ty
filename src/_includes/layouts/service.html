@@ -5,8 +5,8 @@
       <div class="content-component">
         <div class="content-text-wrapper">
           <h1 class="text-heading">
-            Wasatch Maids
-            <span class="text-blue"> {{ about.service }} </span>Services
+            <span class="text-blue"> {{ about.service }} </span>Services {% if about.location %} in {{ about.location }}
+            {% endif %}
           </h1>
           <p>
             {{ heading.intro }}
