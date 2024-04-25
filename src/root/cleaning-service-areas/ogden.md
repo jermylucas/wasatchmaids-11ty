@@ -74,7 +74,7 @@ height="400"
 <div class="cs-right">
 <span class="cs-topper">Home Cleaning</span>
 
-<h2><a href="/cleaning-services/house-cleaning.html" class="black-link">House Cleaning & Maid Services</a></h2>
+<h2><a href="/cleaning-services/house-cleaning" class="black-link">House Cleaning & Maid Services</a></h2>
 
 We interview hundreds of maids and house cleaners, always looking for the best ones who believe in our core values of being <span class="key">clean, honest, thorough, and fair</span>. It isn't easy, but we've found them, and they are cleaning in Ogden, Utah.
 
