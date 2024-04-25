@@ -3,6 +3,9 @@
 <--- -------------------------- -*/
 
 @media only screen and (min-width: 0px) {
+  .image-container {
+    width: 95%;
+  }
   #section_text,
   .section_text {
     padding: 0px 1.25rem 10px 1.25rem;
@@ -24,7 +27,7 @@
     /* scaling the font size with the view width */
     font-size: min(2.31vw, 0.7em);
     /* using ems so we can use font size to scale the whole section */
-    width: 49.4375em;
+    width: 39.4375em;
     height: 39.75em;
     position: relative;
   }
@@ -49,7 +52,7 @@
   }
   #section_text .cs-picture1,
   .section_text .cs-picture1 {
-    width: 32.625em;
+    width: 36.3125em;
     height: 36.3125em;
     left: 0;
     top: 0;
@@ -108,17 +111,13 @@
   .sbs .cs-title.txt-center {
     text-align: center;
   }
-  #sbs p,
-  .sbs p {
-    font-size: var(--bodyFontSize);
-    line-height: 1.5em;
-    text-align: left;
-    width: 100%;
-    max-width: 46.875rem;
-    margin: 0 auto;
+  */
+  #section_text p,
+  .section_text p {
     margin-bottom: 1rem;
     color: var(--bodyTextColor);
   }
+  /*
   #sbs p.txt-center,
   .sbs p.txt-center {
     text-align: center;
@@ -648,7 +647,6 @@
   }
 
   .image-container {
-    width: 40%;
     padding-left: 0;
     border-radius: 5px;
     background-color: var(--primary-blue);
@@ -731,6 +729,15 @@
   }
 
   .blue-link:hover {
+    text-decoration: underline;
+  }
+  .black-link {
+    color: var(--text-black);
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+  }
+
+  .black-link:hover {
     text-decoration: underline;
   }
 
@@ -937,6 +944,14 @@
 }
 
 @media only screen and (min-width: 768px) {
+  #section_text .cs-left,
+  .section_text .cs-left {
+    font-size: min(2.31vw, 0.7em);
+    width: 59.4375em;
+    height: 39.75em;
+    position: relative;
+  }
+
   .heroText {
     margin-top: 50px;
     max-width: 570px;
@@ -999,9 +1014,15 @@
   #generic-hero .container {
     margin-top: 50px;
   }
+  .image-container {
+    width: 95%;
+  }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+  .image-container {
+    width: 50%;
+  }
   .features_container {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -1028,12 +1049,19 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .image-container {
+    width: 40%;
+  }
   #section_text .cs-container,
   .section_text .cs-container {
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
     padding: 10px 50px 0px 50px;
+  }
+  #section_text .cs-container.right > .cs-left,
+  .section_text .cs-container.right > .cs-left {
+    order: 2;
   }
   #section_text .cs-left,
   .section_text .cs-left {
@@ -1052,6 +1080,10 @@
     width: 39.4375em;
     height: 39.75em;
     position: relative;
+  }
+  #section_text .cs-picture1,
+  .section_text .cs-picture1 {
+    width: 36.3125em;
   }
 
   .content-component {
@@ -1284,8 +1316,8 @@
 @media screen and (max-width: 1024px) {
   .image-container {
     display: block;
-    width: 95%;
     margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 0;
     padding-bottom: 15px;
     -webkit-align-self: center;
