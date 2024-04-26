@@ -44,12 +44,6 @@ Our <span class="key blue">complete satisfaction guarantee</span> covers all cle
 <!-- Left Image Section -->
 <div class="cs-left">
 <picture class="cs-picture cs-picture1" aria-hidden="true">
-<!-- <source
-media="(max-width: 600px)"
-srcset="/assets/images/carpet-cleaning-m.jpg" />
-<source
-media="(min-width: 601px)"
-srcset="/assets/images/carpet-cleaning.jpg" /> -->
 <img
 loading="lazy"
 decoding="async"

@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    row-gap: 2.5rem;
+    row-gap: 0px;
   }
   #section_text .cs-left,
   .section_text .cs-left {
@@ -30,6 +30,7 @@
     width: 39.4375em;
     height: 39.75em;
     position: relative;
+    order: 2;
   }
 
   #section_text .cs-picture,
@@ -950,7 +951,12 @@
     width: 59.4375em;
     height: 39.75em;
     position: relative;
+    order: initial;
   }
+  /* #section_text .cs-container,
+  .section_text .cs-container {
+    row-gap: 2rem;
+  } */
 
   .heroText {
     margin-top: 50px;
