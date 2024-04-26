@@ -81,8 +81,7 @@
   }
   #section_text .cs-right,
   .section_text .cs-right {
-    margin: auto;
-    /* max-width: 46.875rem; */
+    margin-top: 2rem;
   }
   #section_text .cs-topper,
   .section_text .cs-topper {
@@ -945,6 +944,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  #section_text .cs-right,
+  .section_text .cs-right {
+    margin: auto;
+  }
   #section_text .cs-left,
   .section_text .cs-left {
     font-size: min(2.31vw, 0.7em);
