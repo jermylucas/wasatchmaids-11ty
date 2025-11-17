@@ -17,215 +17,44 @@ about:
   {% include "hero.html" %}
   <section class="section_text padded">
     <div class="section_text-container normal-weight">
-      <form
-        method="post"
-        name="Issue Reporting"
-        action="https://formspree.io/f/xoqorgar"
-        class="tools-form"
-        method="post">
+      <form method="post" name="Issue Reporting" action="https://formspree.io/f/xoqorgar" class="tools-form">
         <div class="form-body">
-          <!-- <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Name of Person Submitting
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <input
-              aria-label="submitting-first-name"
-              name="submitting-first-name"
-              placeholder="First Name"
-              type="text"
-              required />
-            <input
-              aria-label="submitting-last-name"
-              name="submitting-last-name"
-              placeholder="Last Name"
-              type="text"
-              required />
-          </fieldset> -->
           <fieldset>
             <h3>
-              Client Complaint of Internal Issue?
+              Person Submitting
               <span class="required">(Required)</span>
             </h3>
-            <div>*Client Complaint: A customer had an issue with a service that was done.</div>
-            <div>
-              *Internal Issue: An issue that didn't involve a customer. An example would be not showing up to work.
-            </div>
-            <div class="grid-2">
-              <select name="complaint-type" aria-label="complaint-type" required>
-                <option value="" selected="selected">Select One...</option>
-                <option value="client-complaint">Client Complaint</option>
-                <option value="internal-issue">Internal Issue</option>
-              </select>
-            </div>
+            <input
+              aria-label="person-submitting"
+              name="person-submitting"
+              placeholder="Your name"
+              type="text"
+              required />
           </fieldset>
-          <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Number of Cleaners or Workers Involved?
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div>
-              <span>How many workers were involved?</span>
-              <select name="cleaners-at-job" id="cleaners-at-job" required onchange="workersOnJob(value)">
-                <option value="" selected>Select One...</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="Not Applicable">Not Applicable</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset id="workers-involved" class="grid-2"></fieldset>
+
           <fieldset>
-            <legend>
-              <h3>
-                Is This Related To A Customer/Booking?
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div class="grid-2">
-              <div>
-                <span>On the way to a cleaning, happened while cleaning, or a customer is involved</span>
-                <select name="related-to-booking" id="related-to-booknig" required onchange="relatedToBooking(value)">
-                  <option value="" selected>Select One...</option>
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                </select>
-              </div>
-            </div>
+            <h3>Person(s) Involved</h3>
+            <input
+              aria-label="persons-involved"
+              name="persons-involved"
+              placeholder="e.g., Jane Smith, John Doe (separate with commas)"
+              type="text" />
           </fieldset>
-          <fieldset id="customer-involved"></fieldset>
-          <fieldset>
-            <div class="grid-2">
-              <span>
-                <h3>
-                  Type of Issue:
-                  <span class="required">(Required)</span>
-                </h3>
-                <select name="issue-type" aria-label="issue-type" required>
-                  <option value="" selected>Select One...</option>
-                  <option value="attention-to-detail">Attention to Detail</option>
-                  <option value="accusation-of-theft">Accusation of Theft</option>
-                  <option value="broken-items">Broken Items</option>
-                  <option value="communication-issue">Communication Issue</option>
-                  <option value="customer-issues">Customer Issue</option>
-                  <option value="didnt-show-up">Didn't Show Up To Work</option>
-                  <option value="dishonesty">Dishonesty</option>
-                  <option value="timeliness">Timeliness</option>
-                  <option value="last-minute-reschedule">Last Minute Reschedule</option>
-                  <option value="possible-injury">Possible Injury</option>
-                  <option value="Other">Other</option>
-                </select>
-              </span>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <h3>
-                Are the cleaner(s) at fault?
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div class="grid-2">
-              <select name="cleaners-at-fault" id="related-to-booknig" required>
-                <option value="" selected>Select One...</option>
-                <option value="at-fault">At Fault</option>
-                <option value="not-at-fault">Not At Fault</option>
-                <option value="unknown">Unknown</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset>
-            <div>
-              <h3>
-                Issues Details
-                <span class="required">(Required)</span>
-              </h3>
-              <span
-                >What was the nature of the complaint? Be as detailed as possible without any accusatory or offensive
-                language.</span
-              >
-              <textarea placeholder="" cols="30" rows="5" name="issue-details" required></textarea>
-            </div>
-          </fieldset>
-          <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Issue Date
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div>
-              <span>When did this issue occur?</span>
-              <input type="date" name="issue-date" id="issue-date" />
-            </div>
-          </fieldset>
-          <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Did we get related photos?
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div>
-              <span>Did we get any photos from the cleaners or customers?</span>
-              <select name="received-pictures" aria-label="received-pictures" required>
-                <option value="" selected="selected">Select One...</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-            </div>
-          </fieldset>
-          <!-- <fieldset class="grid-2">
-            <legend>
-              <h3>
-                Did we have to spend money to fix this issue?
-                <span class="required">(Required)</span>
-              </h3>
-            </legend>
-            <div>
-              <select
-                name="spent-money"
-                aria-label="spent-money"
-                required
-                onchange="spentMoney(value)">
-                <option value="" selected="selected">Select One...</option>
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-              </select>
-            </div>
-          </fieldset>
-          <fieldset id="money-spent" class="grid-2"></fieldset>
+
           <fieldset>
             <h3>
-              Fix Time
+              Issue Details
               <span class="required">(Required)</span>
             </h3>
-            <span>
-              How much time did the office staff need to spend solving this
-              issue? <em>It's okay to guess</em>
-            </span>
-            <div>
-              <input
-                type="number"
-                name="fix-hours"
-                maxlength="2"
-                placeholder="HH"
-                style="width: 75px" />
-              <i>:</i
-              ><input
-                type="number"
-                name="fix-minutes"
-                placeholder="MM"
-                style="width: 75px" />
-            </div>
-          </fieldset> 
-        </div>
-        -->
+            <textarea
+              placeholder="Describe the issue in detail..."
+              cols="30"
+              rows="10"
+              name="issue-details"
+              aria-label="issue-details"
+              required></textarea>
+          </fieldset>
+
           <p class="form-submit" style="justify-content: flex-start">
             <button
               name="submit"
