@@ -9,7 +9,7 @@ meta:
   description: 'Professional cleaning services in Ogden Valley (Eden), Utah near Pineview Reservoir, Snowbasin Resort, and Powder Mountain. Wasatch Maids offers house cleaning, Airbnb turnover cleaning, office cleaning, and post-construction cleaning with our satisfaction guarantee.'
   socialimage: '/assets/images/Eden-Utah.jpg'
 about:
-  city: 'Ogden Valley'
+  city: 'Ogden Valley / Eden Area'
 heading:
   intro: "Wasatch Maids ensures you'll love your professional home cleaners in
     Ogden Valley, Utah (Eden area) and we have dedicated cleaners and maids to keep your home

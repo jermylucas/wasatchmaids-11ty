@@ -1098,9 +1098,9 @@
   }
 
   .dropdown-item {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 15px;
-    color: var(--black-blue);
+    color: var(--primary-blue-darkest);
   }
 
   /* Check List */
@@ -1865,7 +1865,7 @@
     box-shadow: rgb(100 100 111 / 40%) 0px 7px 29px 0px;
   }
   a.dropdown-item {
-    font-size: 15px;
+    font-size: 14px;
     padding: 0.25rem 0.25rem;
     line-height: 28px;
   }

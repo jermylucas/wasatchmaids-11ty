@@ -36,11 +36,11 @@
           book online in 60 seconds
         </p>
         <p class="call-nav-phone">
-          Book Monday or Tuesday and save <span class="key">$15</span> with code <span class="key">MONTUE</span>
+          Book on Wednesdays and save <span class="key">$15</span> with code <span class="key">WED15</span>
         </p>
       </div>
         <div></div>
-        <a href="/booknow.html?utm_source=header&utm_medium=cta-button&utm_campaign=MONTUE-15-off" class="call-nav-quote-btn">Book Now</a>
+        <a href="/booknow.html?utm_source=header&utm_medium=cta-button&utm_campaign=WED15-15-off" class="call-nav-quote-btn">Book Now</a>
       </div>
     </div>
     {% endif %}
@@ -105,14 +105,14 @@
             height="80"
           />
         </a>
-        <ul id="on-top" class="navbar-links">
+        <ul id="on-top" class="navbar-links" style="padding-left:0">
           <li class="nav-li">
             <a {% if activemenu === 'home' %} class="active-menu" {% endif %} href="/index.html" aria-label="Read about us and our services">Home</a>
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
               <div class="menu-header" onclick="toggleSubMenu(this)">
-                <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html" aria-label="View all our cleaning services">Services </a>
+                <a {% if activemenu === 'services' %} class="active-menu" {% endif %} aria-label="View all our cleaning services">Services </a>
                 <span class="chevron"></span>
               </div>
               <div class="dropdown-list">
@@ -149,19 +149,19 @@
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
               <div class="menu-header" onclick="toggleSubMenu(this)">
-                <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html" aria-label="View all our cleaning locations">Locations </a>
+                <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} aria-label="View all our cleaning locations">Locations </a>
                 <span class="chevron"></span>
               </div>
               <div class="dropdown-list">
                 <a href="/cleaning-service-areas.html" class="dropdown-item" aria-label="View all our cleaning locations"
                   >All Locations</a
                 >
-                {% for page in collections.serviceareanav %}
+                {% for page in collections.serviceareanav | sort('data.about.city') %}
                 <a
                   href="/cleaning-service-areas/{{ page.data.navurl }}.html"
                   class="dropdown-item"
                   aria-label="Read about our {{page.data.about.city}} cleaning services"
-                  >{{ page.data.about.city }} Cleaning</a
+                  >{{ page.data.about.city }}</a
                 >
                 {% endfor %}
               </div>
