@@ -11,12 +11,12 @@ meta:
 about:
   city: 'Morgan / Mountain Green'
 locationReviews:
-  - text: 'Living in Mountain Green, it is hard to find service providers who are reliable. Wasatch Maids has been consistent and does a great job every time.'
-    author: 'Sarah'
-  - text: 'They did a deep clean on our home near the fairgrounds in Morgan. I was impressed by how thorough they were, especially with the dust.'
-    author: 'Mike'
-  - text: 'We use them for our office cleaning near the interstate. Always professional and the place looks great.'
-    author: 'Jennifer'
+  - text: 'The team was efficient and did a wonderful job cleaning our home. It smelled so fresh and clean when they were done. Will definitely use them again.'
+    author: 'K.L.'
+  - text: 'I hired Wasatch Maids for a post-construction clean and they exceeded my expectations. They removed all the dust and debris and made the place move-in ready.'
+    author: 'R.T.'
+  - text: 'Professional, reliable, and trustworthy. I feel comfortable having them in my home and they always do a great job.'
+    author: 'S.P.'
 qna:
   - question: 'Do you service all of Morgan County?'
     answer: 'Yes, we service Morgan, Mountain Green, Peterson, Milton, and the surrounding areas in the valley.'
