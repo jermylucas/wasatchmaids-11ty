@@ -111,7 +111,10 @@
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html" aria-label="View all our cleaning services">Services </a>
+              <div class="menu-header" onclick="toggleSubMenu(this)">
+                <a {% if activemenu === 'services' %} class="active-menu" {% endif %} href="/cleaning-services.html" aria-label="View all our cleaning services">Services </a>
+                <span class="chevron"></span>
+              </div>
               <div class="dropdown-list">
                 <a href="/cleaning-services.html" class="dropdown-item" aria-label="View all our cleaning services"
                   >All Services</a
@@ -145,7 +148,10 @@
           </li>
           <li class="nav-li" style="position: relative">
             <div class="sub-menu">
-              <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html" aria-label="View all our cleaning locations">Locations </a>
+              <div class="menu-header" onclick="toggleSubMenu(this)">
+                <a {% if activemenu === 'locations' %} class="active-menu" {% endif %} href="/cleaning-service-areas.html" aria-label="View all our cleaning locations">Locations </a>
+                <span class="chevron"></span>
+              </div>
               <div class="dropdown-list">
                 <a href="/cleaning-service-areas.html" class="dropdown-item" aria-label="View all our cleaning locations"
                   >All Locations</a
@@ -155,7 +161,7 @@
                   href="/cleaning-service-areas/{{ page.data.navurl }}.html"
                   class="dropdown-item"
                   aria-label="Read about our {{page.data.about.city}} cleaning services"
-                  >{{ page.data.about.city }} Cleaning Services</a
+                  >{{ page.data.about.city }} Cleaning</a
                 >
                 {% endfor %}
               </div>

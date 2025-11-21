@@ -10,6 +10,20 @@ meta:
   socialimage: '/assets/images/Ogden-Utah.jpg'
 about:
   city: 'Ogden'
+  latitude: '41.2230'
+  longitude: '-111.9738'
+locationReviews:
+  - text: 'Wasatch Maids has been cleaning my home in Ogden for over a year. They are on time and do a fantastic job.'
+    author: 'Jessica'
+  - text: 'I hired them for a move-out clean near Weber State. Amazing!'
+    author: 'Tyler'
+  - text: 'Best cleaning service in Ogden. The team is so friendly and thorough.'
+    author: 'Amanda'
+qna:
+  - question: 'Do you service North Ogden?'
+    answer: 'Yes, we service all of Ogden, including North Ogden, South Ogden, and the bench areas.'
+  - question: 'How much for a 3 bedroom house in Ogden?'
+    answer: 'Our pricing is flat-rate based on the size of your home. You can get an instant quote online, or call or text at 801-821-2316.'
 heading:
   intro: "Wasatch Maids ensures you'll love your professional home cleaners in
     Ogden, Utah and we have dedicated cleaners and maids to keep your home

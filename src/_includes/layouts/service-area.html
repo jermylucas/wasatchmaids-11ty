@@ -31,13 +31,154 @@
       </div>
     </div>
   </section>
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CleaningService",
+      "name": "Wasatch Maids {{ about.city }}",
+      "image": "https://wasatchmaids.com{{ heading.image.url }}",
+      "url": "https://wasatchmaids.com{{ page.url }}",
+      "telephone": "801-821-2316",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "{{ about.city }}",
+        "addressRegion": "UT",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "{{ about.latitude | default('41.2230') }}",
+        "longitude": "{{ about.longitude | default('-111.9738') }}"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "{{ about.city }}"
+      },
+      "priceRange": "$$"
+    }
+  </script>
+
   <section>
     <div>
       <div>{{ content | safe }}</div>
     </div>
   </section>
 
+  <!-- Reviews Section -->
+  <section class="section_text" style="background-color: var(--primary-blue); padding: 40px 0">
+    <div class="section_text-container">
+      <div class="text-content">
+        <h2 style="text-align: center; color: white">What Our Happy {{ about.city }} Clients Say</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 30px">
+          {% for review in locationReviews %}
+          <div
+            style="
+              background: white;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              flex: 1 1 300px;
+              max-width: 400px;
+            ">
+            <div style="color: #ffb400; margin-bottom: 10px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 15px">"{{ review.text }}"</p>
+            <p style="font-weight: bold; text-align: right">- {{ review.author }}</p>
+          </div>
+          {% endfor %} {% if not locationReviews %}
+          <!-- Fallback reviews if none defined in front matter -->
+          <div
+            style="
+              background: white;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              flex: 1 1 300px;
+              max-width: 400px;
+            ">
+            <div style="color: #ffb400; margin-bottom: 10px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 15px">
+              "Wasatch Maids is professional, thorough, and friendly. My home has never looked better!"
+            </p>
+            <p style="font-weight: bold; text-align: right">- Sarah J.</p>
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              flex: 1 1 300px;
+              max-width: 400px;
+            ">
+            <div style="color: #ffb400; margin-bottom: 10px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 15px">
+              "I love coming home to a clean house. The team did an amazing job with the deep cleaning."
+            </p>
+            <p style="font-weight: bold; text-align: right">- Mike T.</p>
+          </div>
+          <div
+            style="
+              background: white;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+              flex: 1 1 300px;
+              max-width: 400px;
+            ">
+            <div style="color: #ffb400; margin-bottom: 10px">★★★★★</div>
+            <p style="font-style: italic; margin-bottom: 15px">
+              "Easy to book online and great communication. Highly recommend for anyone in {{ about.city }}."
+            </p>
+            <p style="font-weight: bold; text-align: right">- Emily R.</p>
+          </div>
+          {% endif %}
+        </div>
+        <div style="text-align: center; margin-top: 20px">
+          <a href="https://share.google/ZDeRSZDOu7FbpXYdc" target="_blank" class="link">Read more reviews on Google</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q&A Section -->
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content">
+        <h2>Frequently Asked Questions in {{ about.city }}</h2>
+        <div class="qa-container" style="margin-top: 20px">
+          {% for qa in qna %}
+          <div style="margin-bottom: 20px">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px">{{ qa.question }}</h3>
+            <p>{{ qa.answer }}</p>
+          </div>
+          {% endfor %} {% if not qna %}
+          <div style="margin-bottom: 20px">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px">Do you bring your own cleaning supplies?</h3>
+            <p>
+              Yes! We bring all the necessary cleaning supplies and equipment to make your home sparkle. If you have
+              specific products you'd like us to use, just let us know.
+            </p>
+          </div>
+          <div style="margin-bottom: 20px">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px">Are you insured?</h3>
+            <p>Absolutely. Wasatch Maids is fully insured and bonded for your peace of mind.</p>
+          </div>
+          <div style="margin-bottom: 20px">
+            <h3 style="font-size: 1.2em; margin-bottom: 5px">How do I book a cleaning in {{ about.city }}?</h3>
+            <p>
+              You can book online in 60 seconds using our <a href="/booknow.html" class="blue-link">booking page</a>.
+              Just enter your zip code and select your service.
+            </p>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
   {% CtaBanner text="Schedule Your Home Cleaning", btnText="Book Now", btnLink="/booknow.html", dark=false %}
+
   <section class="section_text">
     <div class="section_text-container">
       <div class="text-content">
@@ -71,6 +212,22 @@
       </div>
     </div>
   </section>
+
+  <!-- Nearby Locations -->
+  <section class="section_text" style="border-top: 1px solid #eee">
+    <div class="section_text-container">
+      <div class="text-content">
+        <h3>Serving {{ about.city }} and Nearby Areas</h3>
+        <p>We also provide cleaning services in these nearby locations:</p>
+        <ul style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 15px">
+          {% for location in collections.serviceareanav %} {% if location.url != page.url %}
+          <li><a href="{{ location.url }}" class="blue-link">{{ location.data.about.city }}</a></li>
+          {% endif %} {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- {% include "checklist.html" %} -->
 </main>
 

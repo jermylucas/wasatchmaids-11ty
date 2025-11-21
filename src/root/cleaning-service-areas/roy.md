@@ -10,6 +10,20 @@ meta:
   socialimage: "/assets/images/Roy-Utah.jpg"
 about:
   city: "Roy"
+  latitude: '41.1777'
+  longitude: '-112.0480'
+locationReviews:
+  - text: "So glad I found a reliable cleaner in Roy. Wasatch Maids is the best."
+    author: "Robert P."
+  - text: "They did a deep clean on my parents' house in Roy and it looks brand new."
+    author: "Lisa S."
+  - text: "Professional and efficient. Highly recommend for anyone in Roy."
+    author: "David B."
+qna:
+  - question: "Do you come out to Roy?"
+    answer: "Yes, Roy is one of our main service areas."
+  - question: "Are you pet friendly?"
+    answer: "Yes, we love pets! Just let us know if you have any special instructions for them."
 heading:
   intro: " Wasatch Maids ensures you'll love your professional home cleaners in
     Roy, Utah and we have dedicated cleaners and maids to keep your home

@@ -1062,6 +1062,41 @@
     border-radius: 3px;
     overflow: hidden;
   }
+
+  /* Mobile Collapsible Menu Styles */
+  @media screen and (max-width: 991px) {
+    .dropdown-list {
+      display: none;
+      width: 100%; /* Full width in mobile */
+    }
+
+    .sub-menu.expanded .dropdown-list {
+      display: flex;
+    }
+
+    .menu-header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .chevron {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid var(--black-blue);
+      border-bottom: 2px solid var(--black-blue);
+      transform: rotate(45deg);
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .sub-menu.expanded .chevron {
+      transform: rotate(-135deg);
+    }
+  }
+
   .dropdown-item {
     font-size: 15px;
     line-height: 15px;
