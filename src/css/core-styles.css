@@ -102,9 +102,9 @@
     margin-bottom: 0.5rem;
   }
 
-  section.section_text {
-    padding: 0px 1.25rem 10px 1.25rem;
-  }
+  /* section.section_text {
+    padding: 0px 1.25rem 2.5rem 1.25rem;
+  } */
 
   section#services-checklist {
     background-color: #f8f8ff;
@@ -217,6 +217,8 @@
     --bold-weight: 700;
     --red: #e65710;
     --dark-red: #320707;
+
+    --sectionPadding: 2em;
     /* #f8f8ff */
   }
 
@@ -731,6 +733,14 @@
     width: 100%;
     margin: 20px auto;
   }
+  .cs-right h2,
+  .cs-right h3,
+  .cs-right h4,
+  .cs-left h2,
+  .cs-right h3,
+  .cs-right h4 {
+    font-weight: 500;
+  }
   .text-content p {
     margin: 20px auto;
   }
@@ -741,7 +751,7 @@
   }
 
   .section_text-container.last {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   section.section_text.padded {
     margin-top: 30px;
@@ -1052,10 +1062,45 @@
     border-radius: 3px;
     overflow: hidden;
   }
+
+  /* Mobile Collapsible Menu Styles */
+  @media screen and (max-width: 991px) {
+    .dropdown-list {
+      display: none;
+      width: 100%; /* Full width in mobile */
+    }
+
+    .sub-menu.expanded .dropdown-list {
+      display: flex;
+    }
+
+    .menu-header {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .chevron {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-right: 2px solid var(--black-blue);
+      border-bottom: 2px solid var(--black-blue);
+      transform: rotate(45deg);
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .sub-menu.expanded .chevron {
+      transform: rotate(-135deg);
+    }
+  }
+
   .dropdown-item {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 15px;
-    color: var(--black-blue);
+    color: var(--primary-blue-darkest);
   }
 
   /* Check List */
@@ -1375,10 +1420,13 @@
     font-size: 1em;
   }
 
-  section.page-content,
+  /* section.page-content,
   section.section_text {
-    padding: 10px 2.5rem 0px 2.5rem;
+    padding: 10px 2.5rem 2rem 2.5rem;
   }
+  section.page-content {
+    padding-bottom: 0px;
+  } */
   section.section_text {
     max-width: 1200px;
     margin: auto;
@@ -1513,7 +1561,7 @@
     padding: 200px 50px 0px 50px;
   }
   section.section_text {
-    padding: 0px 50px;
+    padding: 10px 50px 0px 50px;
   }
 
   .checklist_items {
@@ -1817,7 +1865,7 @@
     box-shadow: rgb(100 100 111 / 40%) 0px 7px 29px 0px;
   }
   a.dropdown-item {
-    font-size: 15px;
+    font-size: 14px;
     padding: 0.25rem 0.25rem;
     line-height: 28px;
   }
@@ -2098,11 +2146,11 @@
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .general_content {
-    margin: 40px auto;
+    margin: 30px auto;
   }
   .general_content.values {
     margin: auto;
-    padding: 40px 0px;
+    padding: 30px 0px;
   }
 
   .text-heading {
@@ -2116,8 +2164,8 @@
   }
   section.cta-banner,
   section.cta-banner-dark {
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
   }
 
   .cta-grid {

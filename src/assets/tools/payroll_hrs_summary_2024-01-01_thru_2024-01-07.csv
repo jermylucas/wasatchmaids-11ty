@@ -1,0 +1,10 @@
+"Payroll ID","Employee Number","Name","Group","Salaried","Exempt","Reg Hours","Holiday Hours","Sick Hours","Vacation Hours","Approval State"
+"","0","Cano, Luz","-","0","0","14.12","0.00","0.00","0.00","no"
+"","0","Contreras, Ninoska","-","0","0","26.09","0.00","0.00","0.00","no"
+"","0","Landaeta, Angeli","-","0","0","24.70","0.00","0.00","0.00","no"
+"","0","Rengifo, Nairobis","-","0","0","26.91","0.00","0.00","0.00","no"
+"","0","Toledo, Teherly","-","0","0","36.49","0.00","0.00","0.00","no"
+,,SUBTOTAL,,,,=SUM(G2:G6),=SUM(H2:H6),=SUM(I2:I6),=SUM(J2:J6),
+
+
+,,GRAND TOTAL,,,,"=SUM(G7,G1)","=SUM(H7,H1)","=SUM(I7,I1)","=SUM(J7,J1)",

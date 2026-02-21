@@ -1,0 +1,56 @@
+---
+layout: layouts/base.html
+activemenu: 'careers'
+noindex: true
+eleventyExcludeFromCollections: true
+banner: 'tools'
+meta:
+  title: 'Pay Adjustments | Wasatch Maids'
+  description: 'Pay and Payroll Adjustments'
+  socialimage: '/assets/images/Ogden-Utah.jpg'
+about:
+  heroTitle: 'Pay and Payroll Adjustments'
+  heroContent: ''
+---
+
+<main>
+  {% include "hero.html" %}
+
+  <section class="section_text">
+    <div class="section_text-container">
+      <div class="text-content">
+        <form method="post" name="Adjustments" method="post" data-netlify="true">
+          <div class="form-body">
+            <div>
+              <h3>Pay Adjustments and Time Fixed</h3>
+              <p>
+                Use this to request a day off. Or if you forgot to clock in/out, or need to notify of any other
+                pay/clock-in adjustment.. Remember to include your name and the date /
+                <em>
+                  Utilízalo para notificar si necesita tomar un día libre. O si olvidaste fichar a la entrada/salida, o
+                  necesitas notificar cualquier otro ajuste de sueldo/reloj... Recuerde incluir su nombre y la fecha</em
+                >
+              </p>
+              <textarea
+                cols="30"
+                rows="5"
+                name="experience-response"
+                placeholder="Enter your response here"
+                required></textarea>
+            </div>
+          </div>
+          <p class="form-submit" style="justify-content: flex-start">
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              class="primary button-solid"
+              data-submit="...Sending">
+              Submit
+            </button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

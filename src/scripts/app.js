@@ -34,6 +34,11 @@ let toggleNav = function () {
   }
 };
 
+let toggleSubMenu = function (element) {
+  const subMenu = element.parentElement;
+  subMenu.classList.toggle('expanded');
+};
+
 // Remove spinner if iframe loaded after 2 seconds
 if (document.getElementsByTagName('iframe').length) {
   document.getElementsByTagName('iframe')[0].onload = () => {

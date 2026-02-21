@@ -1,0 +1,70 @@
+---
+layout: layouts/base.html
+activemenu: 'careers'
+banner: 'tools'
+noindex: true
+eleventyExcludeFromCollections: true
+meta:
+  title: 'Google Review Received | Wasatch Maids'
+  description: 'Report when a Google review has been received from a customer'
+  socialimage: ''
+about:
+  heroTitle: 'Google Review Received / Revisión de Google Recibida'
+  heroContent: 'Submit this form when you receive a Google review / Envíe este formulario cuando reciba una revisión de Google'
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <form
+        method="post"
+        name="Received Review"
+        action="https://formspree.io/f/mdkybbng"
+        enctype="multipart/form-data"
+        class="tools-form">
+        <div class="form-body">
+          <fieldset>
+            <h3>
+              Cleaner Name / Nombre del Limpiador
+              <span class="required">(Required / Requerido)</span>
+            </h3>
+            <input aria-label="cleaner-name" name="cleaner-name" type="text" required />
+          </fieldset>
+
+          <fieldset>
+            <h3>
+              Date Received / Fecha de Recepción
+              <span class="required">(Required / Requerido)</span>
+            </h3>
+            <input aria-label="date-received" name="date-received" type="date" required />
+          </fieldset>
+
+          <fieldset>
+            <h3>
+              Customer Name / Nombre del Cliente
+              <span class="required">(Required / Requerido)</span>
+            </h3>
+            <input aria-label="customer-name" name="customer-name" type="text" required />
+          </fieldset>
+
+          <fieldset>
+            <h3>Screenshot (Optional) / Captura de Pantalla (Opcional)</h3>
+            <input aria-label="screenshot" name="screenshot" type="file" accept="image/*" />
+          </fieldset>
+
+          <p class="form-submit" style="justify-content: flex-start">
+            <button
+              name="submit"
+              type="submit"
+              id="contact-submit"
+              class="primary button-solid"
+              data-submit="...Sending">
+              Submit / Enviar
+            </button>
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>

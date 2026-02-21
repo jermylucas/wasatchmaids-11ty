@@ -1,0 +1,95 @@
+---
+layout: layouts/base.html
+activemenu: 'careers'
+banner: 'tools'
+noindex: true
+eleventyExcludeFromCollections: true
+meta:
+  title: 'Money Owed | Wasatch Maids'
+  description: 'Form for submitting contractor pay for after they complete a cleaning'
+  socialimage: ''
+about:
+  heroTitle: 'Money Owed'
+  heroContent: 'Submit this form when someone is owed money for a cleaning'
+---
+
+<main id="main">
+  {% include "hero.html" %}
+  <section class="section_text padded">
+    <div class="section_text-container normal-weight">
+      <form method="post" name="Money Owed" action="https://formspree.io/f/xnqrglgo" class="tools-form" method="post">
+        <div class="form-body">
+          <fieldset>
+            <legend>
+              <h3>
+                Name of Person Submitting
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input
+              aria-label="submitting-full-name"
+              name="submitting-full-name"
+              placeholder="Full Name"
+              type="text"
+              required />
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h3>
+                Money Owed Name
+                <span class="required">(Required)</span>
+              </h3>
+            </legend>
+            <input
+              aria-label="contractor-full-name"
+              name="contractor-full-name"
+              placeholder="Full Name"
+              type="text"
+              required />
+          </fieldset>
+          <fieldset>
+            <div class="grid-2">
+              <div>
+                <h3>Service Date</h3>
+                <span>What day was the service completed? (if applicable)</span>
+                <input type="date" name="date-of-work" id="date-of-work" />
+              </div>
+              <div>
+                <h3>Amount Owed <span class="required">(Required)</span></h3>
+                <span>How much does Wasatch Maids owe for the work?</span>
+                <input
+                  required
+                  type="number"
+                  min="0.01"
+                  step="0.01"
+                  max="2500"
+                  name="amount-owed"
+                  style="width: 150px"
+                  placeholder="0.00" />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div>
+              <h3>
+                Details and Pay Information
+                <span class="required">(Required)</span>
+              </h3>
+              <span
+                >Please include any other relevant details that you feel may be helpful such as: Method of payment
+                (Venmo, ACH, etc), details about the cleaning, etc. If there were any issues, please submit them in the
+                <a href="/tools/staff/issue-reporting.html" target="_blank">issue reporting form</a></span
+              >
+              <textarea placeholder="" cols="30" rows="5" name="other-information" required></textarea>
+            </div>
+          </fieldset>
+        </div>
+        <p class="form-submit" style="justify-content: flex-start">
+          <button name="submit" type="submit" id="contact-submit" class="primary button-solid" data-submit="...Sending">
+            Submit
+          </button>
+        </p>
+      </form>
+    </div>
+  </section>
+</main>

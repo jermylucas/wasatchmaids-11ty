@@ -34,6 +34,4 @@ Your profile will now show updated card information.
 
 ![confirmed_Card](/assets/posts/confirmed_card.png "Confirmed Card Information")
 
-You can now go back to your dashboard to make a booking or you can go to <https://wasatchmaids.com/booknow> to make a booking with your updated card information. 
-
 Thank you for doing business with us!
