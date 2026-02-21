@@ -1,33 +1,103 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: "src/assets/posts"
-public_folder: "/assets/posts"
+
+# Default media folder for general assets
+media_folder: 'src/assets/posts'
+public_folder: '/assets/posts'
+
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/blog/posts"
+  # ===== PUBLIC CONTENT COLLECTIONS =====
+  # These collections are accessible by admin users only
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/blog/posts'
     create: true
-    layout: "layouts/post.html"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    publish_roles: ['admin']
+    create_roles: ['admin']
+    layout: 'layouts/post.html'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "how-to"
-    label: "How To"
-    folder: "src/how-to/posts"
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['post'] }
+      - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'how-to'
+    label: 'How To'
+    folder: 'src/how-to/posts'
     create: true
-    slug: "{{slug}}"
+    publish_roles: ['admin']
+    create_roles: ['admin']
+    slug: '{{slug}}'
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["howtto"] }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Image caption", name: "imageAlt", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Tags', name: 'tags', widget: 'list', default: ['howtto'] }
+      - { label: 'Featured Image', name: 'image', widget: 'image' }
+      - { label: 'Image caption', name: 'imageAlt', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # ===== USER-SPECIFIC DOCUMENTS COLLECTIONS =====
+  # Each user has their own documents collection
+  # Users can view and upload their own documents
+  # Admin has full access to all user documents
+
+  # Example user: John (replace with actual user name)
+  - name: 'user-john-documents'
+    label: "John's Documents"
+    folder: 'src/users/john/documents'
+    create: true
+    publish_roles: ['admin', 'user-john']
+    create_roles: ['admin', 'user-john']
+    media_folder: 'src/users/john/media'
+    public_folder: '/users/john/media'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Document Type',
+          name: 'type',
+          widget: 'select',
+          options: ['document', 'scorecard', 'report', 'other'],
+          default: 'document',
+        }
+      - { label: 'File', name: 'file', widget: 'file', allow_multiple: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # Example user: Jane (replace with actual user name)
+  - name: 'user-jane-documents'
+    label: "Jane's Documents"
+    folder: 'src/users/jane/documents'
+    create: true
+    publish_roles: ['admin', 'user-jane']
+    create_roles: ['admin', 'user-jane']
+    media_folder: 'src/users/jane/media'
+    public_folder: '/users/jane/media'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Document Type',
+          name: 'type',
+          widget: 'select',
+          options: ['document', 'scorecard', 'report', 'other'],
+          default: 'document',
+        }
+      - { label: 'File', name: 'file', widget: 'file', allow_multiple: false }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  # Add more user collections below following the same pattern
+  # Simply copy and paste the collection block and replace:
+  # - "user-john-documents" with "user-username-documents"
+  # - "John's Documents" with "User's Documents"
+  # - "src/users/john/" with "src/users/username/"
+  # - "user-john" with "user-username" in roles
