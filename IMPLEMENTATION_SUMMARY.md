@@ -4,6 +4,16 @@
 
 Your Netlify CMS has been configured to support multiple users with role-based access control. This implementation uses the "Separate Collections per User" approach, which provides a simple and secure way for users to access only their own documents and scorecards.
 
+## ⚠️ Important: Collection Visibility Fix
+
+**Issue**: Users were initially able to see all collections regardless of their role.
+
+**Solution**: A custom CMS configuration loader ([`src/admin/cms-config.js`](src/admin/cms-config.js:1)) has been implemented that dynamically filters collections based on the logged-in user's role.
+
+**Status**: ✅ Fixed - Users will now only see collections they have access to.
+
+See [`docs/collection-visibility-fix.md`](docs/collection-visibility-fix.md:1) for detailed information about the fix and troubleshooting.
+
 ---
 
 ## What Was Implemented
@@ -207,14 +217,16 @@ The current setup uses example names (John and Jane). To customize for your actu
 ### Modified Files
 
 - [`src/admin/config.yml`](src/admin/config.yml:1) - Added role-based permissions and user collections
-- [`src/admin/index.html`](src/admin/index.html:1) - Enhanced with Identity widget configuration
+- [`src/admin/index.html`](src/admin/index.html:1) - Enhanced with Identity widget configuration and custom CMS loader
 
 ### Created Files
 
 - [`plans/netlify-cms-multi-user-setup.md`](plans/netlify-cms-multi-user-setup.md) - Implementation plan
 - [`docs/netlify-cms-multi-user-guide.md`](docs/netlify-cms-multi-user-guide.md) - Comprehensive user guide
 - [`docs/user-quick-reference.md`](docs/user-quick-reference.md) - User quick reference
+- [`docs/collection-visibility-fix.md`](docs/collection-visibility-fix.md) - Documentation for collection visibility fix
 - [`src/admin/README.md`](src/admin/README.md) - Admin quick start guide
+- [`src/admin/cms-config.js`](src/admin/cms-config.js) - Custom CMS configuration loader for role-based filtering
 - `IMPLEMENTATION_SUMMARY.md` - This file
 
 ### Created Directories
@@ -230,6 +242,7 @@ The current setup uses example names (John and Jane). To customize for your actu
 
 - **Full Setup Guide**: [`docs/netlify-cms-multi-user-guide.md`](docs/netlify-cms-multi-user-guide.md)
 - **User Quick Reference**: [`docs/user-quick-reference.md`](docs/user-quick-reference.md)
+- **Collection Visibility Fix**: [`docs/collection-visibility-fix.md`](docs/collection-visibility-fix.md)
 - **Implementation Plan**: [`plans/netlify-cms-multi-user-setup.md`](plans/netlify-cms-multi-user-setup.md)
 - **Admin Quick Start**: [`src/admin/README.md`](src/admin/README.md)
 
@@ -237,14 +250,18 @@ The current setup uses example names (John and Jane). To customize for your actu
 
 ## Troubleshooting
 
-If users cannot access their documents:
+If users cannot access their documents or see all collections:
 
 1. **Check role assignment** in Netlify Identity
 2. **Verify role names** match exactly between Identity and config.yml
 3. **Clear browser cache** and try logging in again
 4. **Check Netlify deploy status** for errors
+5. **Review browser console** for errors from [`cms-config.js`](src/admin/cms-config.js:1)
 
-For detailed troubleshooting, see the [Multi-User Setup Guide](docs/netlify-cms-multi-user-guide.md#troubleshooting).
+For detailed troubleshooting, see:
+
+- [Collection Visibility Fix Guide](docs/collection-visibility-fix.md#troubleshooting)
+- [Multi-User Setup Guide](docs/netlify-cms-multi-user-guide.md#troubleshooting)
 
 ---
 
